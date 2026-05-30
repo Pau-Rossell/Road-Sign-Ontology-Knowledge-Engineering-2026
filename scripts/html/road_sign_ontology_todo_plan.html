@@ -1,0 +1,436 @@
+
+<h2 class="sr-only">Phased TO-DO Plan for the Road Sign Ontology project, aligned with sessions 1 through 6.</h2>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans)}
+.plan{padding:1rem 0 2rem}
+.plan-header{margin-bottom:1.5rem}
+.plan-header h1{font-size:20px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
+.plan-header p{font-size:13px;color:var(--color-text-secondary)}
+.phases{display:flex;flex-direction:column;gap:1rem}
+.phase{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden}
+.phase-header{display:flex;align-items:center;gap:12px;padding:12px 16px;cursor:pointer;user-select:none}
+.phase-header:hover{background:var(--color-background-secondary)}
+.phase-num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;flex-shrink:0}
+.phase-meta{flex:1}
+.phase-title{font-size:15px;font-weight:500;color:var(--color-text-primary)}
+.phase-sub{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.phase-badge{font-size:11px;padding:3px 8px;border-radius:99px;font-weight:500;white-space:nowrap}
+.phase-chevron{font-size:14px;color:var(--color-text-tertiary);transition:transform 0.2s}
+.phase-chevron.open{transform:rotate(90deg)}
+.phase-body{display:none;border-top:0.5px solid var(--color-border-tertiary)}
+.phase-body.open{display:block}
+.task-list{list-style:none;padding:0 16px 12px}
+.task{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:0.5px solid var(--color-border-tertiary)}
+.task:last-child{border-bottom:none}
+.task-check{width:18px;height:18px;border:0.5px solid var(--color-border-secondary);border-radius:4px;flex-shrink:0;margin-top:2px;cursor:pointer;background:var(--color-background-primary);display:flex;align-items:center;justify-content:center}
+.task-check.done{background:var(--color-background-success);border-color:var(--color-border-success)}
+.task-check.done::after{content:"✓";font-size:11px;color:var(--color-text-success)}
+.task-content{flex:1}
+.task-label{font-size:13px;color:var(--color-text-primary);line-height:1.5}
+.task-label.done{text-decoration:line-through;color:var(--color-text-tertiary)}
+.task-meta{display:flex;gap:6px;margin-top:4px;flex-wrap:wrap}
+.tag{font-size:10px;padding:2px 6px;border-radius:4px;font-weight:500}
+.tag-session{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.tag-tool{background:#E6F1FB;color:#0C447C}
+.tag-output{background:#EAF3DE;color:#27500A}
+.tag-doc{background:#FAEEDA;color:#633806}
+.tag-critical{background:#FCEBEB;color:#791F1F}
+.session-map{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;padding:12px 16px;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-tertiary)}
+.sm-box{border-radius:6px;padding:6px 4px;text-align:center;font-size:10px;font-weight:500}
+.sm-label{color:inherit;display:block}
+.sm-date{font-size:9px;font-weight:400;margin-top:1px;display:block;opacity:0.7}
+.deadline-bar{display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--color-background-danger);border-top:0.5px solid var(--color-border-danger);font-size:12px;color:var(--color-text-danger);font-weight:500}
+</style>
+
+<div class="plan">
+  <div class="plan-header">
+    <h1>Road Sign Ontology — Phased TO-DO Plan</h1>
+    <p>Synthesised from Sessions 1–6 · Vienna Convention (Part I, Annex 1) · MTSD · OWL 2 · Protégé</p>
+  </div>
+
+  <div class="session-map">
+    <div class="sm-box" style="background:#E6F1FB;color:#0C447C"><span class="sm-label">Session 1–2</span><span class="sm-date">25 Feb</span></div>
+    <div class="sm-box" style="background:#EAF3DE;color:#27500A"><span class="sm-label">Session 2–3</span><span class="sm-date">4 Mar</span></div>
+    <div class="sm-box" style="background:#EEEDFE;color:#3C3489"><span class="sm-label">Session 3–1</span><span class="sm-date">18 Mar</span></div>
+    <div class="sm-box" style="background:#FAEEDA;color:#633806"><span class="sm-label">Session 4</span><span class="sm-date">25 Mar</span></div>
+    <div class="sm-box" style="background:#E1F5EE;color:#085041"><span class="sm-label">Session 5</span><span class="sm-date">8 Apr</span></div>
+    <div class="sm-box" style="background:#FAECE7;color:#712B13"><span class="sm-label">Session 6</span><span class="sm-date">29 Apr</span></div>
+  </div>
+
+  <div class="phases" id="phases">
+
+    <div class="phase">
+      <div class="phase-header" onclick="toggle(this)">
+        <div class="phase-num" style="background:#E6F1FB;color:#0C447C">1</div>
+        <div class="phase-meta">
+          <div class="phase-title">The IS-A Foundation</div>
+          <div class="phase-sub">Vienna Convention taxonomy → OWL 2 class hierarchy · Steps 1–4</div>
+        </div>
+        <span class="phase-badge" style="background:#E6F1FB;color:#0C447C">Sessions 1–2</span>
+        <span class="phase-chevron">▶</span>
+      </div>
+      <div class="phase-body open">
+        <ul class="task-list">
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Define domain &amp; scope: road signs as used in the EU; primary users are (semi-)autonomous vehicles and their engineers</div>
+              <div class="task-meta"><span class="tag tag-session">S1–2 p.3</span><span class="tag tag-doc">Step 1</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Write ≥20 competency questions covering taxonomy, properties, pragmatics, and dataset (at least 5 per category)</div>
+              <div class="task-meta"><span class="tag tag-session">S1–2 p.4</span><span class="tag tag-doc">Step 1</span><span class="tag tag-critical">Required ≥20</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Study Vienna Convention Part I, Annex 1 (Conv_road_signs_2006v_EN.pdf) — sections A through H — and enumerate all sign terms, colours, shapes, and symbols</div>
+              <div class="task-meta"><span class="tag tag-session">S1–2 p.5–6</span><span class="tag tag-doc">Steps 2–3</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Build full IS-A class hierarchy rooted in RoadSign with all Vienna Convention subclasses (DangerWarningSign, ProhibitoryOrRestrictiveSign, MandatorySign, PrioritySign, SpecialRegulationSign, InformationFacilityServiceSign, DirectionPositionIndicationSign, AdditionalPanel); add disjointness axioms</div>
+              <div class="task-meta"><span class="tag tag-session">S1–2 p.7</span><span class="tag tag-doc">Step 4</span><span class="tag tag-output">RDF/XML output</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Add auxiliary class hierarchies: Colour, Shape, Symbol (AnimalSymbol→WildAnimalSymbol/DomesticAnimalSymbol, VehicleSymbol, SpeedSymbol), UserCategory, FacilityType, HazardType, LaneType, Model, Orientation, RegulationType, SizeCategory</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.3 Protégé screenshot</span><span class="tag tag-doc">Step 4</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Prompt engineering: use the canonical prompt template (Role / Objective / Scope &amp; Domain / CQs / Structural Requirements / Output Format) and archive exact prompt + LLM used + revised RDF/XML file</div>
+              <div class="task-meta"><span class="tag tag-session">S1–2 p.13–15</span><span class="tag tag-doc">Documentation</span><span class="tag tag-critical">Mandatory record</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header" onclick="toggle(this)">
+        <div class="phase-num" style="background:#EAF3DE;color:#27500A">2</div>
+        <div class="phase-meta">
+          <div class="phase-title">Property Architecture &amp; Characteristics</div>
+          <div class="phase-sub">Object &amp; data properties with domain/range, cardinality, and functional flags · Steps 5–6</div>
+        </div>
+        <span class="phase-badge" style="background:#EAF3DE;color:#27500A">Session 3–1</span>
+        <span class="phase-chevron">▶</span>
+      </div>
+      <div class="phase-body">
+        <ul class="task-list">
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Define object properties with domain/range: hasBorderColour (RoadSign→Colour), hasGroundColour (RoadSign→Colour), hasShape (RoadSign→Shape), hasSymbol (RoadSign→Symbol), hasSymbolColour (Symbol→Colour), relevantToRoadUser (RoadSign→UserCategory), foaf:depicts</div>
+              <div class="task-meta"><span class="tag tag-session">S3–1 p.5–6</span><span class="tag tag-doc">Step 5</span><span class="tag tag-output">RDF/XML</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Define data properties with domain/range: border_colour (xsd:string), ground_colour (xsd:string), shape (xsd:string), symbol (xsd:string), symbol_colour (xsd:string), symbol_value (xsd:integer); also speed limit value, max height/weight, text content for information signs</div>
+              <div class="task-meta"><span class="tag tag-session">S3–1 p.7</span><span class="tag tag-doc">Step 5</span><span class="tag tag-output">RDF/XML</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Add MTSD image metadata as data properties: mtsd:width (xsd:integer), mtsd:height (xsd:integer), mtsd:isPano (xsd:boolean), mtsd:sourceFile (xsd:string), mtsd:xmin/ymin/xmax/ymax (xsd:decimal), mtsp:barrier/occluded/out-of-frame/exterior/ambiguous/included/direction-or-information/highway/dummy (xsd:boolean)</div>
+              <div class="task-meta"><span class="tag tag-session">S3–1 p.8 assignment · S2–3 p.4</span><span class="tag tag-doc">Step 5</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Define property characteristics: hasShape → Functional (exactly one value); hasSymbol → multiple cardinality; hasSymbolColour → required multiple (min 1); mark applicable properties as Functional, Inverse Functional, Transitive, Asymmetric as justified by the domain</div>
+              <div class="task-meta"><span class="tag tag-session">S1–2 p.9 · S4 p.9</span><span class="tag tag-doc">Step 6</span><span class="tag tag-output">RDF/XML</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Verify in Protégé: object properties tab shows correct domain/range for hasBorderColour, hasGroundColour, hasShape, hasSymbol, relevantToRoadUser; data properties tab shows symbol_value with domain RoadSign and range xsd:integer</div>
+              <div class="task-meta"><span class="tag tag-session">S3–1 p.6–7 Protégé screenshots</span><span class="tag tag-tool">Protégé</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Archive prompts for object property step and data property step separately (recommended two-step approach); record LLM + prompt + revised output file for each</div>
+              <div class="task-meta"><span class="tag tag-session">S3–1 p.8–10</span><span class="tag tag-doc">Documentation</span><span class="tag tag-critical">Mandatory record</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header" onclick="toggle(this)">
+        <div class="phase-num" style="background:#EEEDFE;color:#3C3489">3</div>
+        <div class="phase-meta">
+          <div class="phase-title">Logic &amp; Class Definitions</div>
+          <div class="phase-sub">Necessary &amp; sufficient conditions in Manchester Syntax / OWL EquivalentClass axioms · Steps 6–7</div>
+        </div>
+        <span class="phase-badge" style="background:#EEEDFE;color:#3C3489">Session 4</span>
+        <span class="phase-chevron">▶</span>
+      </div>
+      <div class="phase-body">
+        <ul class="task-list">
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Write necessary conditions (SubClassOf restrictions) for every road-sign class; e.g. StopSign SubClassOf (hasShape value Octagon); DangerWarningSign SubClassOf (hasShape value Triangle) AND (hasGroundColour value White) AND (hasBorderColour value Red)</div>
+              <div class="task-meta"><span class="tag tag-session">S4 p.6–8</span><span class="tag tag-doc">Manchester Syntax</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Write necessary AND sufficient (EquivalentClass) definitions for all main road-sign classes to enable classification by the reasoner; e.g. B2_Stop ≡ PrioritySign AND (hasBorderColour value White) AND (hasGroundColour value Red) AND (hasShape value Octagon) AND (hasText value "STOP")</div>
+              <div class="task-meta"><span class="tag tag-session">S4 p.8 · S6 p.3 Protégé</span><span class="tag tag-doc">Step 6+</span><span class="tag tag-critical">All main classes</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Use the full Manchester Syntax constructor table (AND, OR, NOT, SOME, ONLY, MIN n, MAX n, EXACTLY n, VALUE {a}, SELF, INVERSE R) correctly in Protégé class descriptions panel</div>
+              <div class="task-meta"><span class="tag tag-session">S4 p.7 syntax table</span><span class="tag tag-tool">Protégé</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Add disjointness axioms (owl:disjointWith / DisjointUnion) between all sibling subclasses of RoadSign and all sibling subclasses of Symbol, Colour, Shape</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.3 Protégé — "Disjoint With" panel visible for B2_Stop</span><span class="tag tag-doc">Clean hierarchy</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Create sample individuals (instances) in Protégé for testing: at least one instance of each top-level sign category with concrete property values (e.g. a STOP sign individual, a speed-20 sign individual, a give-way individual)</div>
+              <div class="task-meta"><span class="tag tag-session">S1–2 p.10</span><span class="tag tag-doc">Step 7</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Archive prompts + LLM + revised output file for (a) property characteristics step and (b) definitions step; include example definitions with CQs in prompt</div>
+              <div class="task-meta"><span class="tag tag-session">S4 p.9–10</span><span class="tag tag-doc">Documentation</span><span class="tag tag-critical">Mandatory record</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header" onclick="toggle(this)">
+        <div class="phase-num" style="background:#FAEEDA;color:#633806">4</div>
+        <div class="phase-meta">
+          <div class="phase-title">MTSD Alignment &amp; Hybrid Modelling</div>
+          <div class="phase-sub">owl:equivalentClass + rdfs:subClassOf alignment with MTSD.ttl · alignment.rdf.xml</div>
+        </div>
+        <span class="phase-badge" style="background:#FAEEDA;color:#633806">Sessions 2–3 · 6</span>
+        <span class="phase-chevron">▶</span>
+      </div>
+      <div class="phase-body">
+        <ul class="task-list">
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Parse MTSD.ttl and extract all 300+ rdfs:label values for TrafficSignObject; group them by prefix (warning--, regulatory--, complementary--, information--, other--) to map to Vienna Convention sections</div>
+              <div class="task-meta"><span class="tag tag-session">S2–3 p.3–5</span><span class="tag tag-tool">Python / SPARQL</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">For each MTSD label: decide exact match (owl:equivalentClass) or partial match (rdfs:subClassOf); e.g. information--bus-stop- ≡ E15_BusStop; regulatory--maximum-speed-limit-120- ⊑ C14_MaximumSpeed</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.5 · S2–3 p.6</span><span class="tag tag-doc">Alignment rules</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Produce alignment.rdf.xml: separate OWL file importing both roadsignonto.rdf.xml and MTSD namespace; declare each MTSD class with rdfs:label and rdfs:subClassOf or owl:equivalentClass pointing to roadsigns# classes</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.6 alignment.rdf.xml screenshot</span><span class="tag tag-output">alignment.rdf.xml</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Add missing subclasses to roadsignonto for MTSD labels that have no Vienna Convention counterpart (use owl:subClassOf to the nearest parent); generate additional CQs covering MTSD-specific labels</div>
+              <div class="task-meta"><span class="tag tag-session">S2–3 p.6 assignment</span><span class="tag tag-doc">Hybrid model</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Load MTSD.ttl into Protégé alongside roadsignonto and alignment files; verify class hierarchy integrates correctly and no unsatisfiable classes appear before running the reasoner</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.3</span><span class="tag tag-tool">Protégé</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Archive prompts + LLM + revised alignment.rdf.xml; document reasoning behind each equivalence/subsumption decision for at least 10 representative MTSD labels</div>
+              <div class="task-meta"><span class="tag tag-session">S2–3 p.7</span><span class="tag tag-doc">Documentation</span><span class="tag tag-critical">Mandatory record</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header" onclick="toggle(this)">
+        <div class="phase-num" style="background:#E1F5EE;color:#085041">5</div>
+        <div class="phase-meta">
+          <div class="phase-title">Evaluation &amp; Reasoning</div>
+          <div class="phase-sub">HermiT / Pellet consistency · DL queries · SPARQL · Owlready2 Python</div>
+        </div>
+        <span class="phase-badge" style="background:#E1F5EE;color:#085041">Sessions 5–6</span>
+        <span class="phase-chevron">▶</span>
+      </div>
+      <div class="phase-body">
+        <ul class="task-list">
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Run HermiT or Pellet in Protégé: verify ontology is consistent (no owl:Nothing); inspect inferred class hierarchy with "Show Inferences" enabled; fix any unsatisfiable classes flagged in red</div>
+              <div class="task-meta"><span class="tag tag-session">S5 p.4</span><span class="tag tag-tool">Protégé · HermiT</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Formalise all ≥20 competency questions as DL queries (paste into Protégé DL Query tab), SPARQL queries (for reasoning-free CQs), or Owlready2 Python scripts (using sync_reasoner_pellet); record answers</div>
+              <div class="task-meta"><span class="tag tag-session">S5 p.4–5 · S6 p.7–11</span><span class="tag tag-tool">DL Query · SPARQL · Python</span><span class="tag tag-critical">All CQs answered</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Implement key DL queries: "RoadSign and (appliesToUserCategory value Pedestrian)" → should return A12, A13, D5, E12; "RoadSign and (hasShape value Octagon)" → should return StopSign / B2_Stop</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.9 DL Query screenshot</span><span class="tag tag-tool">Protégé DL Query</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Implement SPARQL query for "What are the primary kinds of road signs distinguished in the Vienna Convention?" using PREFIX rs: and SELECT ?primaryKind WHERE { ?primaryKind rdfs:subClassOf rs:RoadSign }; test against loaded ontology</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.10</span><span class="tag tag-tool">SPARQL</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Implement Owlready2 Python scripts: (a) "What shapes are associated with each traffic sign category?" — use sync_reasoner_pellet + iterate category.descendants(); (b) "What percentage of road signs in the MTSD are prohibitory?" — combine MTSD label counts with alignment lookup</div>
+              <div class="task-meta"><span class="tag tag-session">S5 p.5 · S6 p.11</span><span class="tag tag-tool">Python · Owlready2</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">For each CQ: record (a) the CQ text, (b) the formalisation (DL / SPARQL / Python code), (c) the LLM and prompt used to generate it, and (d) the actual answer / query output</div>
+              <div class="task-meta"><span class="tag tag-session">S5 p.7</span><span class="tag tag-doc">Documentation</span><span class="tag tag-critical">Mandatory record per CQ</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header" onclick="toggle(this)">
+        <div class="phase-num" style="background:#FAECE7;color:#712B13">6</div>
+        <div class="phase-meta">
+          <div class="phase-title">Final Submission &amp; Documentation</div>
+          <div class="phase-sub">Complete deliverable package · Defence preparation · 31 May 2026</div>
+        </div>
+        <span class="phase-badge" style="background:#FCEBEB;color:#791F1F">Deadline 31 May</span>
+        <span class="phase-chevron">▶</span>
+      </div>
+      <div class="phase-body">
+        <ul class="task-list">
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Compile final OWL file (roadsignonto.rdf.xml): must include full class hierarchy, all object &amp; data properties with domain/range and characteristics, all EquivalentClass definitions, disjointness axioms, and test individuals</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.12 submission</span><span class="tag tag-output">roadsignonto.rdf.xml</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Compile alignment.rdf.xml with all MTSD ↔ Vienna Convention class mappings (owl:equivalentClass and rdfs:subClassOf)</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.6</span><span class="tag tag-output">alignment.rdf.xml</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Write final report documenting each of the 7 engineering steps: for every step provide (1) LLM used (e.g. Claude Sonnet 4.6), (2) exact prompt(s), (3) revised/final output file or code snippet</div>
+              <div class="task-meta"><span class="tag tag-session">S1–2 p.16 · S2–3 p.7</span><span class="tag tag-doc">Submission requirement</span><span class="tag tag-critical">Mandatory per step</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Attach complete list of ≥20 CQs with their formalisations (DL / SPARQL / Python) and recorded answers; CQs must span all four categories: taxonomy, properties, pragmatics, dataset</div>
+              <div class="task-meta"><span class="tag tag-session">S1–2 p.16</span><span class="tag tag-critical">≥20 CQs required</span></div>
+            </div>
+          </li>
+          <li class="task">
+            <div class="task-check" onclick="check(this)"></div>
+            <div class="task-content">
+              <div class="task-label">Prepare for defence (8 June 2026, 15:00–17:00): practice live ontology editing in Protégé (adding new classes with definitions), coding and executing DL queries against MTSD fragment, answering additional oral questions — no internet access during defence</div>
+              <div class="task-meta"><span class="tag tag-session">S6 p.12</span><span class="tag tag-tool">Protégé</span><span class="tag tag-critical">No internet at defence</span></div>
+            </div>
+          </li>
+        </ul>
+        <div class="deadline-bar">Submission deadline: 31 May 2026, 23:59 h · Defence: 8 June 2026, 15:00–17:00 h, Aula d'Informàtica A</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:1.5rem;padding:12px 16px;background:var(--color-background-secondary);border-radius:var(--border-radius-lg);border:0.5px solid var(--color-border-tertiary)">
+    <div style="font-size:12px;font-weight:500;color:var(--color-text-secondary);margin-bottom:8px">Additional suggestions (beyond session requirements)</div>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <div style="font-size:12px;color:var(--color-text-secondary)">+ Use a version-control repository (Git) to track each ontology revision so prompt-to-output history is auditable</div>
+      <div style="font-size:12px;color:var(--color-text-secondary)">+ Validate ontology with OOPS! (ontology pitfall scanner) to catch missing inverses, missing domain/range, and redundant subclasses before final submission</div>
+      <div style="font-size:12px;color:var(--color-text-secondary)">+ Add rdfs:comment annotations to every class and property to document Vienna Convention article references (e.g. rdfs:comment "Section A, Article 1 — Model A danger warning sign")</div>
+      <div style="font-size:12px;color:var(--color-text-secondary)">+ Cross-check CQ answers against the raw MTSD.ttl data manually for at least 3 dataset CQs to validate Python scripts independently of Owlready2</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggle(header){
+  var body=header.nextElementSibling;
+  var chev=header.querySelector('.phase-chevron');
+  if(body.classList.contains('open')){body.classList.remove('open');chev.classList.remove('open')}
+  else{body.classList.add('open');chev.classList.add('open')}
+}
+function check(el){
+  el.classList.toggle('done');
+  var label=el.parentElement.querySelector('.task-label');
+  label.classList.toggle('done');
+}
+document.querySelectorAll('.phase-header').forEach(function(h){
+  var chev=h.querySelector('.phase-chevron');
+  if(h.nextElementSibling.classList.contains('open'))chev.classList.add('open');
+});
+</script>

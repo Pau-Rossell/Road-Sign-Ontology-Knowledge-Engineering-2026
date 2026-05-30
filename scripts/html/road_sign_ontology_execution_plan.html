@@ -1,0 +1,514 @@
+
+<h2 class="sr-only">Step-by-step execution plan for the Road Sign Ontology project, organised by the 7-step methodology across 6 phases.</h2>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue-50:#E6F1FB;--blue-800:#0C447C;--blue-600:#185FA5;--green-50:#EAF3DE;--green-800:#27500A;--purple-50:#EEEDFE;--purple-800:#3C3489;--amber-50:#FAEEDA;--amber-800:#633806;--teal-50:#E1F5EE;--teal-800:#085041;--coral-50:#FAECE7;--coral-800:#712B13;--red-50:#FCEBEB;--red-800:#791F1F}
+body{font-family:var(--font-sans);padding:0.5rem 0 2rem}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;padding-bottom:10px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.topbar-title{font-size:15px;font-weight:500;color:var(--color-text-primary)}
+.topbar-sub{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1.25rem}
+.stat{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 12px}
+.stat-n{font-size:22px;font-weight:500;color:var(--color-text-primary)}
+.stat-l{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.prog-bar{height:4px;background:var(--color-border-tertiary);border-radius:2px;margin-bottom:1.5rem;overflow:hidden}
+.prog-fill{height:100%;background:#185FA5;width:0%;transition:width 0.4s}
+.block{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);margin-bottom:10px;overflow:hidden}
+.block-head{display:flex;align-items:center;gap:10px;padding:10px 14px;cursor:pointer;background:var(--color-background-primary)}
+.block-head:hover{background:var(--color-background-secondary)}
+.bh-pill{font-size:10px;font-weight:500;padding:3px 8px;border-radius:99px;flex-shrink:0}
+.bh-title{font-size:13px;font-weight:500;color:var(--color-text-primary);flex:1}
+.bh-meta{font-size:11px;color:var(--color-text-secondary);flex-shrink:0}
+.bh-arrow{font-size:12px;color:var(--color-text-tertiary);transition:transform 0.18s;flex-shrink:0}
+.bh-arrow.open{transform:rotate(90deg)}
+.block-body{display:none;border-top:0.5px solid var(--color-border-tertiary)}
+.block-body.open{display:block}
+.task-row{display:flex;align-items:flex-start;gap:10px;padding:9px 14px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.task-row:last-child{border-bottom:none}
+.task-row:hover{background:var(--color-background-secondary)}
+.task-num{font-size:11px;font-weight:500;color:var(--color-text-tertiary);min-width:28px;padding-top:1px;font-family:var(--font-mono)}
+.task-cb{width:16px;height:16px;border:0.5px solid var(--color-border-secondary);border-radius:3px;flex-shrink:0;margin-top:1px;cursor:pointer;background:var(--color-background-primary);display:flex;align-items:center;justify-content:center;font-size:10px}
+.task-cb.done{background:var(--color-background-success);border-color:var(--color-border-success);color:var(--color-text-success)}
+.task-body{flex:1}
+.task-text{font-size:12.5px;color:var(--color-text-primary);line-height:1.55}
+.task-text.done{text-decoration:line-through;color:var(--color-text-tertiary)}
+.task-tags{display:flex;gap:5px;margin-top:4px;flex-wrap:wrap;align-items:center}
+.tt{font-size:10px;padding:2px 6px;border-radius:3px;font-weight:500}
+.tt-step{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.tt-out{background:#EAF3DE;color:#27500A}
+.tt-tool{background:#E6F1FB;color:#0C447C}
+.tt-doc{background:#FAEEDA;color:#633806}
+.tt-crit{background:#FCEBEB;color:#791F1F}
+.tt-gen{background:#EEEDFE;color:#3C3489}
+.exec-btn{font-size:11px;padding:3px 8px;border-radius:4px;border:0.5px solid var(--color-border-secondary);background:transparent;color:var(--color-text-secondary);cursor:pointer;margin-top:4px}
+.exec-btn:hover{background:var(--color-background-secondary)}
+.legend{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1rem;padding:10px 14px;background:var(--color-background-secondary);border-radius:var(--border-radius-md)}
+.leg-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--color-text-secondary)}
+.leg-dot{width:8px;height:8px;border-radius:2px}
+</style>
+
+<div class="topbar">
+  <div><div class="topbar-title">Road Sign Ontology — Execution Plan</div><div class="topbar-sub">7-step methodology · 6 phases · atomic tasks · deadline 31 May 2026</div></div>
+  <div style="font-size:11px;color:var(--color-text-secondary)" id="done-label">0 / 37 done</div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n">37</div><div class="stat-l">Total tasks</div></div>
+  <div class="stat"><div class="stat-n">6</div><div class="stat-l">Phases</div></div>
+  <div class="stat"><div class="stat-n">20+</div><div class="stat-l">CQs required</div></div>
+  <div class="stat"><div class="stat-n">31 May</div><div class="stat-l">Deadline</div></div>
+</div>
+
+<div class="prog-bar"><div class="prog-fill" id="prog"></div></div>
+
+<div class="legend">
+  <div class="leg-item"><div class="leg-dot" style="background:#27500A"></div>Output file</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#0C447C"></div>Tool / code</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#633806"></div>Documentation record</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#791F1F"></div>Critical requirement</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#3C3489"></div>LLM generate</div>
+</div>
+
+<div id="blocks">
+
+<div class="block">
+<div class="block-head" onclick="tog(this)">
+  <span class="bh-pill" style="background:var(--blue-50);color:var(--blue-800)">Phase 1</span>
+  <span class="bh-title">Scope, CQs &amp; Term Enumeration</span>
+  <span class="bh-meta">Steps 1–3 · Sessions 1–2</span>
+  <span class="bh-arrow open">▶</span>
+</div>
+<div class="block-body open">
+
+  <div class="task-row">
+    <span class="task-num">T-01</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Write a one-paragraph scope statement: domain = road signs used in the EU; purpose = classify sign type and determine applicable road users to guide autonomous-vehicle decisions; users = (semi-)autonomous vehicles and engineers</div>
+      <div class="task-tags"><span class="tt tt-step">Step 1</span><span class="tt tt-doc">Docs §1</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-02</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Write ≥20 competency questions across four mandatory categories: (a) taxonomy — ≥5 CQs, (b) road-sign properties — ≥5 CQs, (c) pragmatics/road users — ≥5 CQs, (d) MTSD dataset — ≥5 CQs</div>
+      <div class="task-tags"><span class="tt tt-step">Step 1</span><span class="tt tt-crit">≥20 required for submission</span><span class="tt tt-doc">Docs §1</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate ≥20 competency questions for the Road Sign Ontology covering taxonomy, properties, pragmatics, and the MTSD dataset') ">Generate CQs ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-03</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Read Vienna Convention Part I, Annex 1 (sections A–H) and enumerate every sign-category name, sign-model code (A1–A30, B1–B6, C1–C24, D1–D4, E1–E24, F1–F12, G, H), shape, ground colour, border colour, and symbol type</div>
+      <div class="task-tags"><span class="tt tt-step">Step 2–3</span><span class="tt tt-doc">Docs §2</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-04</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Enumerate auxiliary concept terms: colours (White, Red, Blue, Black, Yellow, Green, Orange), shapes (Triangle, Circle, Octagon, Rectangle, Diamond, Square, Pentagon), symbol sub-types (AnimalSymbol, VehicleSymbol, SpeedSymbol, WildAnimalSymbol, DomesticAnimalSymbol), user categories (Pedestrian, Bicycle, Car, Lorry, MotorVehicle, Bus, Tram), and supporting classes (FacilityType, HazardType, LaneType, Model, Orientation, RegulationType, SizeCategory)</div>
+      <div class="task-tags"><span class="tt tt-step">Step 3</span></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="block">
+<div class="block-head" onclick="tog(this)">
+  <span class="bh-pill" style="background:var(--green-50);color:var(--green-800)">Phase 2</span>
+  <span class="bh-title">IS-A Class Hierarchy (Taxonomy)</span>
+  <span class="bh-meta">Step 4 · Sessions 1–2 · Milestone: Taxonomy OWL file</span>
+  <span class="bh-arrow">▶</span>
+</div>
+<div class="block-body">
+
+  <div class="task-row">
+    <span class="task-num">T-05</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Craft LLM prompt (Role / Objective / Scope &amp; Domain / CQs / Structural Requirements / Output Format) targeting Step 4: generate a Vienna-Convention IS-A hierarchy rooted in RoadSign, RDF/XML syntax, disjointness axioms, no other ontological entities yet</div>
+      <div class="task-tags"><span class="tt tt-step">Step 4</span><span class="tt tt-gen">LLM prompt</span><span class="tt tt-crit">Archive exact prompt + LLM name</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate Step 4 LLM prompt for the IS-A class hierarchy of the Road Sign Ontology')">Generate prompt ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-06</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Declare 8 primary RoadSign subclasses in RDF/XML: DangerWarningSign, PrioritySign, ProhibitoryOrRestrictiveSign, MandatorySign, SpecialRegulationSign, InformationFacilityServiceSign, DirectionPositionIndicationSign, AdditionalPanel — all rdfs:subClassOf RoadSign</div>
+      <div class="task-tags"><span class="tt tt-step">Step 4</span><span class="tt tt-out">roadsignonto.rdf.xml</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate the 8 primary RoadSign subclasses in RDF/XML with rdfs:subClassOf axioms')">Generate RDF/XML ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-07</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Declare all Vienna Convention model subclasses under their parents: e.g. A1_DangerousBend, A2_DangerousDescent … A30 under DangerWarningSign; B1_GiveWay, B2_Stop, B3_PriorityRoad, B4_EndOfPriority, B5_PriorityForOncomingTraffic, B6_PriorityOverOncomingTraffic under PrioritySign; C1–C24 under ProhibitoryOrRestrictiveSign; D1–D4 under MandatorySign; E1–E24 under InformationFacilityServiceSign; F1–F12 under DirectionPositionIndicationSign</div>
+      <div class="task-tags"><span class="tt tt-step">Step 4</span><span class="tt tt-out">roadsignonto.rdf.xml</span><span class="tt tt-gen">LLM generate</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate all Vienna Convention sign-model subclasses in RDF/XML organized under their 8 parent categories')">Generate sign models ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-08</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Declare auxiliary class hierarchies in RDF/XML: Colour (with named individuals White, Red, Blue, Black, Yellow, Green, Orange), Shape (Triangle, Circle, Octagon, Rectangle, Diamond), Symbol → AnimalSymbol → WildAnimalSymbol / DomesticAnimalSymbol; Symbol → VehicleSymbol; Symbol → SpeedSymbol; UserCategory; FacilityType; HazardType; LaneType; Model; Orientation; RegulationType; SizeCategory</div>
+      <div class="task-tags"><span class="tt tt-step">Step 4</span><span class="tt tt-out">roadsignonto.rdf.xml</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-09</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Add owl:disjointWith (or owl:AllDisjointClasses) axioms between all sibling subclasses of RoadSign and between siblings within Colour, Shape, Symbol hierarchies; verify no class is both a PrioritySign and a MandatorySign, etc.</div>
+      <div class="task-tags"><span class="tt tt-step">Step 4</span><span class="tt tt-out">roadsignonto.rdf.xml</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-10</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Load roadsignonto.rdf.xml into Protégé; verify class hierarchy tree matches Vienna Convention structure; confirm no syntax errors; save revised file; archive: (a) LLM used, (b) exact prompt, (c) final roadsignonto.rdf.xml</div>
+      <div class="task-tags"><span class="tt tt-tool">Protégé</span><span class="tt tt-doc">Docs §4 — mandatory record</span><span class="tt tt-crit">Archive before proceeding</span></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="block">
+<div class="block-head" onclick="tog(this)">
+  <span class="bh-pill" style="background:var(--purple-50);color:var(--purple-800)">Phase 3</span>
+  <span class="bh-title">MTSD Alignment</span>
+  <span class="bh-meta">Step 4 ext. · Sessions 2–3, 6 · Milestone: alignment.rdf.xml</span>
+  <span class="bh-arrow">▶</span>
+</div>
+<div class="block-body">
+
+  <div class="task-row">
+    <span class="task-num">T-11</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Parse MTSD.ttl with Python (rdflib): extract all rdfs:label values for instances of mtsd:TrafficSignObject; group by prefix string (warning--, regulatory--, complementary--, information--, other--); output a sorted list of 300+ unique labels</div>
+      <div class="task-tags"><span class="tt tt-tool">Python · rdflib</span><span class="tt tt-gen">LLM generate script</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate a Python rdflib script to extract and group all MTSD TrafficSignObject rdfs:label values from MTSD.ttl by prefix')">Generate script ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-12</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">For each MTSD label decide alignment type: owl:equivalentClass when the MTSD label refers to exactly the same road-sign class (e.g. information--bus-stop- ≡ E15_BusStop); rdfs:subClassOf when it is a specific variant of a Vienna Convention class (e.g. regulatory--maximum-speed-limit-120- ⊑ C14_MaximumSpeed); produce a mapping table</div>
+      <div class="task-tags"><span class="tt tt-step">Step 4 ext.</span><span class="tt tt-doc">Docs §MTSD</span><span class="tt tt-gen">LLM assist</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate the MTSD-to-Vienna-Convention alignment mapping table with owl:equivalentClass and rdfs:subClassOf decisions for all major MTSD label groups')">Generate mapping ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-13</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Create alignment.rdf.xml: separate OWL ontology that imports both the roadsigns namespace and the mtsd namespace; for each MTSD label declare an owl:Class with rdfs:label, then either owl:equivalentClass or rdfs:subClassOf pointing to the corresponding roadsigns# class URI</div>
+      <div class="task-tags"><span class="tt tt-step">Step 4 ext.</span><span class="tt tt-out">alignment.rdf.xml</span><span class="tt tt-gen">LLM generate</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate alignment.rdf.xml in RDF/XML syntax implementing the MTSD-to-Vienna-Convention class alignments')">Generate alignment file ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-14</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Add any MTSD labels that have no Vienna Convention counterpart as new owl:Class declarations with rdfs:subClassOf to the nearest appropriate parent (e.g. complementary--accident-area- rdfs:subClassOf AdditionalPanel); update CQ list with ≥5 new dataset-specific CQs</div>
+      <div class="task-tags"><span class="tt tt-step">Step 4 ext.</span><span class="tt tt-out">alignment.rdf.xml</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-15</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Load both roadsignonto.rdf.xml and alignment.rdf.xml into Protégé; confirm merged class hierarchy is coherent; archive: (a) LLM used, (b) exact prompts, (c) final alignment.rdf.xml</div>
+      <div class="task-tags"><span class="tt tt-tool">Protégé</span><span class="tt tt-doc">Docs §MTSD — mandatory record</span><span class="tt tt-crit">Archive before proceeding</span></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="block">
+<div class="block-head" onclick="tog(this)">
+  <span class="bh-pill" style="background:var(--amber-50);color:var(--amber-800)">Phase 4</span>
+  <span class="bh-title">Properties &amp; Property Characteristics</span>
+  <span class="bh-meta">Steps 5–6 · Session 3–1, 4 · Milestone: properties in OWL</span>
+  <span class="bh-arrow">▶</span>
+</div>
+<div class="block-body">
+
+  <div class="task-row">
+    <span class="task-num">T-16</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Craft LLM prompt for Step 5 (object properties only): define hasBorderColour, hasGroundColour, hasShape, hasSymbol, hasSymbolColour, relevantToRoadUser, foaf:depicts — each with owl:ObjectProperty declaration, rdfs:domain, rdfs:range; output RDF/XML</div>
+      <div class="task-tags"><span class="tt tt-step">Step 5</span><span class="tt tt-gen">LLM prompt</span><span class="tt tt-crit">Archive prompt + LLM</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate Step 5 LLM prompt for object properties of the Road Sign Ontology, then produce the RDF/XML block')">Generate prompt ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-17</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Craft LLM prompt for Step 5 (data properties): define border_colour, ground_colour, shape, symbol, symbol_colour (xsd:string), symbol_value (xsd:integer), speed_limit_value (xsd:integer), max_weight_value (xsd:decimal), max_height_value (xsd:decimal), sign_text (xsd:string) — each with rdfs:domain and rdfs:range; output RDF/XML</div>
+      <div class="task-tags"><span class="tt tt-step">Step 5</span><span class="tt tt-gen">LLM prompt</span><span class="tt tt-crit">Archive prompt + LLM</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate Step 5 LLM prompt for data properties of the Road Sign Ontology including MTSD metadata fields, then produce the RDF/XML block')">Generate prompt ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-18</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Add MTSD-specific data properties in RDF/XML: mtsd:width, mtsd:height (xsd:integer); mtsd:isPano (xsd:boolean); mtsd:sourceFile (xsd:string); mtsd:xmin, mtsd:ymin, mtsd:xmax, mtsd:ymax (xsd:decimal); mtsp:barrier, mtsp:occluded, mtsp:out-of-frame, mtsp:exterior, mtsp:ambiguous, mtsp:included, mtsp:direction-or-information, mtsp:highway, mtsp:dummy (xsd:boolean)</div>
+      <div class="task-tags"><span class="tt tt-step">Step 5</span><span class="tt tt-out">roadsignonto.rdf.xml</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-19</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Define property characteristics in RDF/XML: mark hasShape as owl:FunctionalProperty (exactly one shape per sign); mark hasSymbolColour with owl:someValuesFrom (required, min 1); mark relevant object properties as Asymmetric where warranted; document the justification for each characteristic</div>
+      <div class="task-tags"><span class="tt tt-step">Step 6</span><span class="tt tt-out">roadsignonto.rdf.xml</span><span class="tt tt-gen">LLM generate</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate Step 6 RDF/XML block defining property characteristics (Functional, Asymmetric, min-cardinality) for all Road Sign Ontology properties')">Generate characteristics ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-20</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Verify in Protégé Object Properties tab: hasBorderColour domain = RoadSign, range = Colour; hasShape domain = RoadSign, range = Shape, Functional checked; relevantToRoadUser domain = RoadSign, range = UserCategory; Data Properties tab: symbol_value domain = RoadSign, range = xsd:integer</div>
+      <div class="task-tags"><span class="tt tt-tool">Protégé</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-21</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Archive: (a) LLM used for object-property prompt, (b) exact object-property prompt, (c) LLM used for data-property prompt, (d) exact data-property prompt, (e) LLM used for characteristics prompt, (f) exact characteristics prompt, (g) revised roadsignonto.rdf.xml</div>
+      <div class="task-tags"><span class="tt tt-doc">Docs §5–6 — mandatory record</span><span class="tt tt-crit">Three separate records</span></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="block">
+<div class="block-head" onclick="tog(this)">
+  <span class="bh-pill" style="background:var(--teal-50);color:var(--teal-800)">Phase 5</span>
+  <span class="bh-title">Class Definitions &amp; Reasoning</span>
+  <span class="bh-meta">Steps 6–7 · Sessions 4–6 · Milestone: defined ontology + CQ answers</span>
+  <span class="bh-arrow">▶</span>
+</div>
+<div class="block-body">
+
+  <div class="task-row">
+    <span class="task-num">T-22</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">For every primary RoadSign subclass write a necessary condition (owl:SubClassOf restriction) in Manchester Syntax, e.g.: DangerWarningSign SubClassOf (hasShape value Triangle) AND (hasGroundColour value White) AND (hasBorderColour value Red); generate RDF/XML equivalents</div>
+      <div class="task-tags"><span class="tt tt-step">Step 6</span><span class="tt tt-out">roadsignonto.rdf.xml</span><span class="tt tt-gen">LLM generate</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate necessary-condition SubClassOf restrictions in Manchester Syntax and RDF/XML for all 8 primary RoadSign subclasses')">Generate restrictions ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-23</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">For every primary RoadSign subclass write a necessary AND sufficient condition (owl:equivalentClass intersection) enabling reasoner classification, e.g.: B2_Stop ≡ PrioritySign AND (hasBorderColour value White) AND (hasGroundColour value Red) AND (hasShape value Octagon) AND (hasText value "STOP"); generate RDF/XML equivalents</div>
+      <div class="task-tags"><span class="tt tt-step">Step 6</span><span class="tt tt-out">roadsignonto.rdf.xml</span><span class="tt tt-gen">LLM generate</span><span class="tt tt-crit">All main classes</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate owl:equivalentClass (necessary and sufficient) definitions for all main Road Sign Ontology classes in RDF/XML')">Generate definitions ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-24</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Create ≥5 representative OWL individuals (named instances) in Protégé for testing: one STOP sign (B2_Stop individual), one speed-20 sign (C14 individual), one give-way sign (B1 individual), one pedestrian crossing sign (E12 individual), one no-entry sign (C1 individual) — assign concrete property values to each</div>
+      <div class="task-tags"><span class="tt tt-step">Step 7</span><span class="tt tt-tool">Protégé</span><span class="tt tt-out">roadsignonto.rdf.xml</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate RDF/XML for 5 named individuals in the Road Sign Ontology with concrete property values for testing')">Generate individuals ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-25</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Run HermiT (or Pellet) in Protégé with "Show Inferences" on: verify ontology is consistent (no unsatisfiable classes shown in red); confirm B2_Stop is inferred under PrioritySign; fix any consistency issues before proceeding</div>
+      <div class="task-tags"><span class="tt tt-tool">Protégé · HermiT / Pellet</span><span class="tt tt-crit">No red classes allowed</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-26</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Formalise every CQ as a DL query (paste into Protégé DL Query tab and execute), e.g.: "Which signs apply to pedestrians?" → RoadSign and (relevantToRoadUser value Pedestrian); "Which signs are octagonal?" → RoadSign and (hasShape value Octagon); record query text and result set for each CQ</div>
+      <div class="task-tags"><span class="tt tt-tool">Protégé DL Query</span><span class="tt tt-doc">Docs §CQs</span><span class="tt tt-gen">LLM generate queries</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate DL queries in Manchester Syntax for all 20+ Road Sign Ontology competency questions')">Generate DL queries ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-27</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Formalise reasoning-free CQs as SPARQL queries (for those not requiring the reasoner): e.g. "What are the primary kinds of road signs?" → SELECT ?kind WHERE { ?kind rdfs:subClassOf rs:RoadSign }; test each against the loaded ontology graph in Protégé's SPARQL Query tab</div>
+      <div class="task-tags"><span class="tt tt-tool">Protégé SPARQL tab</span><span class="tt tt-doc">Docs §CQs</span><span class="tt tt-gen">LLM generate queries</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate SPARQL queries for all reasoning-free Road Sign Ontology competency questions')">Generate SPARQL ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-28</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Write Owlready2 Python scripts for dataset-dependent CQs: load ontology, call sync_reasoner_pellet(infer_property_values=True, infer_data_property_values=True), then answer CQs such as "What shapes are associated with each sign category?" and "What percentage of MTSD signs are prohibitory?"; run scripts and record outputs</div>
+      <div class="task-tags"><span class="tt tt-tool">Python · Owlready2</span><span class="tt tt-doc">Docs §CQs</span><span class="tt tt-gen">LLM generate scripts</span></div>
+      <button class="exec-btn" onclick="sendPrompt('Generate Owlready2 Python scripts for the MTSD dataset-dependent competency questions of the Road Sign Ontology')">Generate Python scripts ↗</button>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-29</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">For each of the ≥20 CQs record in the documentation: (a) CQ natural-language text, (b) formalisation type (DL / SPARQL / Python), (c) exact query or script code, (d) LLM + prompt used to generate it, (e) actual answer / output from Protégé or Python</div>
+      <div class="task-tags"><span class="tt tt-doc">Docs §CQs — one record per CQ</span><span class="tt tt-crit">Mandatory for all ≥20 CQs</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-30</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Archive: (a) LLM + prompt for definitions step, (b) LLM + prompt for individuals step; add rdfs:comment annotations to every class and property with Vienna Convention article references (e.g. rdfs:comment "Section A, para. 1 — Model A danger warning sign")</div>
+      <div class="task-tags"><span class="tt tt-doc">Docs §6–7 — mandatory record</span><span class="tt tt-out">roadsignonto.rdf.xml</span></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="block">
+<div class="block-head" onclick="tog(this)">
+  <span class="bh-pill" style="background:var(--coral-50);color:var(--coral-800)">Phase 6</span>
+  <span class="bh-title">Final Submission &amp; Defence Prep</span>
+  <span class="bh-meta">Deadline 31 May 2026 · Defence 8 June 2026</span>
+  <span class="bh-arrow">▶</span>
+</div>
+<div class="block-body">
+
+  <div class="task-row">
+    <span class="task-num">T-31</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Run OOPS! (ontology pitfall scanner) on the final roadsignonto.rdf.xml; address any P04 (creating unconnected ontology elements), P08 (missing annotations), P10 (missing disjointness), P11 (missing domain/range) pitfalls before submission</div>
+      <div class="task-tags"><span class="tt tt-tool">OOPS! pitfall scanner</span><span class="tt tt-crit">Fix before submission</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-32</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Compile final roadsignonto.rdf.xml: must contain — full Vienna Convention class hierarchy, all 8 primary subclasses + model subclasses, auxiliary class hierarchies, all object and data properties with domain/range and characteristics, all EquivalentClass definitions, disjointness axioms, rdfs:comment annotations, ≥5 test individuals</div>
+      <div class="task-tags"><span class="tt tt-out">roadsignonto.rdf.xml — final</span><span class="tt tt-crit">Complete checklist before submitting</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-33</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Compile final alignment.rdf.xml: must contain — all 300+ MTSD label alignments with owl:equivalentClass or rdfs:subClassOf, correctly importing both the roadsigns and mtsd namespaces</div>
+      <div class="task-tags"><span class="tt tt-out">alignment.rdf.xml — final</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-34</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Write the submission report: one section per engineering step (Steps 1–7), each containing — LLM name and version used, exact prompt(s) submitted, revised/final output file name and content summary; total report must cover all 7 steps</div>
+      <div class="task-tags"><span class="tt tt-doc">Final report — one section per step</span><span class="tt tt-crit">7 steps × 3 items each</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-35</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Attach the complete CQ document: ≥20 CQs with category labels (taxonomy / properties / pragmatics / dataset), formalisation code, LLM + prompt used, and recorded answer — verify coverage spans all four categories</div>
+      <div class="task-tags"><span class="tt tt-doc">CQ annex</span><span class="tt tt-crit">≥20 CQs, all 4 categories</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-36</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Defence drill (no internet): practise adding a new class with a complete EquivalentClass definition directly in Protégé without LLM assistance; practise writing a DL query from memory in the Protégé DL Query tab and reading the result; time yourself to under 5 minutes per task</div>
+      <div class="task-tags"><span class="tt tt-tool">Protégé</span><span class="tt tt-crit">No internet access at defence</span></div>
+    </div>
+  </div>
+
+  <div class="task-row">
+    <span class="task-num">T-37</span>
+    <div class="task-cb" onclick="tick(this)"></div>
+    <div class="task-body">
+      <div class="task-text">Submit all deliverables by 31 May 2026 23:59: roadsignonto.rdf.xml, alignment.rdf.xml, submission report (Steps 1–7 with prompts), CQ document (≥20 CQs with formalisations and answers), any Python scripts</div>
+      <div class="task-tags"><span class="tt tt-crit">Hard deadline: 31 May 2026 23:59</span><span class="tt tt-out">All files</span></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+<script>
+var total=37,done=0;
+function tick(cb){
+  cb.classList.toggle('done');
+  cb.textContent=cb.classList.contains('done')?'✓':'';
+  var row=cb.closest('.task-row');
+  row.querySelector('.task-text').classList.toggle('done',cb.classList.contains('done'));
+  done=document.querySelectorAll('.task-cb.done').length;
+  document.getElementById('done-label').textContent=done+' / '+total+' done';
+  document.getElementById('prog').style.width=Math.round(done/total*100)+'%';
+}
+function tog(head){
+  var body=head.nextElementSibling;
+  var arr=head.querySelector('.bh-arrow');
+  var open=body.classList.toggle('open');
+  arr.classList.toggle('open',open);
+}
+</script>

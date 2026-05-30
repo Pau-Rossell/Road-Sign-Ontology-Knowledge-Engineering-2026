@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vienna Convention — Protégé Reference</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --bg: #0f0f0f;
+  --surface: #161616;
+  --surface2: #1f1f1f;
+  --surface3: #282828;
+  --border: #333;
+  --border2: #444;
+  --text: #e8e8e8;
+  --muted: #888;
+  --dim: #555;
+  --acc: #e8c547;
+  --acc2: #c8a830;
+
+  --A: #e05a4e; --A-bg: #2a1614;
+  --B: #e07b3a; --B-bg: #2a1b10;
+  --C: #d4a017; --C-bg: #2a2108;
+  --D: #5aae6a; --D-bg: #0f2214;
+  --E: #4a9fd4; --E-bg: #0d1f2e;
+  --F: #9b72cf; --F-bg: #1e152e;
+  --G: #4abfbf; --G-bg: #0d2626;
+  --H: #c47eb5; --H-bg: #281520;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ── TOP BAR ── */
+.topbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.topbar-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--acc);
+  letter-spacing: 0.08em;
+  flex: 1;
+}
+.topbar-meta { font-size: 11px; color: var(--muted); }
+
+/* ── SEARCH ── */
+.search-bar {
+  padding: 12px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  color: var(--text);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  padding: 7px 12px;
+  outline: none;
+}
+.search-input:focus { border-color: var(--acc); }
+.search-input::placeholder { color: var(--dim); }
+.filter-btn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all .15s;
+  white-space: nowrap;
+}
+.filter-btn:hover { border-color: var(--acc); color: var(--acc); }
+.filter-btn.active { background: var(--acc); color: #000; border-color: var(--acc); font-weight: 500; }
+.count-badge { font-size: 11px; color: var(--muted); font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
+
+/* ── MAIN LAYOUT ── */
+.main { display: flex; height: calc(100vh - 89px); overflow: hidden; }
+
+/* ── SIDEBAR ── */
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 12px 0;
+}
+.sidebar-section { padding: 4px 16px; margin-bottom: 4px; }
+.sidebar-label { font-size: 10px; font-weight: 500; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 0 6px; }
+.sec-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 3px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: left;
+  transition: all .1s;
+  margin-bottom: 2px;
+}
+.sec-btn:hover { background: var(--surface2); color: var(--text); }
+.sec-btn.active { background: var(--surface3); color: var(--text); }
+.sec-code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.sec-count { margin-left: auto; font-size: 10px; color: var(--dim); font-family: 'IBM Plex Mono', monospace; }
+
+/* ── CONTENT ── */
+.content { flex: 1; overflow-y: auto; padding: 20px 24px; }
+
+/* ── SECTION HEADER ── */
+.sec-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+.sec-header-code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.sec-header-info { flex: 1; }
+.sec-header-name { font-size: 16px; font-weight: 500; margin-bottom: 4px; }
+.sec-header-meta { font-size: 12px; color: var(--muted); }
+.sec-props {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.prop-chip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--border2);
+  color: var(--muted);
+}
+
+/* ── TABLE ── */
+.ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 28px;
+  font-size: 12px;
+}
+.ref-table th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 2;
+}
+.ref-table td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.4;
+}
+.ref-table tr:hover td { background: var(--surface2); }
+.ref-table tr.hidden { display: none; }
+
+/* ── CELL TYPES ── */
+.code-cell {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--acc);
+}
+.owl-cell {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: #7ec8e3;
+  word-break: break-all;
+}
+.name-cell { font-weight: 500; color: var(--text); }
+.shape-pill {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  font-family: 'IBM Plex Mono', monospace;
+  white-space: nowrap;
+}
+.color-swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--border2);
+  flex-shrink: 0;
+}
+.parent-cell { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #a8d8a8; }
+.user-tags { display: flex; gap: 4px; flex-wrap: wrap; }
+.user-tag {
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 2px;
+  background: var(--surface3);
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+}
+.note-cell { font-size: 11px; color: var(--muted); }
+
+/* ── EMPTY STATE ── */
+.empty { text-align: center; padding: 48px 24px; color: var(--dim); }
+.empty-mono { font-family: 'IBM Plex Mono', monospace; font-size: 11px; margin-bottom: 8px; }
+
+/* ── OWL BLOCK ── */
+.owl-block {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--text);
+  overflow-x: auto;
+}
+.owl-kw { color: #c792ea; }
+.owl-cls { color: #7ec8e3; }
+.owl-prop { color: #addb67; }
+.owl-val { color: var(--acc); }
+.owl-cmt { color: var(--dim); }
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* ── COPY BUTTON ── */
+.copy-btn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  float: right;
+  transition: all .15s;
+}
+.copy-btn:hover { border-color: var(--acc); color: var(--acc); }
+
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-title">VIENNA CONVENTION · ANNEX 1 · PROTÉGÉ REFERENCE</div>
+  <div class="topbar-meta">Sections A–H · 182 OWL classes · 1-to-1 with sign codes · OWL 2 ready</div>
+</div>
+
+<div class="search-bar">
+  <input class="search-input" id="search" placeholder="Search by code, name, shape, colour, OWL class…" oninput="filterRows()">
+  <button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">All</button>
+  <button class="filter-btn" data-filter="A" onclick="setFilter('A',this)" style="color:var(--A)">A</button>
+  <button class="filter-btn" data-filter="B" onclick="setFilter('B',this)" style="color:var(--B)">B</button>
+  <button class="filter-btn" data-filter="C" onclick="setFilter('C',this)" style="color:var(--C)">C</button>
+  <button class="filter-btn" data-filter="D" onclick="setFilter('D',this)" style="color:var(--D)">D</button>
+  <button class="filter-btn" data-filter="E" onclick="setFilter('E',this)" style="color:var(--E)">E</button>
+  <button class="filter-btn" data-filter="F" onclick="setFilter('F',this)" style="color:var(--F)">F</button>
+  <button class="filter-btn" data-filter="G" onclick="setFilter('G',this)" style="color:var(--G)">G</button>
+  <button class="filter-btn" data-filter="H" onclick="setFilter('H',this)" style="color:var(--H)">H</button>
+  <span class="count-badge" id="count-badge">180 signs</span>
+</div>
+
+<div class="main">
+<nav class="sidebar">
+  <div class="sidebar-section">
+    <div class="sidebar-label">Sections</div>
+    <button class="sec-btn active" onclick="scrollTo('secA')" id="navA">
+      <span class="sec-code" style="background:var(--A-bg);color:var(--A)">A</span>
+      Danger Warning
+      <span class="sec-count">51</span>
+    </button>
+    <button class="sec-btn" onclick="scrollTo('secB')" id="navB">
+      <span class="sec-code" style="background:var(--B-bg);color:var(--B)">B</span>
+      Priority
+      <span class="sec-count">7</span>
+    </button>
+    <button class="sec-btn" onclick="scrollTo('secC')" id="navC">
+      <span class="sec-code" style="background:var(--C-bg);color:var(--C)">C</span>
+      Prohibitory
+      <span class="sec-count">24</span>
+    </button>
+    <button class="sec-btn" onclick="scrollTo('secD')" id="navD">
+      <span class="sec-code" style="background:var(--D-bg);color:var(--D)">D</span>
+      Mandatory
+      <span class="sec-count">14</span>
+    </button>
+    <button class="sec-btn" onclick="scrollTo('secE')" id="navE">
+      <span class="sec-code" style="background:var(--E-bg);color:var(--E)">E</span>
+      Information
+      <span class="sec-count">37</span>
+    </button>
+    <button class="sec-btn" onclick="scrollTo('secF')" id="navF">
+      <span class="sec-code" style="background:var(--F-bg);color:var(--F)">F</span>
+      Facility Service
+      <span class="sec-count">14</span>
+    </button>
+    <button class="sec-btn" onclick="scrollTo('secG')" id="navG">
+      <span class="sec-code" style="background:var(--G-bg);color:var(--G)">G</span>
+      Direction
+      <span class="sec-count">24</span>
+    </button>
+    <button class="sec-btn" onclick="scrollTo('secH')" id="navH">
+      <span class="sec-code" style="background:var(--H-bg);color:var(--H)">H</span>
+      Additional Panels
+      <span class="sec-count">11</span>
+    </button>
+  </div>
+
+  <div class="sidebar-section" style="margin-top:8px">
+    <div class="sidebar-label">OWL Hierarchy</div>
+    <div style="font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--dim);line-height:1.9;padding:4px 0">
+      RoadSign<br>
+      &nbsp;├─ <span style="color:var(--A)">DangerWarningSign</span><br>
+      &nbsp;├─ <span style="color:var(--B)">PrioritySign</span><br>
+      &nbsp;├─ <span style="color:var(--C)">ProhibitoryOrRestrictiveSign</span><br>
+      &nbsp;├─ <span style="color:var(--D)">MandatorySign</span><br>
+      &nbsp;├─ <span style="color:var(--E)">InformationFacilityServiceSign</span><br>
+      &nbsp;├─ <span style="color:var(--F)">FacilityServiceSign</span><br>
+      &nbsp;├─ <span style="color:var(--G)">DirectionPositionIndicationSign</span><br>
+      &nbsp;└─ <span style="color:var(--H)">AdditionalPanel</span>
+    </div>
+  </div>
+
+  <div class="sidebar-section" style="margin-top:4px">
+    <div class="sidebar-label">Legend</div>
+    <div style="font-size:10px;color:var(--dim);line-height:2;font-family:'IBM Plex Mono',monospace">
+      <span style="color:#7ec8e3">blue</span> = OWL class<br>
+      <span style="color:#addb67">green</span> = property<br>
+      <span style="color:var(--acc)">yellow</span> = value/code<br>
+      <span style="color:#c792ea">purple</span> = keyword
+    </div>
+  </div>
+</nav>
+
+<div class="content" id="content">
+
+<!-- ══════════════ SECTION A ══════════════ -->
+<div id="secA">
+<div class="sec-header" style="background:var(--A-bg);border-color:var(--A)">
+  <div class="sec-header-code" style="color:var(--A)">A</div>
+  <div class="sec-header-info">
+    <div class="sec-header-name" style="color:var(--A)">Danger Warning Signs</div>
+    <div class="sec-header-meta">OWL parent: <code>DangerWarningSign rdfs:subClassOf RoadSign</code> · 51 sign models</div>
+    <div class="sec-props">
+      <span class="prop-chip">hasShape value Triangle <em>or</em> Diamond</span>
+      <span class="prop-chip">hasGroundColour value White/Yellow</span>
+      <span class="prop-chip">hasBorderColour value Red/Black</span>
+      <span class="prop-chip">Disjoint with all other RoadSign subclasses</span>
+    </div>
+  </div>
+</div>
+
+<div class="owl-block">
+<button class="copy-btn" onclick="copyBlock(this)">copy</button>
+<span class="owl-cmt">&lt;!-- Section A · Danger Warning Signs · OWL 2 RDF/XML skeleton --&gt;</span><br>
+<span class="owl-kw">&lt;owl:Class</span> <span class="owl-prop">rdf:about</span>=<span class="owl-val">"#DangerWarningSign"</span><span class="owl-kw">&gt;</span><br>
+&nbsp;&nbsp;<span class="owl-kw">&lt;rdfs:subClassOf</span> <span class="owl-prop">rdf:resource</span>=<span class="owl-val">"#RoadSign"</span><span class="owl-kw">/&gt;</span><br>
+&nbsp;&nbsp;<span class="owl-cmt">&lt;!-- Necessary condition: triangle or diamond --&gt;</span><br>
+&nbsp;&nbsp;<span class="owl-kw">&lt;rdfs:subClassOf&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="owl-kw">&lt;owl:Restriction&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="owl-kw">&lt;owl:onProperty</span> <span class="owl-prop">rdf:resource</span>=<span class="owl-val">"#hasShape"</span><span class="owl-kw">/&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="owl-kw">&lt;owl:someValuesFrom</span> <span class="owl-prop">rdf:resource</span>=<span class="owl-val">"#TriangleOrDiamond"</span><span class="owl-kw">/&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="owl-kw">&lt;/owl:Restriction&gt;</span><br>
+&nbsp;&nbsp;<span class="owl-kw">&lt;/rdfs:subClassOf&gt;</span><br>
+<span class="owl-kw">&lt;/owl:Class&gt;</span>
+</div>
+
+<table class="ref-table" id="tableA">
+<thead>
+<tr>
+  <th>Code</th>
+  <th>OWL Class</th>
+  <th>Official Name</th>
+  <th>Shape</th>
+  <th>Ground</th>
+  <th>Border</th>
+  <th>Symbol</th>
+  <th>Applies To</th>
+  <th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr data-sec="A" data-search="A,1a A1a LeftBend DangerWarningSign triangle white red bend curve">
+  <td class="code-cell">A, 1a</td><td class="owl-cell">A1a_LeftBend</td><td class="name-cell">Left Bend</td>
+  <td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td>
+  <td class="note-cell">Curved arrow arcing left</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td>
+  <td class="note-cell">Reversible symbol</td>
+</tr>
+<tr data-sec="A" data-search="A,1b RightBend bend curve right">
+  <td class="code-cell">A, 1b</td><td class="owl-cell">A1b_RightBend</td><td class="name-cell">Right Bend</td>
+  <td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td>
+  <td class="note-cell">Curved arrow arcing right</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td>
+  <td class="note-cell">Mirror of A,1a</td>
+</tr>
+<tr data-sec="A" data-search="A,1c DoubleBend double bend S-curve left first">
+  <td class="code-cell">A, 1c</td><td class="owl-cell">A1c_DoubleBendLeftFirst</td><td class="name-cell">Double Bend — Left First</td>
+  <td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td>
+  <td class="note-cell">S-curve symbol, first arc left</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td>
+  <td class="note-cell">Succession of bends</td>
+</tr>
+<tr data-sec="A" data-search="A,1d DoubleBend double bend right first">
+  <td class="code-cell">A, 1d</td><td class="owl-cell">A1d_DoubleBendRightFirst</td><td class="name-cell">Double Bend — Right First</td>
+  <td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td>
+  <td class="note-cell">S-curve symbol, first arc right</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td>
+  <td class="note-cell">Mirror of A,1c</td>
+</tr>
+<tr data-sec="A" data-search="A,2a SteepDescent descent slope gradient triangle">
+  <td class="code-cell">A, 2a</td><td class="owl-cell">A2a_SteepDescent_Triangle</td><td class="name-cell">Steep Descent (Tri.)</td>
+  <td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td>
+  <td class="note-cell">Slope falling left-to-right + gradient %</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td>
+  <td class="note-cell">Engine braking required</td>
+</tr>
+<tr data-sec="A" data-search="A,2b SteepDescent diamond descent">
+  <td class="code-cell">A, 2b</td><td class="owl-cell">A2b_SteepDescent_Diamond</td><td class="name-cell">Steep Descent (Diam.)</td>
+  <td><span class="shape-pill" style="background:#1a1a2e;color:#ffd;border:1px solid #888">◇</span></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#ff0"></span>Yellow</div></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black rim</div></td>
+  <td class="note-cell">Slope with % figure</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td>
+  <td class="note-cell">Diamond-system equiv.</td>
+</tr>
+<tr data-sec="A" data-search="A,3a SteepAscent ascent triangle">
+  <td class="code-cell">A, 3a</td><td class="owl-cell">A3a_SteepAscent_Triangle</td><td class="name-cell">Steep Ascent (Tri.)</td>
+  <td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td>
+  <td class="note-cell">Slope rising left-to-right + gradient %</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Impacts heavy vehicles</td>
+</tr>
+<tr data-sec="A" data-search="A,4a CarriagewayNarrows narrow carriageway">
+  <td class="code-cell">A, 4a</td><td class="owl-cell">A4a_CarriagewayNarrowsBothSides</td><td class="name-cell">Carriageway Narrows (Both)</td>
+  <td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td>
+  <td class="note-cell">Two lines converging symmetrically</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Both sides narrow</td>
+</tr>
+<tr data-sec="A" data-search="A,4b CarriagewayNarrows narrow one side">
+  <td class="code-cell">A, 4b</td><td class="owl-cell">A4b_CarriagewayNarrowsOneSide</td><td class="name-cell">Carriageway Narrows (One Side)</td>
+  <td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td>
+  <td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td>
+  <td class="note-cell">One line straight, one angled inward</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Reversible symbol</td>
+</tr>
+<tr data-sec="A" data-search="A,5 SwingBridge bridge opening"><td class="code-cell">A, 5</td><td class="owl-cell">A5_SwingBridge</td><td class="name-cell">Swing Bridge</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Bridge section raised upward</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Often with countdown beacons</td></tr>
+<tr data-sec="A" data-search="A,6 RoadLeadsOnToQuay quay water edge"><td class="code-cell">A, 6</td><td class="owl-cell">A6_RoadLeadsOnToQuay</td><td class="name-cell">Road Leads on to Quay</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Car driving over edge into water</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Unprotected bank ahead</td></tr>
+<tr data-sec="A" data-search="A,7a UnevenRoad uneven road surface"><td class="code-cell">A, 7a</td><td class="owl-cell">A7a_UnevenRoad</td><td class="name-cell">Uneven Road</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Two rounded humps or dip+hump</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">General bad surface</td></tr>
+<tr data-sec="A" data-search="A,7b HumpBridge hump bridge ridge"><td class="code-cell">A, 7b</td><td class="owl-cell">A7b_HumpBridge</td><td class="name-cell">Hump Bridge / Ridge</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Single rounded hump in centre</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="A" data-search="A,7c Dip depression road"><td class="code-cell">A, 7c</td><td class="owl-cell">A7c_Dip</td><td class="name-cell">Dip</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Single concave dip symbol</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="A" data-search="A,8 DangerousShoulders shoulder soft verge"><td class="code-cell">A, 8</td><td class="owl-cell">A8_DangerousShoulders</td><td class="name-cell">Dangerous Shoulders</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Car tilted on road verge</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Soft/unstable shoulder</td></tr>
+<tr data-sec="A" data-search="A,9 SlipperyRoad slippery ice wet"><td class="code-cell">A, 9</td><td class="owl-cell">A9_SlipperyRoad</td><td class="name-cell">Slippery Road</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Car with winding tyre tracks</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Rain/oil/ice</td></tr>
+<tr data-sec="A" data-search="A,10a LooseGravel gravel stones triangle"><td class="code-cell">A, 10a</td><td class="owl-cell">A10a_LooseGravel_Triangle</td><td class="name-cell">Loose Gravel (Tri.)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Car with stones ejected from tyre</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="A" data-search="A,11a FallingRocks rocks cliff triangle"><td class="code-cell">A, 11a</td><td class="owl-cell">A11a_FallingRocks_Triangle</td><td class="name-cell">Falling Rocks (Tri.)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Rocks tumbling from cliff right side</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Symbol may be reversed</td></tr>
+<tr data-sec="A" data-search="A,11b FallingRocks rocks cliff diamond"><td class="code-cell">A, 11b</td><td class="owl-cell">A11b_FallingRocks_Diamond</td><td class="name-cell">Falling Rocks (Diam.)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#ffd;border:1px solid #888">◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#ff0"></span>Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black rim</div></td><td class="note-cell">Rocks tumbling from cliff</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Diamond equivalent</td></tr>
+<tr data-sec="A" data-search="A,12a PedestrianCrossing pedestrian crossing zebra"><td class="code-cell">A, 12a</td><td class="owl-cell">A12a_PedestrianCrossingAhead</td><td class="name-cell">Pedestrian Crossing (Std)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Person walking on parallel lines</td><td><div class="user-tags"><span class="user-tag">All</span><span class="user-tag">Pedestrians</span></div></td><td class="note-cell">Advance warning for crossing</td></tr>
+<tr data-sec="A" data-search="A,13 Children school playground"><td class="code-cell">A, 13</td><td class="owl-cell">A13_Children</td><td class="name-cell">Children</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Two children walking</td><td><div class="user-tags"><span class="user-tag">All</span><span class="user-tag">Pedestrians</span></div></td><td class="note-cell">Near schools/playgrounds</td></tr>
+<tr data-sec="A" data-search="A,14 Cyclists cycle bicycle"><td class="code-cell">A, 14</td><td class="owl-cell">A14_Cyclists</td><td class="name-cell">Cyclists</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Person on bicycle</td><td><div class="user-tags"><span class="user-tag">All</span><span class="user-tag">Cyclists</span></div></td><td></td></tr>
+<tr data-sec="A" data-search="A,15a Cattle cow domestic animal"><td class="code-cell">A, 15a</td><td class="owl-cell">A15a_Cattle</td><td class="name-cell">Cattle</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Cow silhouette (domestic animal)</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">hasSymbol: DomesticAnimalSymbol</td></tr>
+<tr data-sec="A" data-search="A,15b WildAnimals deer wild animal"><td class="code-cell">A, 15b</td><td class="owl-cell">A15b_WildAnimals</td><td class="name-cell">Wild Animals</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Deer silhouette (wild animal)</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">hasSymbol: WildAnimalSymbol</td></tr>
+<tr data-sec="A" data-search="A,16 RoadWorks construction repair"><td class="code-cell">A, 16</td><td class="owl-cell">A16_RoadWorks</td><td class="name-cell">Road Works</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Person digging with shovel</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="A" data-search="A,17a LightSignals traffic lights signal vertical"><td class="code-cell">A, 17a</td><td class="owl-cell">A17a_LightSignals_Vertical</td><td class="name-cell">Light Signals (Vertical)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Red/Amber/Green circles vertical</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Hidden traffic lights</td></tr>
+<tr data-sec="A" data-search="A,18a Intersection priority general cross"><td class="code-cell">A, 18a</td><td class="owl-cell">A18a_Intersection_GeneralPriority</td><td class="name-cell">Intersection (General Priority)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Diagonal X cross (equal weight)</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">yield-to-right rule applies</td></tr>
+<tr data-sec="A" data-search="a, 18c a18c_intersection_crossroads intersection — crossroads <span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span> <div class="color-swatch"><span class="swatch" style="background:#fff"></span>white / yellow</div>"><td class="code-cell">A, 18c</td><td class="owl-cell">A18c_Intersection_Crossroads</td><td class="name-cell">Intersection — Crossroads</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Thin vertical + thin horizontal lines</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Thin lines = minor road; no priority</td></tr>
+<tr data-sec="A" data-search="a, 18d a18d_intersection_tjunction intersection — t-junction <span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span> <div class="color-swatch"><span class="swatch" style="background:#fff"></span>white / yellow</div>"><td class="code-cell">A, 18d</td><td class="owl-cell">A18d_Intersection_TJunction</td><td class="name-cell">Intersection — T-Junction</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Vertical line ending at horizontal line</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Visual layout of T-junction</td></tr>
+<tr data-sec="A" data-search="a, 18e a18e_intersection_staggered intersection — staggered <span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span> <div class="color-swatch"><span class="swatch" style="background:#fff"></span>white / yellow</div>"><td class="code-cell">A, 18e</td><td class="owl-cell">A18e_Intersection_Staggered</td><td class="name-cell">Intersection — Staggered</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Vertical + two offset horizontal branches</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Staggered side roads</td></tr>
+<tr data-sec="A" data-search="a, 18f a18f_intersection_yjunction intersection — y-junction <span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span> <div class="color-swatch"><span class="swatch" style="background:#fff"></span>white / yellow</div>"><td class="code-cell">A, 18f</td><td class="owl-cell">A18f_Intersection_YJunction</td><td class="name-cell">Intersection — Y-Junction</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Vertical line branching into two diagonals</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Fork/Y-junction layout</td></tr>
+<tr data-sec="A" data-search="a, 18g a18g_intersection_sideroad intersection — side road <span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span> <div class="color-swatch"><span class="swatch" style="background:#fff"></span>white / yellow</div>"><td class="code-cell">A, 18g</td><td class="owl-cell">A18g_Intersection_SideRoad</td><td class="name-cell">Intersection — Side Road</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Vertical + one horizontal branch</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Three-way junction with side road</td></tr>
+
+<tr data-sec="A" data-search="a, 19a a19a_priorityintersection_cross priority intersection — cross <span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span> <div class="color-swatch"><span class="swatch" style="background:#fff"></span>white / yellow</div>"><td class="code-cell">A, 19a</td><td class="owl-cell">A19a_PriorityIntersection_Cross</td><td class="name-cell">Priority Intersection — Cross</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Thick vertical + thin horizontal (cross)</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Driver on priority road; yield-to-right</td></tr>
+<tr data-sec="A" data-search="a, 19b a19b_priorityintersection_t priority intersection — t <span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span> <div class="color-swatch"><span class="swatch" style="background:#fff"></span>white / yellow</div>"><td class="code-cell">A, 19b</td><td class="owl-cell">A19b_PriorityIntersection_T</td><td class="name-cell">Priority Intersection — T</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Thick vertical ending at thin horizontal</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Priority T-junction layout</td></tr>
+<tr data-sec="A" data-search="a, 19c a19c_priorityintersection_sideroad priority intersection — side road <span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span> <div class="color-swatch"><span class="swatch" style="background:#fff"></span>white / yellow</div>"><td class="code-cell">A, 19c</td><td class="owl-cell">A19c_PriorityIntersection_SideRoad</td><td class="name-cell">Priority Intersection — Side Road</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Thick vertical + thin branch (side road)</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Priority road with side road</td></tr>
+
+<tr data-sec="A" data-search="A,20 GiveWayAhead advance warning give way"><td class="code-cell">A, 20</td><td class="owl-cell">A20_GiveWayAhead</td><td class="name-cell">Give Way Ahead</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Silhouette of B,1 (give way) sign</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Advance of B,1</td></tr>
+<tr data-sec="A" data-search="A,21a StopAhead stop advance octagon"><td class="code-cell">A, 21a</td><td class="owl-cell">A21a_StopAhead_Octagon</td><td class="name-cell">Stop Ahead (Octagon)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Silhouette of B,2a STOP octagon</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Advance of B,2a</td></tr>
+<tr data-sec="A" data-search="A,22 Roundabout roundabout traffic circle"><td class="code-cell">A, 22</td><td class="owl-cell">A22_Roundabout</td><td class="name-cell">Roundabout</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Three clockwise arrows in circle</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="A" data-search="A,23 TwoWayTraffic two way traffic"><td class="code-cell">A, 23</td><td class="owl-cell">A23_TwoWayTraffic</td><td class="name-cell">Two-Way Traffic</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Two arrows pointing opposite directions</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="A" data-search="A,24 TrafficCongestion congestion queue jam"><td class="code-cell">A, 24</td><td class="owl-cell">A24_TrafficCongestion</td><td class="name-cell">Traffic Congestion</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Three car silhouettes in column</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="A" data-search="A,25 LevelCrossing railway gates"><td class="code-cell">A, 25</td><td class="owl-cell">A25_LevelCrossing_WithGates</td><td class="name-cell">Level Crossing (Gates)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Picket fence silhouette</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Gates or half-gates present</td></tr>
+<tr data-sec="A" data-search="A,26a OtherLevelCrossings level crossing no gates train"><td class="code-cell">A, 26a</td><td class="owl-cell">A26a_LevelCrossing_NoGates</td><td class="name-cell">Level Crossing (No Gates)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Steam locomotive silhouette</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Driver must visually check</td></tr>
+<tr data-sec="A" data-search="A,27 TramwayLine tramway tram"><td class="code-cell">A, 27</td><td class="owl-cell">A27_TramwayLine</td><td class="name-cell">Tramway Line</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Tram silhouette</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="A" data-search="A,28a StAndrewsCross railway cross X"><td class="code-cell">A, 28a</td><td class="owl-cell">A28a_StAndrewsCross_SingleTrack</td><td class="name-cell">St. Andrew's Cross (Single)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#888;border:1px solid #888">✕</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black</div></td><td class="note-cell">X shape — two crossed arms</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Immediate vicinity of single-track</td></tr>
+<tr data-sec="A" data-search="A,28b StAndrewsCross railway cross two tracks"><td class="code-cell">A, 28b</td><td class="owl-cell">A28b_StAndrewsCross_MultiTrack</td><td class="name-cell">St. Andrew's Cross (Multi)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#888;border:1px solid #888">✕+</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black</div></td><td class="note-cell">X shape + inverted V below</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Two or more tracks</td></tr>
+<tr data-sec="A" data-search="A,29a CountdownBeacon three bars 150m"><td class="code-cell">A, 29a</td><td class="owl-cell">A29a_CountdownBeacon_3Bars</td><td class="name-cell">Countdown Beacon (3 bars)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#aaa;border:1px solid #aaa">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red bars</div></td><td class="note-cell">Three oblique red bars</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">~150 m from crossing</td></tr>
+<tr data-sec="A" data-search="A,29b CountdownBeacon two bars 100m"><td class="code-cell">A, 29b</td><td class="owl-cell">A29b_CountdownBeacon_2Bars</td><td class="name-cell">Countdown Beacon (2 bars)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#aaa;border:1px solid #aaa">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red bars</div></td><td class="note-cell">Two oblique red bars</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">~100 m from crossing</td></tr>
+<tr data-sec="A" data-search="A,29c CountdownBeacon one bar 50m"><td class="code-cell">A, 29c</td><td class="owl-cell">A29c_CountdownBeacon_1Bar</td><td class="name-cell">Countdown Beacon (1 bar)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#aaa;border:1px solid #aaa">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red bars</div></td><td class="note-cell">One oblique red bar</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">~50 m from crossing</td></tr>
+<tr data-sec="A" data-search="A,30 Airfield airplane aircraft low flying"><td class="code-cell">A, 30</td><td class="owl-cell">A30_Airfield</td><td class="name-cell">Airfield</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Airplane silhouette</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Low-flying aircraft near runway</td></tr>
+<tr data-sec="A" data-search="A,31 CrossWind wind windsock lateral"><td class="code-cell">A, 31</td><td class="owl-cell">A31_CrossWind</td><td class="name-cell">Cross-Wind</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Windsock silhouette</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Sudden lateral winds</td></tr>
+<tr data-sec="A" data-search="A,32 OtherDangers other danger general exclamation"><td class="code-cell">A, 32</td><td class="owl-cell">A32_OtherDangers</td><td class="name-cell">Other Dangers</td><td><span class="shape-pill" style="background:#1a1a2e;color:#7ec8e3;border:1px solid #7ec8e3">▲ / ◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red / Black rim</div></td><td class="note-cell">Black exclamation mark</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Catch-all; requires additional panel</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ══════════════ SECTION B ══════════════ -->
+<div id="secB">
+<div class="sec-header" style="background:var(--B-bg);border-color:var(--B)">
+  <div class="sec-header-code" style="color:var(--B)">B</div>
+  <div class="sec-header-info">
+    <div class="sec-header-name" style="color:var(--B)">Priority Signs</div>
+    <div class="sec-header-meta">OWL parent: <code>PrioritySign rdfs:subClassOf RoadSign</code> · 7 sign models</div>
+    <div class="sec-props">
+      <span class="prop-chip">Mixed shapes: InvertedTriangle, Octagon, Circle, Diamond, Rectangle</span>
+      <span class="prop-chip">Varied colours per model — see table</span>
+      <span class="prop-chip">Disjoint with all other RoadSign subclasses</span>
+    </div>
+  </div>
+</div>
+<table class="ref-table" id="tableB">
+<thead><tr><th>Code</th><th>OWL Class</th><th>Official Name</th><th>Shape</th><th>Ground</th><th>Border</th><th>Symbol</th><th>Applies To</th><th>Note</th></tr></thead>
+<tbody>
+<tr data-sec="B" data-search="B,1 GiveWay give way yield inverted triangle"><td class="code-cell">B, 1</td><td class="owl-cell">B1_GiveWay</td><td class="name-cell">GIVE WAY</td><td><span class="shape-pill" style="background:#1a1a2e;color:#f90;border:1px solid #f90">▽</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">No symbol; inverted equilateral triangle</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Unique shape for this instruction</td></tr>
+<tr data-sec="B" data-search="B,2a Stop STOP octagon red white"><td class="code-cell">B, 2a</td><td class="owl-cell">B2a_Stop_Octagon</td><td class="name-cell">STOP (Octagon)</td><td><span class="shape-pill" style="background:#c00;color:#fff;border:1px solid #c00">⬟</span></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White/Light yellow rim</div></td><td class="note-cell">Word "STOP" in white</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Compulsory stop before intersection</td></tr>
+<tr data-sec="B" data-search="B,2b Stop STOP circle alternative"><td class="code-cell">B, 2b</td><td class="owl-cell">B2b_Stop_Circle</td><td class="name-cell">STOP (Circle)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">B,1 triangle + "STOP" text</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Alternative STOP model</td></tr>
+<tr data-sec="B" data-search="B,3 PriorityRoad priority road diamond yellow"><td class="code-cell">B, 3</td><td class="owl-cell">B3_PriorityRoad</td><td class="name-cell">PRIORITY ROAD</td><td><span class="shape-pill" style="background:#ff0;color:#000;border:1px solid #888">◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black rim</div></td><td class="note-cell">Inner yellow/orange diamond with black rim</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Other roads must give way</td></tr>
+<tr data-sec="B" data-search="B,4 EndOfPriority end priority diamond band"><td class="code-cell">B, 4</td><td class="owl-cell">B4_EndOfPriority</td><td class="name-cell">END OF PRIORITY</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">◇</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black rim</div></td><td class="note-cell">Identical to B,3 + black/grey median band</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Priority road ends here</td></tr>
+<tr data-sec="B" data-search="B,5 PriorityForOncomingTraffic oncoming narrow"><td class="code-cell">B, 5</td><td class="owl-cell">B5_PriorityForOncomingTraffic</td><td class="name-cell">PRIORITY FOR ONCOMING TRAFFIC</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Black arrow (priority) + red arrow (no priority)</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Must yield to oncoming</td></tr>
+<tr data-sec="B" data-search="B,6 PriorityOverOncomingTraffic over oncoming blue rectangle"><td class="code-cell">B, 6</td><td class="owl-cell">B6_PriorityOverOncomingTraffic</td><td class="name-cell">PRIORITY OVER ONCOMING TRAFFIC</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White arrow up (priority) + red arrow down</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Has priority over oncoming</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ══════════════ SECTION C ══════════════ -->
+<div id="secC">
+<div class="sec-header" style="background:var(--C-bg);border-color:var(--C)">
+  <div class="sec-header-code" style="color:var(--C)">C</div>
+  <div class="sec-header-info">
+    <div class="sec-header-name" style="color:var(--C)">Prohibitory or Restrictive Signs</div>
+    <div class="sec-header-meta">OWL parent: <code>ProhibitoryOrRestrictiveSign rdfs:subClassOf RoadSign</code> · 24 sign models</div>
+    <div class="sec-props">
+      <span class="prop-chip">hasShape value Circle</span>
+      <span class="prop-chip">hasGroundColour value White/Yellow (most)</span>
+      <span class="prop-chip">hasBorderColour value Red (prohibitory) / Black (end-of)</span>
+    </div>
+  </div>
+</div>
+<table class="ref-table" id="tableC">
+<thead><tr><th>Code</th><th>OWL Class</th><th>Official Name</th><th>Shape</th><th>Ground</th><th>Border</th><th>Symbol</th><th>Applies To</th><th>Note</th></tr></thead>
+<tbody>
+<tr data-sec="C" data-search="C NoEntry no entry circle red white bar"><td class="code-cell">C, 1</td><td class="owl-cell">C1_NoEntry</td><td class="name-cell">NO ENTRY</td><td><span class="shape-pill" style="background:#c00;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Horizontal white bar</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Prohibits all entry from this direction</td></tr>
+<tr data-sec="C" data-search="C ClosedAllVehicles closed all vehicles both directions"><td class="code-cell">C, 2</td><td class="owl-cell">C2_ClosedToAllVehicles_BothDirections</td><td class="name-cell">CLOSED TO ALL VEHICLES (Both Dir.)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Empty centre (no symbol)</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Both directions blocked</td></tr>
+<tr data-sec="C" data-search="C NoEntryPowerDrivenVehicle motor car motorcycle except two-wheeled"><td class="code-cell">C, 3</td><td class="owl-cell">C3_NoEntry_AllMotorVehicles_ExceptSoloMC</td><td class="name-cell">NO ENTRY (except solo motorcycles)</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Front-view passenger car silhouette</td><td><div class="user-tags"><span class="user-tag">Motor vehicles</span></div></td><td class="note-cell">Solo motorcycles exempt</td></tr>
+<tr data-sec="C" data-search="C NoEntryMotorCycles motorcycle no entry"><td class="code-cell">C, 4</td><td class="owl-cell">C4_NoEntry_MotorCycles</td><td class="name-cell">NO ENTRY FOR MOTOR CYCLES</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Motorcycle silhouette</td><td><div class="user-tags"><span class="user-tag">Motorcycles</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C NoEntryCycles cycle bicycle no entry"><td class="code-cell">C, 5</td><td class="owl-cell">C5_NoEntry_Cycles</td><td class="name-cell">NO ENTRY FOR CYCLES</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Bicycle silhouette</td><td><div class="user-tags"><span class="user-tag">Cyclists</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C NoEntryMopeds moped no entry"><td class="code-cell">C, 6</td><td class="owl-cell">C6_NoEntry_Mopeds</td><td class="name-cell">NO ENTRY FOR MOPEDS</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Moped silhouette</td><td><div class="user-tags"><span class="user-tag">Mopeds</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C NoEntryGoodsVehicles goods vehicle lorry truck no entry"><td class="code-cell">C, 7</td><td class="owl-cell">C7_NoEntry_GoodsVehicles</td><td class="name-cell">NO ENTRY FOR GOODS VEHICLES</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Lorry/truck silhouette</td><td><div class="user-tags"><span class="user-tag">Lorries</span></div></td><td class="note-cell">Tonnage inscribed on symbol</td></tr>
+<tr data-sec="C" data-search="C NoEntryDangerousGoods dangerous goods hazmat no entry"><td class="code-cell">C, 8</td><td class="owl-cell">C8_NoEntry_DangerousGoods</td><td class="name-cell">NO ENTRY — DANGEROUS GOODS</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Vehicle with orange hazmat plaque</td><td><div class="user-tags"><span class="user-tag">Hazmat vehicles</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C NoEntryPedestrians pedestrian no entry"><td class="code-cell">C, 9</td><td class="owl-cell">C9_NoEntry_Pedestrians</td><td class="name-cell">NO ENTRY FOR PEDESTRIANS</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Walking pedestrian silhouette</td><td><div class="user-tags"><span class="user-tag">Pedestrians</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C WidthLimit overall width exceeding metres"><td class="code-cell">C, 10</td><td class="owl-cell">C10_NoEntry_ExceedingWidth</td><td class="name-cell">NO ENTRY — EXCEEDING WIDTH</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Numerical value + two horizontal arrows</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">symbol_value: xsd:decimal (metres)</td></tr>
+<tr data-sec="C" data-search="C HeightLimit height exceeding metres"><td class="code-cell">C, 11</td><td class="owl-cell">C11_NoEntry_ExceedingHeight</td><td class="name-cell">NO ENTRY — EXCEEDING HEIGHT</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Numerical value + two vertical arrows</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">symbol_value: xsd:decimal (metres)</td></tr>
+<tr data-sec="C" data-search="C WeightLimit tonnes laden mass exceeding"><td class="code-cell">C, 12</td><td class="owl-cell">C12_NoEntry_ExceedingLadenMass</td><td class="name-cell">NO ENTRY — EXCEEDING LADEN MASS</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Numerical figure + "t" unit</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">symbol_value: xsd:decimal (tonnes)</td></tr>
+<tr data-sec="C" data-search="C AxleWeightLimit axle mass exceeding tonnes"><td class="code-cell">C, 13</td><td class="owl-cell">C13_NoEntry_ExceedingAxleMass</td><td class="name-cell">NO ENTRY — EXCEEDING AXLE MASS</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Figure over single axle silhouette</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">symbol_value: xsd:decimal (tonnes)</td></tr>
+<tr data-sec="C" data-search="C MaximumSpeed speed limit restricted km/h mph"><td class="code-cell">C, 14</td><td class="owl-cell">C14_MaximumSpeed</td><td class="name-cell">MAXIMUM SPEED LIMIT</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Numerical value (e.g. 50, 100) in black</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">speed_limit_value: xsd:integer</td></tr>
+<tr data-sec="C" data-search="C NoLeftTurn no left turn arrow"><td class="code-cell">C, 15</td><td class="owl-cell">C15_NoLeftTurn</td><td class="name-cell">NO LEFT TURN</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Left arrow + red oblique bar</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C NoRightTurn no right turn arrow"><td class="code-cell">C, 16</td><td class="owl-cell">C16_NoRightTurn</td><td class="name-cell">NO RIGHT TURN</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Right arrow + red oblique bar</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C NoUTurn no U-turn reverse direction"><td class="code-cell">C, 17</td><td class="owl-cell">C17_NoUTurn</td><td class="name-cell">NO U-TURN</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">U-shaped arrow + red oblique bar</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C ParkingProhibited parking no parking"><td class="code-cell">C, 18</td><td class="owl-cell">C18_ParkingProhibited</td><td class="name-cell">PARKING PROHIBITED</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Single red diagonal bar (left-to-right)</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Side of road indicated</td></tr>
+<tr data-sec="C" data-search="C StandingAndParkingProhibited standing parking no stopping"><td class="code-cell">C, 19</td><td class="owl-cell">C19_StandingAndParkingProhibited</td><td class="name-cell">STANDING AND PARKING PROHIBITED</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Red X (two intersecting diagonal bars)</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">No stopping or parking</td></tr>
+<tr data-sec="C" data-search="C OvertakingProhibited overtaking no overtaking"><td class="code-cell">C, 20</td><td class="owl-cell">C20_OvertakingProhibited</td><td class="name-cell">OVERTAKING PROHIBITED</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Two cars side-by-side (right=black, left=red)</td><td><div class="user-tags"><span class="user-tag">Motor vehicles</span></div></td><td class="note-cell">Cars only; trucks see C,21</td></tr>
+<tr data-sec="C" data-search="C OvertakingByGoodsVehiclesProhibited goods overtaking lorry truck"><td class="code-cell">C, 21</td><td class="owl-cell">C21_OvertakingByGoodsVehiclesProhibited</td><td class="name-cell">OVERTAKING BY GOODS VEHICLES PROHIBITED</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Red truck overtaking black car</td><td><div class="user-tags"><span class="user-tag">Lorries</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C NoAudibleWarning horn honking prohibited"><td class="code-cell">C, 22</td><td class="owl-cell">C22_AudibleWarningProhibited</td><td class="name-cell">AUDIBLE WARNING PROHIBITED</td><td><span class="shape-pill" style="background:#1a1a2e;color:#fff;border:1px solid #c00">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td class="note-cell">Horn silhouette + red oblique bar</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td></td></tr>
+<tr data-sec="C" data-search="C EndAllProhibitions end all prohibitions cancel moving vehicles"><td class="code-cell">C, 23</td><td class="owl-cell">C23_EndOfAllLocalProhibitions</td><td class="name-cell">END OF ALL LOCAL PROHIBITIONS</td><td><span class="shape-pill" style="background:#1a1a2e;color:#888;border:1px solid #888">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black rim</div></td><td class="note-cell">Five grey diagonal parallel lines</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Cancels all moving-vehicle restrictions</td></tr>
+<tr data-sec="C" data-search="C EndSpeedLimit end speed limit cancel"><td class="code-cell">C, 24</td><td class="owl-cell">C24_EndOfSpeedLimit</td><td class="name-cell">END OF SPEED LIMIT</td><td><span class="shape-pill" style="background:#1a1a2e;color:#888;border:1px solid #888">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black rim</div></td><td class="note-cell">Greyed numerical value + diagonal lines</td><td><div class="user-tags"><span class="user-tag">All vehicles</span></div></td><td class="note-cell">Cancels C,14 restriction</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ══════════════ SECTION D ══════════════ -->
+<div id="secD">
+<div class="sec-header" style="background:var(--D-bg);border-color:var(--D)">
+  <div class="sec-header-code" style="color:var(--D)">D</div>
+  <div class="sec-header-info">
+    <div class="sec-header-name" style="color:var(--D)">Mandatory Signs</div>
+    <div class="sec-header-meta">OWL parent: <code>MandatorySign rdfs:subClassOf RoadSign</code> · 14 sign models</div>
+    <div class="sec-props">
+      <span class="prop-chip">hasShape value Circle (most) / Rectangle (D,10)</span>
+      <span class="prop-chip">hasGroundColour value Blue</span>
+      <span class="prop-chip">hasBorderColour value White rim</span>
+    </div>
+  </div>
+</div>
+<table class="ref-table" id="tableD">
+<thead><tr><th>Code</th><th>OWL Class</th><th>Official Name</th><th>Shape</th><th>Ground</th><th>Border</th><th>Symbol</th><th>Applies To</th><th>Note</th></tr></thead>
+<tbody>
+<tr data-sec="D" data-search="D,1a DirectionFollowed direction compulsory arrow blue"><td class="code-cell">D, 1a</td><td class="owl-cell">D1a_DirectionToBeFollowed</td><td class="name-cell">Direction to be Followed</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">White arrow(s) in mandatory direction</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Obligatory direction</td></tr>
+<tr data-sec="D" data-search="D,2 PassThisSide pass obstacle side island"><td class="code-cell">D, 2</td><td class="owl-cell">D2_PassThisSide</td><td class="name-cell">Pass This Side</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">White arrow pointing diagonally down (L or R)</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Placed on traffic islands</td></tr>
+<tr data-sec="D" data-search="D,3 CompulsoryRoundabout roundabout compulsory circle arrows"><td class="code-cell">D, 3</td><td class="owl-cell">D3_CompulsoryRoundabout</td><td class="name-cell">Compulsory Roundabout</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Three white circular arrows</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td></td></tr>
+<tr data-sec="D" data-search="D,4 CompulsoryCycleTrack cycle track compulsory bicycle"><td class="code-cell">D, 4</td><td class="owl-cell">D4_CompulsoryCycleTrack</td><td class="name-cell">Compulsory Cycle Track</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">White cycle silhouette</td><td><div class="user-tags"><span class="user-tag">Cyclists</span></div></td><td class="note-cell">Reserved for cycles</td></tr>
+<tr data-sec="D" data-search="D,5 CompulsoryFootpath footpath pedestrian compulsory"><td class="code-cell">D, 5</td><td class="owl-cell">D5_CompulsoryFootpath</td><td class="name-cell">Compulsory Footpath</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">White pedestrian silhouette</td><td><div class="user-tags"><span class="user-tag">Pedestrians</span></div></td><td class="note-cell">Reserved for pedestrians</td></tr>
+<tr data-sec="D" data-search="D,6 CompulsoryHorseback horseback rider equestrian track"><td class="code-cell">D, 6</td><td class="owl-cell">D6_CompulsoryHorsebackTrack</td><td class="name-cell">Compulsory Track for Horse Riders</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">White rider on horse silhouette</td><td><div class="user-tags"><span class="user-tag">Equestrians</span></div></td><td></td></tr>
+<tr data-sec="D" data-search="D,7 CompulsoryMinimumSpeed minimum speed compulsory numeric"><td class="code-cell">D, 7</td><td class="owl-cell">D7_CompulsoryMinimumSpeed</td><td class="name-cell">Compulsory Minimum Speed</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">White numerals (speed value)</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">speed_limit_value: xsd:integer (min)</td></tr>
+<tr data-sec="D" data-search="D,8 EndCompulsoryMinimumSpeed end minimum speed cancel bar"><td class="code-cell">D, 8</td><td class="owl-cell">D8_EndOfCompulsoryMinimumSpeed</td><td class="name-cell">End of Compulsory Minimum Speed</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">D,7 + oblique red bar crossing it</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Cancels D,7</td></tr>
+<tr data-sec="D" data-search="D,9 SnowChains chains compulsory snow winter"><td class="code-cell">D, 9</td><td class="owl-cell">D9_SnowChainsCompulsory</td><td class="name-cell">Snow Chains Compulsory</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Tyre fitted with snow chains</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Min. two driving wheels</td></tr>
+<tr data-sec="D" data-search="d, 10a d10a_compulsorydirection_dangerousgoods_straight compulsory direction — dg (straight) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">D, 10a</td><td class="owl-cell">D10a_CompulsoryDirection_DangerousGoods_Straight</td><td class="name-cell">Compulsory Direction — DG (Straight)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">White truck + orange rear + upward arrow</td><td><div class="user-tags"><span class="user-tag">Hazmat vehicles</span></div></td><td class="note-cell">Straight ahead mandatory</td></tr>
+<tr data-sec="D" data-search="d, 10b d10b_compulsorydirection_dangerousgoods_turn compulsory direction — dg (turn) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">D, 10b</td><td class="owl-cell">D10b_CompulsoryDirection_DangerousGoods_Turn</td><td class="name-cell">Compulsory Direction — DG (Turn)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">White truck + orange rear + left/right arrow</td><td><div class="user-tags"><span class="user-tag">Hazmat vehicles</span></div></td><td class="note-cell">Turn in direction indicated</td></tr>
+<tr data-sec="D" data-search="d, 10c d10c_compulsorydirection_dangerousgoods_junction compulsory direction — dg (junction) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">D, 10c</td><td class="owl-cell">D10c_CompulsoryDirection_DangerousGoods_Junction</td><td class="name-cell">Compulsory Direction — DG (Junction)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">White truck + complex directional arrows</td><td><div class="user-tags"><span class="user-tag">Hazmat vehicles</span></div></td><td class="note-cell">Complex junction routing for hazmat</td></tr>
+
+<tr data-sec="D" data-search="d, 11a d11a_compulsorysharedpath_segregated compulsory shared path — segregated <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">D, 11a</td><td class="owl-cell">D11a_CompulsorySharedPath_Segregated</td><td class="name-cell">Compulsory Shared Path — Segregated</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Cycle + pedestrian icons separated by vertical line</td><td><div class="user-tags"><span class="user-tag">Cyclists</span><span class="user-tag">Pedestrians</span></div></td><td class="note-cell">Users stay on designated side</td></tr>
+<tr data-sec="D" data-search="d, 11b d11b_compulsorysharedpath_unsegregated compulsory shared path — unsegregated <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">D, 11b</td><td class="owl-cell">D11b_CompulsorySharedPath_Unsegregated</td><td class="name-cell">Compulsory Shared Path — Unsegregated</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">○</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Cycle + pedestrian icons stacked (no divider)</td><td><div class="user-tags"><span class="user-tag">Cyclists</span><span class="user-tag">Pedestrians</span></div></td><td class="note-cell">Both categories share full path width</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- ══════════════ SECTION E ══════════════ -->
+<div id="secE">
+<div class="sec-header" style="background:var(--E-bg);border-color:var(--E)">
+  <div class="sec-header-code" style="color:var(--E)">E</div>
+  <div class="sec-header-info">
+    <div class="sec-header-name" style="color:var(--E)">Information, Facility &amp; Service Signs</div>
+    <div class="sec-header-meta">OWL parent: <code>InformationFacilityServiceSign rdfs:subClassOf RoadSign</code> · 27 sign models</div>
+    <div class="sec-props">
+      <span class="prop-chip">hasShape value Rectangle (most)</span>
+      <span class="prop-chip">hasGroundColour value Blue</span>
+      <span class="prop-chip">No border colour (open rim)</span>
+    </div>
+  </div>
+</div>
+<table class="ref-table" id="tableE">
+<thead><tr><th>Code</th><th>OWL Class</th><th>Official Name</th><th>Shape</th><th>Ground</th><th>Border</th><th>Symbol</th><th>Applies To</th><th>Note</th></tr></thead>
+<tbody>
+<tr data-sec="E" data-search="E,1a CompulsoryMinimumSpeedLanes lanes speed minimum lane"><td class="code-cell">E, 1a</td><td class="owl-cell">E1a_LaneMinimumSpeed_MultiLane</td><td class="name-cell">Min. Speed Applying to Different Lanes</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">Light rim</div></td><td class="note-cell">Multiple arrows each containing D,7</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Per-lane min speed</td></tr><tr data-sec="E" data-search="e, 1b e1b_laneminimumspeed_onelane min. speed — one lane <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 1b</td><td class="owl-cell">E1b_LaneMinimumSpeed_OneLane</td><td class="name-cell">Min. Speed — One Lane</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">Light rim</div></td><td class="note-cell">Single arrow containing D,7</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Designates slow-lane minimum speed</td></tr>
+<tr data-sec="E" data-search="e, 1c e1c_lanemaximumspeed_multilane speed limits — different lanes <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 1c</td><td class="owl-cell">E1c_LaneMaximumSpeed_MultiLane</td><td class="name-cell">Speed Limits — Different Lanes</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">Light rim</div></td><td class="note-cell">Multiple arrows each containing C,14</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Sets per-lane maximum speed limits</td></tr>
+
+<tr data-sec="E" data-search="e, 2a e2a_lanereservedforbuses_position lane reserved for buses (position) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 2a</td><td class="owl-cell">E2a_LaneReservedForBuses_Position</td><td class="name-cell">Lane Reserved for Buses (Position)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">Light rim</div></td><td class="note-cell">White bus silhouette within lane-marker arrow</td><td><div class="user-tags"><span class="user-tag">Buses</span></div></td><td class="note-cell">Marks position of bus lane relative to other lanes</td></tr>
+<tr data-sec="E" data-search="e, 2b e2b_lanereservedforbuses_entrance lane reserved for buses (entrance) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 2b</td><td class="owl-cell">E2b_LaneReservedForBuses_Entrance</td><td class="name-cell">Lane Reserved for Buses (Entrance)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">Light rim</div></td><td class="note-cell">White bus silhouette on blue rectangle</td><td><div class="user-tags"><span class="user-tag">Buses</span></div></td><td class="note-cell">Marks the entry point of bus-only lane</td></tr>
+
+<tr data-sec="E" data-search="e, 3a e3a_onewaysign_perpendicular one-way sign (perpendicular) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 3a</td><td class="owl-cell">E3a_OneWaySign_Perpendicular</td><td class="name-cell">One-Way Sign (Perpendicular)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">Large horizontal white arrow pointing in traffic direction</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Placed at entry to one-way road</td></tr>
+<tr data-sec="E" data-search="e, 3b e3b_onewaysign_parallel one-way sign (parallel) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭ long</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 3b</td><td class="owl-cell">E3b_OneWaySign_Parallel</td><td class="name-cell">One-Way Sign (Parallel)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭ long</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">Elongated horizontal white arrow; optional "one way" text</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Placed along the length of one-way road</td></tr>
+
+<tr data-sec="E" data-search="e, 5a e5a_motorway_beginning motorway (beginning) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue / green</div>"><td class="code-cell">E, 5a</td><td class="owl-cell">E5a_Motorway_Beginning</td><td class="name-cell">Motorway (Beginning)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White dual-carriageway + overpass bridge silhouette</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Entry into motorway regulatory environment</td></tr>
+<tr data-sec="E" data-search="e, 5b e5b_motorway_end end of motorway <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue / green</div>"><td class="code-cell">E, 5b</td><td class="owl-cell">E5b_Motorway_End</td><td class="name-cell">End of Motorway</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">E,5a silhouette + red oblique bar</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Motorway-specific rules cease here</td></tr><tr data-sec="E" data-search="e, 6a e6a_roadformotorvehicles road for motor vehicles <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue / green</div>"><td class="code-cell">E, 6a</td><td class="owl-cell">E6a_RoadForMotorVehicles</td><td class="name-cell">Road for Motor Vehicles</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White car front-view silhouette</td><td><div class="user-tags"><span class="user-tag">Motor vehicles</span></div></td><td class="note-cell">Reserved for motor vehicles only</td></tr>
+<tr data-sec="E" data-search="e, 6b e6b_endofroadformotorvehicles end of road for motor vehicles <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue / green</div>"><td class="code-cell">E, 6b</td><td class="owl-cell">E6b_EndOfRoadForMotorVehicles</td><td class="name-cell">End of Road for Motor Vehicles</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">E,6a silhouette + red oblique bar</td><td><div class="user-tags"><span class="user-tag">Motor vehicles</span></div></td><td class="note-cell">Motorized-only restriction ends</td></tr>
+
+
+<tr data-sec="E" data-search="e, 7a e7a_beginningofbuiltuparea_name beginning of built-up area (name) <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 7a</td><td class="owl-cell">E7a_BeginningOfBuiltUpArea_Name</td><td class="name-cell">Beginning of Built-Up Area (Name)</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black narrow</div></td><td class="note-cell">Locality name in dark lettering</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Triggers urban traffic regulations</td></tr>
+<tr data-sec="E" data-search="e, 7b e7b_beginningofbuiltuparea_silhouette beginning of built-up area (silhouette) <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 7b</td><td class="owl-cell">E7b_BeginningOfBuiltUpArea_Silhouette</td><td class="name-cell">Beginning of Built-Up Area (Silhouette)</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black narrow</div></td><td class="note-cell">Dark silhouette of town/village skyline</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Visual entry marker for urban environment</td></tr>
+<tr data-sec="E" data-search="e, 7c e7c_beginningofbuiltuparea_combined beginning of built-up area (combined) <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 7c</td><td class="owl-cell">E7c_BeginningOfBuiltUpArea_Combined</td><td class="name-cell">Beginning of Built-Up Area (Combined)</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black narrow</div></td><td class="note-cell">Locality name + town silhouette combined</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Combined semantic entry marker</td></tr>
+<tr data-sec="E" data-search="e, 7d e7d_beginningofbuiltuparea_model4 beginning of built-up area (model 4) <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 7d</td><td class="owl-cell">E7d_BeginningOfBuiltUpArea_Model4</td><td class="name-cell">Beginning of Built-Up Area (Model 4)</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black narrow</div></td><td class="note-cell">Local variation of E,7a-c</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Regional implementation of urban entry</td></tr>
+
+<tr data-sec="E" data-search="e, 8a e8a_endofbuiltuparea_name end of built-up area (name) <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 8a</td><td class="owl-cell">E8a_EndOfBuiltUpArea_Name</td><td class="name-cell">End of Built-Up Area (Name)</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black narrow</div></td><td class="note-cell">Locality name + red oblique bar</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Exit marker; urban rules cease</td></tr>
+<tr data-sec="E" data-search="e, 8b e8b_endofbuiltuparea_silhouette end of built-up area (silhouette) <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 8b</td><td class="owl-cell">E8b_EndOfBuiltUpArea_Silhouette</td><td class="name-cell">End of Built-Up Area (Silhouette)</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black narrow</div></td><td class="note-cell">Town silhouette + red oblique bar</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Visual exit marker for built-up area</td></tr>
+<tr data-sec="E" data-search="e, 8c e8c_endofbuiltuparea_combined end of built-up area (combined exit) <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 8c</td><td class="owl-cell">E8c_EndOfBuiltUpArea_Combined</td><td class="name-cell">End of Built-Up Area (Combined Exit)</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black narrow</div></td><td class="note-cell">Combined name/silhouette exit + red bar</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Formal termination of built-up area state</td></tr>
+<tr data-sec="E" data-search="e, 8d e8d_endofbuiltuparea_model4 end of built-up area (model 4 exit) <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 8d</td><td class="owl-cell">E8d_EndOfBuiltUpArea_Model4</td><td class="name-cell">End of Built-Up Area (Model 4 Exit)</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black narrow</div></td><td class="note-cell">Local exit variation of E,8a-c</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Regional implementation of urban exit</td></tr>
+
+<tr data-sec="E" data-search="e, 9a e9a_zonalvalidity_parkingprohibited zonal validity — parking prohibited <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 9a</td><td class="owl-cell">E9a_ZonalValidity_ParkingProhibited</td><td class="name-cell">Zonal Validity — Parking Prohibited</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black</div></td><td class="note-cell">"ZONE" + sign C,18 panel</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Parking prohibition applies to entire zone</td></tr>
+<tr data-sec="E" data-search="e, 9b e9b_zonalvalidity_timebound zonal validity — prohibited at times <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 9b</td><td class="owl-cell">E9b_ZonalValidity_TimeBound</td><td class="name-cell">Zonal Validity — Prohibited at Times</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black</div></td><td class="note-cell">"ZONE" + C,18 + time period panel</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Time-bound parking prohibition for zone</td></tr>
+<tr data-sec="E" data-search="e, 9c e9c_zonalvalidity_parkingzone zonal validity — parking zone <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 9c</td><td class="owl-cell">E9c_ZonalValidity_ParkingZone</td><td class="name-cell">Zonal Validity — Parking Zone</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black</div></td><td class="note-cell">"ZONE" + E,14a panel</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Authorised/regulated parking area zone</td></tr>
+<tr data-sec="E" data-search="e, 9d e9d_zonalvalidity_maximumspeedzone zonal validity — maximum speed zone <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 9d</td><td class="owl-cell">E9d_ZonalValidity_MaximumSpeedZone</td><td class="name-cell">Zonal Validity — Maximum Speed Zone</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black</div></td><td class="note-cell">"ZONE" + C,14 panel</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Universal speed limit for all roads in zone</td></tr><tr data-sec="E" data-search="e, 10a e10a_exitfromparkingprohibitedzone exit — parking prohibited zone <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 10a</td><td class="owl-cell">E10a_ExitFromParkingProhibitedZone</td><td class="name-cell">Exit — Parking Prohibited Zone</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black</div></td><td class="note-cell">Greyed E,9a + black diagonal band</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Terminates zonal parking prohibition</td></tr>
+<tr data-sec="E" data-search="e, 10b e10b_exitfromtimeboundzone exit — time-bound zone <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 10b</td><td class="owl-cell">E10b_ExitFromTimeBoundZone</td><td class="name-cell">Exit — Time-Bound Zone</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black</div></td><td class="note-cell">Greyed E,9b + black diagonal band</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Terminates timed zonal prohibition</td></tr>
+<tr data-sec="E" data-search="e, 10c e10c_exitfromparkingzone exit — parking zone <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 10c</td><td class="owl-cell">E10c_ExitFromParkingZone</td><td class="name-cell">Exit — Parking Zone</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black</div></td><td class="note-cell">Greyed E,9c + black diagonal band</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Terminates zonal parking regulation</td></tr>
+<tr data-sec="E" data-search="e, 10d e10d_exitfrommaximumspeedzone exit — maximum speed zone <span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span> <div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>white / light</div>"><td class="code-cell">E, 10d</td><td class="owl-cell">E10d_ExitFromMaximumSpeedZone</td><td class="name-cell">Exit — Maximum Speed Zone</td><td><span class="shape-pill" style="background:#fff;color:#000;border:1px solid #888">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#f8f8f0"></span>White / Light</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black</div></td><td class="note-cell">Greyed E,9d + black diagonal band</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Terminates zonal speed limit</td></tr>
+
+
+<tr data-sec="E" data-search="e, 11a e11a_tunnel_beginning tunnel (entry) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 11a</td><td class="owl-cell">E11a_Tunnel_Beginning</td><td class="name-cell">Tunnel (Entry)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White tunnel mouth/entrance silhouette</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Lights mandatory; tunnel rules begin</td></tr>
+<tr data-sec="E" data-search="e, 11b e11b_tunnel_end end of tunnel <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 11b</td><td class="owl-cell">E11b_Tunnel_End</td><td class="name-cell">End of Tunnel</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">E,11a silhouette + red oblique bar</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Tunnel-specific rules cease here</td></tr>
+
+<tr data-sec="E" data-search="e, 12a e12a_pedestriancrossing_standard pedestrian crossing position (standard) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 12a</td><td class="owl-cell">E12a_PedestrianCrossing_Standard</td><td class="name-cell">Pedestrian Crossing Position (Standard)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White triangle with A,12 symbol</td><td><div class="user-tags"><span class="user-tag">Pedestrians</span><span class="user-tag">All</span></div></td><td class="note-cell">Precise position of pedestrian crossing</td></tr>
+<tr data-sec="E" data-search="e, 12b e12b_pedestriancrossing_pentagon pedestrian crossing position (pentagon) <span class="shape-pill" style="background:#0d1f2e;color:#4a9fd4;border:1px solid #4a9fd4">⬠</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 12b</td><td class="owl-cell">E12b_PedestrianCrossing_Pentagon</td><td class="name-cell">Pedestrian Crossing Position (Pentagon)</td><td><span class="shape-pill" style="background:#0d1f2e;color:#4a9fd4;border:1px solid #4a9fd4">⬠</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White walking person silhouette</td><td><div class="user-tags"><span class="user-tag">Pedestrians</span><span class="user-tag">All</span></div></td><td class="note-cell">Alternative position marker for crossing</td></tr>
+<tr data-sec="E" data-search="e, 12c e12c_pedestriancrossing_dark pedestrian crossing position (dark) <span class="shape-pill" style="background:#111;color:#fff;border:1px solid #444">▭</span> <div class="color-swatch"><span class="swatch" style="background:#111"></span>black</div>"><td class="code-cell">E, 12c</td><td class="owl-cell">E12c_PedestrianCrossing_Dark</td><td class="name-cell">Pedestrian Crossing Position (Dark)</td><td><span class="shape-pill" style="background:#111;color:#fff;border:1px solid #444">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White walking person silhouette on black</td><td><div class="user-tags"><span class="user-tag">Pedestrians</span><span class="user-tag">All</span></div></td><td class="note-cell">High-contrast marker for crossing</td></tr>
+
+<tr data-sec="E" data-search="e, 14a e14a_parking parking <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 14a</td><td class="owl-cell">E14a_Parking</td><td class="name-cell">Parking</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White letter "P" or national ideogram</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Authorised parking location</td></tr>
+<tr data-sec="E" data-search="e, 14b e14b_parking_plusbus parking + bus (park and ride) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 14b</td><td class="owl-cell">E14b_Parking_PlusBus</td><td class="name-cell">Parking + Bus (Park and Ride)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">"P" symbol + Bus symbol/text</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Park and Ride for bus commuters</td></tr>
+<tr data-sec="E" data-search="e, 14c e14c_parking_plustrain parking + train (park and ride) <span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span> <div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>blue</div>"><td class="code-cell">E, 14c</td><td class="owl-cell">E14c_Parking_PlusTrain</td><td class="name-cell">Parking + Train (Park and Ride)</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">"P" symbol + Train symbol/text</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Park and Ride for rail commuters</td></tr>
+
+<tr data-sec="E" data-search="E,15 BusStop bus stop blue"><td class="code-cell">E, 15</td><td class="owl-cell">E15_BusStop</td><td class="name-cell">Bus Stop</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White bus silhouette</td><td><div class="user-tags"><span class="user-tag">Buses</span><span class="user-tag">Passengers</span></div></td><td class="note-cell">MTSD exact match: information--bus-stop-</td></tr>
+<tr data-sec="E" data-search="E,16 TramwayStop tram stop tramway"><td class="code-cell">E, 16</td><td class="owl-cell">E16_TramwayStop</td><td class="name-cell">Tramway Stop</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch">None</div></td><td class="note-cell">White tram silhouette</td><td><div class="user-tags"><span class="user-tag">Trams</span><span class="user-tag">Passengers</span></div></td><td></td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ══════════════ SECTION F ══════════════ -->
+<div id="secF">
+<div class="sec-header" style="background:var(--F-bg);border-color:var(--F)">
+  <div class="sec-header-code" style="color:var(--F)">F</div>
+  <div class="sec-header-info">
+    <div class="sec-header-name" style="color:var(--F)">Facility Service Signs</div>
+    <div class="sec-header-meta">OWL parent: <code>FacilityServiceSign rdfs:subClassOf InformationFacilityServiceSign</code> · 14 sign models</div>
+    <div class="sec-props">
+      <span class="prop-chip">hasShape value Rectangle</span>
+      <span class="prop-chip">hasGroundColour value Blue or Green</span>
+      <span class="prop-chip">Symbol on white/yellow square insert</span>
+    </div>
+  </div>
+</div>
+<table class="ref-table" id="tableF">
+<thead><tr><th>Code</th><th>OWL Class</th><th>Official Name</th><th>Shape</th><th>Ground</th><th>Border</th><th>Symbol</th><th>Applies To</th><th>Note</th></tr></thead>
+<tbody>
+<tr data-sec="F" data-search="F,1a FirstAidStation first aid medical cross hospital"><td class="code-cell">F, 1a</td><td class="owl-cell">F1a_FirstAidStation_RedCross</td><td class="name-cell">First-Aid Station (Red Cross)</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Red cross on white/yellow insert</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,2 BreakdownService breakdown repair service"><td class="code-cell">F, 2</td><td class="owl-cell">F2_BreakdownService</td><td class="name-cell">Breakdown Service</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Hammer and wrench silhouette</td><td><div class="user-tags"><span class="user-tag">Motorists</span></div></td><td class="note-cell">Rare-road-only placement rule</td></tr>
+<tr data-sec="F" data-search="F,3 Telephone telephone phone call"><td class="code-cell">F, 3</td><td class="owl-cell">F3_Telephone</td><td class="name-cell">Telephone</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Telephone handset icon</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,4 FillingStation petrol fuel station"><td class="code-cell">F, 4</td><td class="owl-cell">F4_FillingStation</td><td class="name-cell">Filling Station</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Petrol pump silhouette</td><td><div class="user-tags"><span class="user-tag">Motorists</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,5 Hotel hotel motel accommodation"><td class="code-cell">F, 5</td><td class="owl-cell">F5_HotelMotel</td><td class="name-cell">Hotel or Motel</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Bed silhouette</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,6 Restaurant restaurant food dining"><td class="code-cell">F, 6</td><td class="owl-cell">F6_Restaurant</td><td class="name-cell">Restaurant</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Fork and spoon silhouette</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,7 Refreshments cafeteria snack coffee cup"><td class="code-cell">F, 7</td><td class="owl-cell">F7_Refreshments</td><td class="name-cell">Refreshments / Cafeteria</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Cup silhouette</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,8 PicnicSite picnic rest area table tree"><td class="code-cell">F, 8</td><td class="owl-cell">F8_PicnicSite</td><td class="name-cell">Picnic Site</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Tree + picnic table icon</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,10 CampingSite camping tent site"><td class="code-cell">F, 10</td><td class="owl-cell">F10_CampingSite</td><td class="name-cell">Camping Site</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Tent silhouette</td><td><div class="user-tags"><span class="user-tag">Campers</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,11 CaravanSite caravan site RV trailer"><td class="code-cell">F, 11</td><td class="owl-cell">F11_CaravanSite</td><td class="name-cell">Caravan Site</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Caravan silhouette</td><td><div class="user-tags"><span class="user-tag">Caravans</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,12 CampingCaravanSite camping caravan combined tent"><td class="code-cell">F, 12</td><td class="owl-cell">F12_CampingAndCaravanSite</td><td class="name-cell">Camping and Caravan Site</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Tent + caravan combined</td><td><div class="user-tags"><span class="user-tag">Campers</span><span class="user-tag">Caravans</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,13 YouthHostel youth hostel accommodation house"><td class="code-cell">F, 13</td><td class="owl-cell">F13_YouthHostel</td><td class="name-cell">Youth Hostel</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Stylized house with tree</td><td><div class="user-tags"><span class="user-tag">Youth</span></div></td><td></td></tr>
+<tr data-sec="F" data-search="F,17 EmergencyTelephone SOS emergency telephone tunnel"><td class="code-cell">F, 17</td><td class="owl-cell">F17_EmergencyTelephone</td><td class="name-cell">Emergency Telephone (SOS)</td><td><span class="shape-pill" style="background:#9b72cf;color:#fff;border:1px solid #9b72cf">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue / Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">Phone symbol + "SOS" text</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Priority for tunnels</td></tr>
+<tr data-sec="F" data-search="F,18 Extinguisher fire extinguisher red tunnel"><td class="code-cell">F, 18</td><td class="owl-cell">F18_FireExtinguisher</td><td class="name-cell">Fire Extinguisher</td><td><span class="shape-pill" style="background:#c00;color:#fff;border:1px solid #c00">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#c00"></span>Red</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White</div></td><td class="note-cell">White extinguisher symbol</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Tunnels; fire safety</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ══════════════ SECTION G ══════════════ -->
+<div id="secG">
+<div class="sec-header" style="background:var(--G-bg);border-color:var(--G)">
+  <div class="sec-header-code" style="color:var(--G)">G</div>
+  <div class="sec-header-info">
+    <div class="sec-header-name" style="color:var(--G)">Direction, Position &amp; Indication Signs</div>
+    <div class="sec-header-meta">OWL parent: <code>DirectionPositionIndicationSign rdfs:subClassOf RoadSign</code> · 24 sign models</div>
+    <div class="sec-props">
+      <span class="prop-chip">hasShape value Rectangle / Arrow-panel</span>
+      <span class="prop-chip">hasGroundColour value Blue/Green/White/Yellow (context-dependent)</span>
+    </div>
+  </div>
+</div>
+<table class="ref-table" id="tableG">
+<thead><tr><th>Code</th><th>OWL Class</th><th>Official Name</th><th>Shape</th><th>Ground</th><th>Border</th><th>Symbol</th><th>Applies To</th><th>Note</th></tr></thead>
+<tbody>
+<tr data-sec="G" data-search="g, 1a g1a_advancedirectionsign_junction advance direction sign (junction) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 1a</td><td class="owl-cell">G1a_AdvanceDirectionSign_Junction</td><td class="name-cell">Advance Direction Sign (Junction)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Arrow diagrams + place names + route numbers</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Pre-select lanes/routes before junction</td></tr>
+<tr data-sec="G" data-search="g, 1b g1b_advancedirectionsign_stacked advance direction sign (stacked) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 1b</td><td class="owl-cell">G1b_AdvanceDirectionSign_Stacked</td><td class="name-cell">Advance Direction Sign (Stacked)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Stacked place names with left/right arrows</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Limited-space or simple junction</td></tr>
+<tr data-sec="G" data-search="g, 1c g1c_advancedirectionsign_roundabout advance direction sign (roundabout) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 1c</td><td class="owl-cell">G1c_AdvanceDirectionSign_Roundabout</td><td class="name-cell">Advance Direction Sign (Roundabout)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Diagrammatic roundabout with exit arrows</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Approaching roundabouts or rotaries</td></tr>
+
+<tr data-sec="G" data-search="g, 2a g2a_advancenothroughroad_sideroad advance — no through road (side road) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 2a</td><td class="owl-cell">G2a_AdvanceNoThroughRoad_SideRoad</td><td class="name-cell">Advance — No Through Road (Side Road)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Through road + perpendicular branch ending in red bar</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Dead-end is a side road at next intersection</td></tr>
+<tr data-sec="G" data-search="g, 2b g2b_advancenothroughroad_mainpath advance — no through road (main path) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 2b</td><td class="owl-cell">G2b_AdvanceNoThroughRoad_MainPath</td><td class="name-cell">Advance — No Through Road (Main Path)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Arrow where main path or branch ends in red bar</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Dead end is on main navigational path</td></tr>
+
+<tr data-sec="G" data-search="G,3 RouteFollowProhibitedTurn detour route prohibited turn loop arrow"><td class="code-cell">G, 3</td><td class="owl-cell">G3_RouteForProhibitedTurn</td><td class="name-cell">Route for Prohibited Turn</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td><div class="color-swatch">Blue/Green/White/Yellow</div></td><td><div class="color-swatch">Dark rim</div></td><td class="note-cell">Complex arrow loop/detour diagram</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Used when C,15/C,16 in effect</td></tr>
+<tr data-sec="G" data-search="g, 4a g4a_directionsign_arrowhead direction sign (arrowhead) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 4a</td><td class="owl-cell">G4a_DirectionSign_Arrowhead</td><td class="name-cell">Direction Sign (Arrowhead)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Place name + distance aligned horizontally on arrow panel</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Placed at intersection: point of turning</td></tr>
+<tr data-sec="G" data-search="g, 4b g4b_directionsign_stack direction sign (stack) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 4b</td><td class="owl-cell">G4b_DirectionSign_Stack</td><td class="name-cell">Direction Sign (Stack)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Place name + arrow symbol on side of rectangle</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Stack-type multi-direction signage</td></tr>
+<tr data-sec="G" data-search="g, 4c g4c_directionsign_multidestination direction sign (multiple destinations) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 4c</td><td class="owl-cell">G4c_DirectionSign_MultiDestination</td><td class="name-cell">Direction Sign (Multiple Destinations)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Multiple place names + distances stacked on arrow board</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Deprecated in some EA countries; valid in Convention</td></tr>
+
+<tr data-sec="G" data-search="G,10 ConfirmatorySign confirmatory sign after intersection place name distance"><td class="code-cell">G, 10</td><td class="owl-cell">G10_ConfirmatorySign</td><td class="name-cell">Confirmatory Sign</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td><div class="color-swatch">Blue/Green/White/Yellow</div></td><td><div class="color-swatch">Dark rim</div></td><td class="note-cell">Place names + distances after junction</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Placed after intersection</td></tr>
+<tr data-sec="G" data-search="g, 11a g11a_lanedirection_parallel number and direction of lanes (parallel) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 11a</td><td class="owl-cell">G11a_LaneDirection_Parallel</td><td class="name-cell">Number and Direction of Lanes (Parallel)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Parallel vertical arrows (one per lane)</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Lane configuration on current carriageway</td></tr>
+<tr data-sec="G" data-search="g, 11b g11b_lanedirection_split number and direction of lanes (split) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 11b</td><td class="owl-cell">G11b_LaneDirection_Split</td><td class="name-cell">Number and Direction of Lanes (Split)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Vertical arrows with one branching at angle</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Upcoming lane split or intersection exit</td></tr>
+<tr data-sec="G" data-search="g, 11c g11c_lanedirection_opposite number and direction of lanes (opposite) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 11c</td><td class="owl-cell">G11c_LaneDirection_Opposite</td><td class="name-cell">Number and Direction of Lanes (Opposite)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Vertical arrows pointing in opposite directions</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Same-direction + oncoming traffic lanes</td></tr>
+
+<tr data-sec="G" data-search="g, 12a g12a_laneclosure_crossedout lane closure (crossed out) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 12a</td><td class="owl-cell">G12a_LaneClosure_CrossedOut</td><td class="name-cell">Lane Closure (Crossed Out)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Vertical arrows with one crossed by red X or bar</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Specific lane closed or ending ahead</td></tr>
+<tr data-sec="G" data-search="g, 12b g12b_laneclosure_merge lane closure (merge) <span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span> blue/green/white/yellow"><td class="code-cell">G, 12b</td><td class="owl-cell">G12b_LaneClosure_Merge</td><td class="name-cell">Lane Closure (Merge)</td><td><span class="shape-pill" style="background:#4abfbf;color:#fff;border:1px solid #4abfbf">▭</span></td><td>Blue/Green/White/Yellow</td><td><div class="color-swatch">Dark rim or none</div></td><td class="note-cell">Diagrammatic representation of lanes merging</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Merge out of lane being closed</td></tr>
+
+<tr data-sec="G" data-search="G,13 NoThroughRoad no through road dead end blue"><td class="code-cell">G, 13</td><td class="owl-cell">G13_NoThroughRoad</td><td class="name-cell">No Through Road</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">□</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Blue path ending in horizontal red bar</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">No exit road</td></tr>
+<tr data-sec="G" data-search="G,14 GeneralSpeedLimits speed limits general country frontier national"><td class="code-cell">G, 14</td><td class="owl-cell">G14_GeneralSpeedLimits</td><td class="name-cell">General Speed Limits</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue and White</div></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue border</div></td><td class="note-cell">Icons for urban/rural/motorway + speeds</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Near national frontiers</td></tr>
+<tr data-sec="G" data-search="G,17 AdvisorySpeed advisory speed recommended blue"><td class="code-cell">G, 17</td><td class="owl-cell">G17_AdvisorySpeed</td><td class="name-cell">Advisory Speed</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">□</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Speed figure in white (e.g. "60")</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Recommended, not mandatory</td></tr>
+<tr data-sec="G" data-search="G,19 EscapeLane escape lane runaway brake failure"><td class="code-cell">G, 19</td><td class="owl-cell">G19_EscapeLane</td><td class="name-cell">Escape Lane</td><td><span class="shape-pill" style="background:#4a9fd4;color:#fff;border:1px solid #4a9fd4">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#4a9fd4"></span>Blue</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Lane branching into gravel trap pattern</td><td><div class="user-tags"><span class="user-tag">All drivers</span></div></td><td class="note-cell">Runaway lane for brake failure</td></tr>
+<tr data-sec="G" data-search="g, 23a g23a_emergencyexit emergency exit <span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">□</span> <div class="color-swatch"><span class="swatch" style="background:#27500a"></span>green</div>"><td class="code-cell">G, 23a</td><td class="owl-cell">G23a_EmergencyExit</td><td class="name-cell">Emergency Exit</td><td><span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">□</span></td><td><div class="color-swatch"><span class="swatch" style="background:#27500a"></span>Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Running figure toward open door</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Marks exact tunnel emergency exit</td></tr>
+<tr data-sec="G" data-search="g, 23b g23b_emergencyexit_directional emergency exit (directional) <span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">□</span> <div class="color-swatch"><span class="swatch" style="background:#27500a"></span>green</div>"><td class="code-cell">G, 23b</td><td class="owl-cell">G23b_EmergencyExit_Directional</td><td class="name-cell">Emergency Exit (Directional)</td><td><span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">□</span></td><td><div class="color-swatch"><span class="swatch" style="background:#27500a"></span>Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Running figure + directional arrow</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Exit where directional guidance required</td></tr>
+
+<tr data-sec="G" data-search="g, 24a g24a_directiontoemergencyexit_50m direction to emergency exit (50 m) <span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">▭</span> <div class="color-swatch"><span class="swatch" style="background:#27500a"></span>green</div>"><td class="code-cell">G, 24a</td><td class="owl-cell">G24a_DirectionToEmergencyExit_50m</td><td class="name-cell">Direction to Emergency Exit (50 m)</td><td><span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#27500a"></span>Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Running figure + arrow + 50 m distance</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Tunnel wall sign — exit 50 m ahead</td></tr>
+<tr data-sec="G" data-search="g, 24b g24b_directiontoemergencyexit_100m direction to emergency exit (100 m) <span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">▭</span> <div class="color-swatch"><span class="swatch" style="background:#27500a"></span>green</div>"><td class="code-cell">G, 24b</td><td class="owl-cell">G24b_DirectionToEmergencyExit_100m</td><td class="name-cell">Direction to Emergency Exit (100 m)</td><td><span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#27500a"></span>Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Running figure + arrow + 100 m distance</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Tunnel wall sign — exit 100 m ahead</td></tr>
+<tr data-sec="G" data-search="g, 24c g24c_directiontoemergencyexit_bothways direction to emergency exit (both ways) <span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">▭</span> <div class="color-swatch"><span class="swatch" style="background:#27500a"></span>green</div>"><td class="code-cell">G, 24c</td><td class="owl-cell">G24c_DirectionToEmergencyExit_BothWays</td><td class="name-cell">Direction to Emergency Exit (Both Ways)</td><td><span class="shape-pill" style="background:#27500a;color:#fff;border:1px solid #5aae6a">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#27500a"></span>Green</div></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White rim</div></td><td class="note-cell">Running figure between two arrows + two distances</td><td><div class="user-tags"><span class="user-tag">All road users</span></div></td><td class="note-cell">Shows distances to exits in both directions</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- ══════════════ SECTION H ══════════════ -->
+<div id="secH">
+<div class="sec-header" style="background:var(--H-bg);border-color:var(--H)">
+  <div class="sec-header-code" style="color:var(--H)">H</div>
+  <div class="sec-header-info">
+    <div class="sec-header-name" style="color:var(--H)">Additional Panels</div>
+    <div class="sec-header-meta">OWL parent: <code>AdditionalPanel rdfs:subClassOf RoadSign</code> · 11 panel types</div>
+    <div class="sec-props">
+      <span class="prop-chip">hasShape value Rectangle (all)</span>
+      <span class="prop-chip">hasGroundColour value White or Yellow</span>
+      <span class="prop-chip">hasBorderColour value Black, Dark Blue, or Red</span>
+      <span class="prop-chip">Modifies meaning of primary sign; not standalone</span>
+    </div>
+  </div>
+</div>
+<div class="owl-block">
+<button class="copy-btn" onclick="copyBlock(this)">copy</button>
+<span class="owl-cmt">&lt;!-- Section H · Additional Panels · OWL 2 axiom example --&gt;</span><br>
+<span class="owl-cmt">&lt;!-- AdditionalPanel is always attached to another RoadSign individual --&gt;</span><br>
+<span class="owl-kw">&lt;owl:ObjectProperty</span> <span class="owl-prop">rdf:about</span>=<span class="owl-val">"#hasAdditionalPanel"</span><span class="owl-kw">&gt;</span><br>
+&nbsp;&nbsp;<span class="owl-kw">&lt;rdfs:domain</span> <span class="owl-prop">rdf:resource</span>=<span class="owl-val">"#RoadSign"</span><span class="owl-kw">/&gt;</span><br>
+&nbsp;&nbsp;<span class="owl-kw">&lt;rdfs:range</span> <span class="owl-prop">rdf:resource</span>=<span class="owl-val">"#AdditionalPanel"</span><span class="owl-kw">/&gt;</span><br>
+<span class="owl-kw">&lt;/owl:ObjectProperty&gt;</span>
+</div>
+<table class="ref-table" id="tableH">
+<thead><tr><th>Code</th><th>OWL Class</th><th>Official Name</th><th>Shape</th><th>Ground</th><th>Border</th><th>Symbol / Content</th><th>Primary Sign</th><th>Note</th></tr></thead>
+<tbody>
+<tr data-sec="H" data-search="H,1 DistancePanel distance panel metres km ahead"><td class="code-cell">H, 1</td><td class="owl-cell">H1_DistancePanel</td><td class="name-cell">Distance Panel</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">Distance figure (e.g. "200 m", "800 m")</td><td><div class="user-tags"><span class="user-tag">Any sign</span></div></td><td class="note-cell">Distance to hazard/zone start</td></tr>
+<tr data-sec="H" data-search="H,2 LengthPanel length panel extent km danger zone"><td class="code-cell">H, 2</td><td class="owl-cell">H2_LengthPanel</td><td class="name-cell">Length Panel</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">"↑ 2 km ↑" — length figure + two vertical arrows</td><td><div class="user-tags"><span class="user-tag">Any sign</span></div></td><td class="note-cell">Extent of danger/regulation zone</td></tr>
+<tr data-sec="H" data-search="H,3a ParkingStart parking start parallel arrow"><td class="code-cell">H, 3a</td><td class="owl-cell">H3a_ParkingStart_Parallel</td><td class="name-cell">Parking Start (Parallel)</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">Horizontal arrow pointing toward carriageway</td><td><div class="user-tags"><span class="user-tag">C,18 / E,14</span></div></td><td class="note-cell">Start of parking restriction zone</td></tr>
+<tr data-sec="H" data-search="H,3b ParkingContinuation parking continuation parallel arrow"><td class="code-cell">H, 3b</td><td class="owl-cell">H3b_ParkingContinuation_Parallel</td><td class="name-cell">Parking Continuation (Parallel)</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">Double-headed horizontal arrow</td><td><div class="user-tags"><span class="user-tag">C,18 / E,14</span></div></td><td class="note-cell">Repetition along restricted zone</td></tr>
+<tr data-sec="H" data-search="H,3c ParkingEnd parking end parallel arrow away"><td class="code-cell">H, 3c</td><td class="owl-cell">H3c_ParkingEnd_Parallel</td><td class="name-cell">Parking End (Parallel)</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">Horizontal arrow pointing away from carriageway</td><td><div class="user-tags"><span class="user-tag">C,18 / E,14</span></div></td><td class="note-cell">Terminal point of zone</td></tr>
+<tr data-sec="H" data-search="H,5a RoadUserCategory goods lorry truck restriction category"><td class="code-cell">H, 5a</td><td class="owl-cell">H5a_UserCategory_GoodsVehicle</td><td class="name-cell">User Category — Goods Vehicle</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">Lorry/truck silhouette icon</td><td><div class="user-tags"><span class="user-tag">Any sign</span></div></td><td class="note-cell">Restricts primary sign to goods vehicles</td></tr>
+<tr data-sec="H" data-search="H,5b RoadUserCategory bus restriction category"><td class="code-cell">H, 5b</td><td class="owl-cell">H5b_UserCategory_Bus</td><td class="name-cell">User Category — Bus</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">Bus silhouette icon</td><td><div class="user-tags"><span class="user-tag">Any sign</span></div></td><td class="note-cell">Restricts primary sign to buses</td></tr>
+<tr data-sec="H" data-search="H,6 ExemptionPanel exemption except category exclude"><td class="code-cell">H, 6</td><td class="owl-cell">H6_ExemptionPanel</td><td class="name-cell">Exemption Panel</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">"except" + category symbol (e.g. cycle)</td><td><div class="user-tags"><span class="user-tag">Any sign</span></div></td><td class="note-cell">Category exempted from regulation</td></tr>
+<tr data-sec="H" data-search="H,7 HandicappedPanel handicapped wheelchair disabled parking"><td class="code-cell">H, 7</td><td class="owl-cell">H7_HandicappedPanel</td><td class="name-cell">Handicapped Panel</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">Wheelchair symbol</td><td><div class="user-tags"><span class="user-tag">C,18 / E,14</span></div></td><td class="note-cell">Reserved for disabled persons</td></tr>
+<tr data-sec="H" data-search="H,8 IntersectionDiagram intersection diagram priority junction map"><td class="code-cell">H, 8</td><td class="owl-cell">H8_IntersectionDiagram</td><td class="name-cell">Intersection Diagram</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">Junction map (broad=priority; thin=secondary)</td><td><div class="user-tags"><span class="user-tag">B,1 / B,2 / B,3</span></div></td><td class="note-cell">Visual layout of priority road</td></tr>
+<tr data-sec="H" data-search="H,9 IceSnowWarning ice snow winter slippery warning panel"><td class="code-cell">H, 9</td><td class="owl-cell">H9_IceOrSnowWarning</td><td class="name-cell">Ice or Snow Warning</td><td><span class="shape-pill" style="background:#281520;color:#c47eb5;border:1px solid #c47eb5">▭</span></td><td><div class="color-swatch"><span class="swatch" style="background:#fff"></span>White / Yellow</div></td><td><div class="color-swatch"><span class="swatch" style="background:#111"></span>Black/Dark blue/Red</div></td><td class="note-cell">Snowflake / ice crystal icon</td><td><div class="user-tags"><span class="user-tag">A,9 (slippery road)</span></div></td><td class="note-cell">Specifies ice/snow as cause</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- EMPTY STATE -->
+<div class="empty" id="empty-state" style="display:none">
+  <div class="empty-mono" id="empty-query"></div>
+  <div>No signs match your search.</div>
+</div>
+
+</div><!-- /content -->
+</div><!-- /main -->
+
+<script>
+var currentFilter = 'all';
+
+function setFilter(sec, btn) {
+  currentFilter = sec;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  filterRows();
+}
+
+function filterRows() {
+  var q = document.getElementById('search').value.toLowerCase().trim();
+  var rows = document.querySelectorAll('tr[data-sec]');
+  var visible = 0;
+
+  rows.forEach(function(row) {
+    var sec = row.getAttribute('data-sec');
+    var txt = row.getAttribute('data-search').toLowerCase();
+    var cellText = row.textContent.toLowerCase();
+    var combined = txt + ' ' + cellText;
+
+    var secMatch = (currentFilter === 'all' || sec === currentFilter);
+    var qMatch = !q || combined.includes(q);
+
+    if (secMatch && qMatch) {
+      row.classList.remove('hidden');
+      visible++;
+    } else {
+      row.classList.add('hidden');
+    }
+  });
+
+  document.getElementById('count-badge').textContent = visible + ' sign' + (visible !== 1 ? 's' : '');
+  document.getElementById('empty-state').style.display = visible === 0 ? 'block' : 'none';
+  if (visible === 0) {
+    document.getElementById('empty-query').textContent = '"' + (q || currentFilter) + '"';
+  }
+
+  // hide/show section headers
+  ['A','B','C','D','E','F','G','H'].forEach(function(s) {
+    var secDiv = document.getElementById('sec' + s);
+    if (!secDiv) return;
+    var hasVisible = secDiv.querySelectorAll('tr[data-sec="' + s + '"]:not(.hidden)').length > 0;
+    var shouldShow = (currentFilter === 'all' || currentFilter === s);
+    secDiv.style.display = (shouldShow && (hasVisible || !q)) ? 'block' : 'none';
+  });
+}
+
+function scrollTo(id) {
+  var el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+function copyBlock(btn) {
+  var block = btn.closest('.owl-block');
+  var text = block.innerText.replace(/^copy\n/, '');
+  navigator.clipboard.writeText(text).then(function() {
+    btn.textContent = 'copied!';
+    setTimeout(function() { btn.textContent = 'copy'; }, 1500);
+  });
+}
+
+// Keyboard shortcut: Ctrl/Cmd+F focuses search
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+    e.preventDefault();
+    document.getElementById('search').focus();
+  }
+});
+
+filterRows();
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+# Python / virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# macOS / OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Protégé / ontology editor backup artifacts
+*.owl~
+*.rdf~
+*.ttl~
+*.omn~
+*.ofn~
+*.owl.bak
+*.rdf.bak
+*.ttl.bak
+
+# Generated or intermediate data
+data/processed/*
+!data/processed/.gitkeep
+
+# Local reports / scratch validation outputs
+results/tmp/
+results/*.tmp
+results/*.log
+
+# Build/cache directories
+.cache/
+dist/
+build/
+
+# The MTSD.ttl file as it is too large for github (>100mb)
+data/raw/MTSD.ttl
