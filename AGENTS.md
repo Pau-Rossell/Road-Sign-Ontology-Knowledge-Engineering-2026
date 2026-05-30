@@ -211,7 +211,7 @@ PROMPT_LOG_ENTRY_START
 
 ENTRY_ID: PL-0001
 
-DATE_TIME: YYYY-MM-DD HH
+DATE: YYYY-MM-DD
 
 LLM_USED: model name or UNKNOWN
 
@@ -258,8 +258,8 @@ PROMPT LOG ENTRY RULES
 * ENTRY_ID uses sequential numbering: PL-0001, PL-0002, PL-0003, and so on.
 * Before appending a new entry, docs/prompt_log.md is inspected to find the latest existing ENTRY_ID.
 * If no previous entry exists, numbering starts at PL-0001.
-* DATE_TIME uses the current local date and time if available.
-* If exact time is unavailable, the date is used and the time is written as UNKNOWN.
+* DATE uses the current local date if available.
+* Local time does not need to be stated.
 * USER_PROMPT contains the user prompt verbatim, not a paraphrase.
 * FILES_READ lists only files actually inspected or used.
 * FILES_CREATED_OR_MODIFIED lists only files actually created or modified.
