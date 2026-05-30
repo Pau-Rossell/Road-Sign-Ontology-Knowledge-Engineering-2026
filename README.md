@@ -1,7 +1,7 @@
 ### KNOWLEDGE ENGINEERING: ROAD SIGN ONTOLOGY PROJECT README
 This file contains the basic information on the project structure. For starters, the contents of the directory follow the following structure:
 
-###
+```
 project/
 ├── ontology/
 │   └── roadSignOntology.owl
@@ -27,4 +27,4 @@ project/
 │   ├── figures/
 │   └── screenshots/
 └── README.md
-###
+```
