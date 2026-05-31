@@ -259,6 +259,79 @@ PROMPT_LOG_ENTRY_END
 
 PROMPT_LOG_ENTRY_START
 
+ENTRY_ID: PL-0015
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+do the necessary changes in the ontology to answer the CQ left
+PROMPT_END
+
+TASK_TYPE:
+ontology_modelling
+
+FILES_READ:
+
+* ontology/roadSignOntology.owl
+* scripts/html/qc_code/answerability_matrix.md
+* scripts/html/qc_code/cq08_b2a_stop_colours.dl.txt
+* scripts/html/qc_code/cq09_circle_sign_border_colours.dl.txt
+* scripts/html/qc_code/cq10_danger_warning_standard_size.rq
+* scripts/html/qc_code/cq15_pedestrian_relevant_signs.dl.txt
+* scripts/html/qc_code/cq16_falling_rocks_symbol.rq
+* scripts/html/qc_code/cq17_a15_crossing_symbol.rq
+* scripts/html/qc_code/cq18_large_vehicle_restrictions.dl.txt
+* scripts/html/qc_code/cq19_bicycle_only_signs.dl.txt
+* docs/prompt_log.md
+* c:\Users\alexa\Downloads\Vienna_Convention_Parsed.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* ontology/roadSignOntology.owl - modified
+* scripts/html/qc_code/answerability_matrix.md - modified
+* scripts/html/qc_code/cq08_b2a_stop_colours.dl.txt - modified
+* scripts/html/qc_code/cq09_circle_sign_border_colours.dl.txt - modified
+* scripts/html/qc_code/cq10_danger_warning_standard_size.rq - modified
+* scripts/html/qc_code/cq15_pedestrian_relevant_signs.dl.txt - modified
+* scripts/html/qc_code/cq16_falling_rocks_symbol.rq - modified
+* scripts/html/qc_code/cq17_a15_crossing_symbol.rq - modified
+* scripts/html/qc_code/cq18_large_vehicle_restrictions.dl.txt - modified
+* scripts/html/qc_code/cq19_bicycle_only_signs.dl.txt - modified
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Extended the ontology with CQ-oriented modelling additions: explicit STOP sign colours, a standard side-length value for a normal-sized danger warning sign, explicit falling-rock and animal-crossing symbols, and explicit applicability/exclusivity properties for pedestrian, cycle, and large-vehicle-related signs. Updated the CQ query pack and answerability matrix accordingly.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* Added `appliesToCategory` and `appliesExclusivelyToCategory` with a lightweight `TrafficParticipantCategory` pattern instead of overhauling the full sign semantics.
+* Added `NormalSizedDangerWarningSign` with `hasStandardSideLength = 0.90` to support CQ-10 conservatively; this value should be checked manually against the intended Vienna source passage.
+* Kept CQ-14 partial because the ontology still does not encode concrete speed-limit values across a value-specific sign inventory.
+* Left CQ-20 to CQ-25 unresolved because MTSD source data is still absent from the repository.
+
+VALIDATION_STATUS:
+requires_manual_check
+
+MANUAL_REVIEW_REQUIRED:
+
+* Review the new applicability and standard-size modelling in Protégé and confirm it matches your intended interpretation of the competency questions.
+* Decide whether you want to add a value-specific speed-limit hierarchy to fully answer CQ-14.
+
+NEXT_RECOMMENDED_ACTION:
+
+* Run the updated DL/SPARQL CQ queries in Protégé and then decide whether to model concrete speed-limit sign values or restore the MTSD dataset for CQ-20 to CQ-25.
+
+PROMPT_LOG_ENTRY_END
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
 ENTRY_ID: PL-0014
 
 DATE: 2026-05-31

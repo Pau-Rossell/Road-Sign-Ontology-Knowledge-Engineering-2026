@@ -16,7 +16,7 @@ Status meanings:
 | CQ-07 | yes | The `DangerWarningSign` hierarchy is present. |
 | CQ-08 | yes | `B2a_Stop_Octagon` now carries explicit ground, border, and inscription colour axioms. |
 | CQ-09 | yes | Circle-sign families now expose explicit border colours that can be queried. |
-| CQ-10 | yes | `NormalSizedDangerWarningSign` now carries an explicit `hasStandardSideLength` value. |
+| CQ-10 | yes | `NormalSizedDangerWarningSign` now carries an explicit `hasStandardSideLength` value, but the `0.90` value should be verified against your source text. |
 | CQ-11 | yes | `B1_GiveWay` has shape `InvertedTriangle`. |
 | CQ-12 | partial | Many category/sign classes have shape axioms, but not every class is fully covered. |
 | CQ-13 | yes | Many sign classes carry blue-ground restrictions and can be queried directly. |
