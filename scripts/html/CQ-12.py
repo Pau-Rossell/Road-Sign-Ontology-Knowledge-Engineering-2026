@@ -1,7 +1,7 @@
 from owlready2 import *
 
 # Load the ontology
-onto_path.append(".")
+onto_path.append("./ontology")
 onto = get_ontology("roadSignOntology.owl").load()
 
 with onto:
