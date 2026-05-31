@@ -3883,6 +3883,4782 @@
         <Class IRI="#St._Andrew&apos;s_cross"/>
         <Class IRI="#Symbol"/>
     </SubClassOf>
+    <!-- A-D sign property restrictions generated from Vienna Convention Part I, Annex 1 and ViennaConvention_Protege_Reference2.html. -->
+    <SubClassOf>
+        <Class IRI="#A10a_LooseGravel_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A10a_LooseGravel_Triangle"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A10a_LooseGravel_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A10a_LooseGravel_Triangle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Car_throwing_up_loose_stones"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A10b_LooseGravel_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A10b_LooseGravel_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A10b_LooseGravel_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A10b_LooseGravel_Diamond"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Car_throwing_up_loose_stones"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A11a_FallingRocks_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A11a_FallingRocks_Triangle"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A11a_FallingRocks_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A11a_FallingRocks_Triangle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Falling_rocks"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A11b_FallingRocks_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A11b_FallingRocks_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A11b_FallingRocks_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A11b_FallingRocks_Diamond"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Falling_rocks"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A12a_PedestrianCrossingAhead_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A12a_PedestrianCrossingAhead_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A12a_PedestrianCrossingAhead_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A12a_PedestrianCrossingAhead_ModelA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A12b_PedestrianCrossingAhead_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A12b_PedestrianCrossingAhead_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A12b_PedestrianCrossingAhead_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A12b_PedestrianCrossingAhead_ModelB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A13_Children"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A13_Children"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A13_Children"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A13_Children"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Children_running"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A14_CyclistsEnteringOrCrossing"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A14_CyclistsEnteringOrCrossing"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A14_CyclistsEnteringOrCrossing"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A14_CyclistsEnteringOrCrossing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A15a_DomesticAnimalsCrossing"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A15a_DomesticAnimalsCrossing"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A15a_DomesticAnimalsCrossing"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A15a_DomesticAnimalsCrossing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Animal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A15b_WildAnimalsCrossing"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A15b_WildAnimalsCrossing"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A15b_WildAnimalsCrossing"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A15b_WildAnimalsCrossing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Animal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A16_RoadWorks"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A16_RoadWorks"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A16_RoadWorks"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A17a_LightSignals_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A17a_LightSignals_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A17a_LightSignals_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A17b_LightSignals_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A17b_LightSignals_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A17b_LightSignals_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A17c_LightSignals_ModelC"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A17c_LightSignals_ModelC"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A17c_LightSignals_ModelC"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18a_GeneralPriorityIntersection_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18a_GeneralPriorityIntersection_Triangle"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18a_GeneralPriorityIntersection_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18b_GeneralPriorityIntersection_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18b_GeneralPriorityIntersection_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18b_GeneralPriorityIntersection_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18c_GeneralPriorityIntersection_Crossroads"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18c_GeneralPriorityIntersection_Crossroads"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18c_GeneralPriorityIntersection_Crossroads"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18d_GeneralPriorityIntersection_TJunction"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18d_GeneralPriorityIntersection_TJunction"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18d_GeneralPriorityIntersection_TJunction"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18d_GeneralPriorityIntersection_TJunction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#T-shaped_symbol"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18e_GeneralPriorityIntersection_Staggered"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18e_GeneralPriorityIntersection_Staggered"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18e_GeneralPriorityIntersection_Staggered"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18f_GeneralPriorityIntersection_YJunction"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18f_GeneralPriorityIntersection_YJunction"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18f_GeneralPriorityIntersection_YJunction"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19a_PriorityRoadIntersection_Cross"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19a_PriorityRoadIntersection_Cross"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19a_PriorityRoadIntersection_Cross"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19a_PriorityRoadIntersection_Cross"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Broad_and_thin_lines"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19b_PriorityRoadIntersection_T"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19b_PriorityRoadIntersection_T"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19b_PriorityRoadIntersection_T"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19b_PriorityRoadIntersection_T"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Broad_and_thin_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#T-shaped_symbol"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19c_PriorityRoadIntersection_SideRoad"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19c_PriorityRoadIntersection_SideRoad"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19c_PriorityRoadIntersection_SideRoad"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A19c_PriorityRoadIntersection_SideRoad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Broad_and_thin_lines"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1a_LeftBend"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1a_LeftBend"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1a_LeftBend"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1b_RightBend"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1b_RightBend"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1b_RightBend"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1c_DoubleBendLeftFirst"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1c_DoubleBendLeftFirst"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1c_DoubleBendLeftFirst"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1d_DoubleBendRightFirst"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1d_DoubleBendRightFirst"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A1d_DoubleBendRightFirst"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A20_GiveWayAhead"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A20_GiveWayAhead"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A20_GiveWayAhead"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A21a_StopAhead_Octagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A21a_StopAhead_Octagon"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A21a_StopAhead_Octagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A21a_StopAhead_Octagon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A21b_StopAhead_Circular"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A21b_StopAhead_Circular"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A21b_StopAhead_Circular"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A21b_StopAhead_Circular"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A22_Roundabout"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A22_Roundabout"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A22_Roundabout"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A22_Roundabout"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A23_TwoWayTraffic"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A23_TwoWayTraffic"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A23_TwoWayTraffic"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A23_TwoWayTraffic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A24_TrafficCongestion"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A24_TrafficCongestion"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A24_TrafficCongestion"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A24_TrafficCongestion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Line_of_cars"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A25_LevelCrossingWithGates"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A25_LevelCrossingWithGates"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A25_LevelCrossingWithGates"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A25_LevelCrossingWithGates"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Gate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A26a_LevelCrossingWithoutGates_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A26a_LevelCrossingWithoutGates_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A26a_LevelCrossingWithoutGates_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A26a_LevelCrossingWithoutGates_ModelA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Train"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A26b_LevelCrossingWithoutGates_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A26b_LevelCrossingWithoutGates_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A26b_LevelCrossingWithoutGates_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A26b_LevelCrossingWithoutGates_ModelB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Train"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A27_TramwayLine"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A27_TramwayLine"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A27_TramwayLine"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A27_TramwayLine"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Tramway"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28a_SaintAndrewsCross_SingleTrack"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#St.Andrew'sCross"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28a_SaintAndrewsCross_SingleTrack"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28a_SaintAndrewsCross_SingleTrack"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28a_SaintAndrewsCross_SingleTrack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#St._Andrew's_cross"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28b_SaintAndrewsCross_MultipleTracks"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#St.Andrew'sCross"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28b_SaintAndrewsCross_MultipleTracks"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28b_SaintAndrewsCross_MultipleTracks"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28b_SaintAndrewsCross_MultipleTracks"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#St._Andrew's_cross"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28c_LevelCrossingTrackCountPanel"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28c_LevelCrossingTrackCountPanel"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28c_LevelCrossingTrackCountPanel"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A28c_LevelCrossingTrackCountPanel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Number"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A29a_CountdownBeacon_ThreeBars"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A29a_CountdownBeacon_ThreeBars"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A29a_CountdownBeacon_ThreeBars"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Oblique_red_or_white_bars"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A29b_CountdownBeacon_TwoBars"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A29b_CountdownBeacon_TwoBars"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A29b_CountdownBeacon_TwoBars"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Oblique_red_or_white_bars"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A29c_CountdownBeacon_OneBar"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A29c_CountdownBeacon_OneBar"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A29c_CountdownBeacon_OneBar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Oblique_red_or_white_bars"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2a_DangerousDescent_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2a_DangerousDescent_Triangle"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2a_DangerousDescent_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2a_DangerousDescent_Triangle"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Profile_of_a_steep_gradient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2b_DangerousDescent_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2b_DangerousDescent_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2b_DangerousDescent_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2b_DangerousDescent_Diamond"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Profile_of_a_steep_gradient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2c_DangerousDescent_AlternativeTriangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2c_DangerousDescent_AlternativeTriangle"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2c_DangerousDescent_AlternativeTriangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2c_DangerousDescent_AlternativeTriangle"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Profile_of_a_steep_gradient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2d_DangerousDescent_AlternativeDiamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2d_DangerousDescent_AlternativeDiamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2d_DangerousDescent_AlternativeDiamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A2d_DangerousDescent_AlternativeDiamond"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Profile_of_a_steep_gradient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A30_Airfield"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A30_Airfield"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A30_Airfield"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A30_Airfield"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Airplane"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A31_CrossWind"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A31_CrossWind"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A31_CrossWind"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A31_CrossWind"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Windsock"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A32_OtherDangers"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A32_OtherDangers"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A32_OtherDangers"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A32_OtherDangers"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Exclamation_mark"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3a_SteepAscent_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3a_SteepAscent_Triangle"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3a_SteepAscent_Triangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3a_SteepAscent_Triangle"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Profile_of_a_steep_gradient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3b_SteepAscent_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3b_SteepAscent_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3b_SteepAscent_Diamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3b_SteepAscent_Diamond"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Profile_of_a_steep_gradient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3c_SteepAscent_AlternativeTriangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Triangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3c_SteepAscent_AlternativeTriangle"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3c_SteepAscent_AlternativeTriangle"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3c_SteepAscent_AlternativeTriangle"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Profile_of_a_steep_gradient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3d_SteepAscent_AlternativeDiamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3d_SteepAscent_AlternativeDiamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3d_SteepAscent_AlternativeDiamond"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A3d_SteepAscent_AlternativeDiamond"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Profile_of_a_steep_gradient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A4a_CarriagewayNarrows"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A4a_CarriagewayNarrows"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A4a_CarriagewayNarrows"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A4a_CarriagewayNarrows"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Road_outline_lines_narrowing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A4b_CarriagewayNarrowsAlternative"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A4b_CarriagewayNarrowsAlternative"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A4b_CarriagewayNarrowsAlternative"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A4b_CarriagewayNarrowsAlternative"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Road_outline_lines_narrowing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A5_SwingBridge"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A5_SwingBridge"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A5_SwingBridge"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A5_SwingBridge"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Swing_bridge_span"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A6_RoadLeadsOnToQuayOrRiverBank"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A6_RoadLeadsOnToQuayOrRiverBank"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A6_RoadLeadsOnToQuayOrRiverBank"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A6_RoadLeadsOnToQuayOrRiverBank"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Car_falling_into_water"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7a_UnevenRoad"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7a_UnevenRoad"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7a_UnevenRoad"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7a_UnevenRoad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Profile_of_an_uneven_road"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7b_HumpBridgeOrRidge"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7b_HumpBridgeOrRidge"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7b_HumpBridgeOrRidge"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7b_HumpBridgeOrRidge"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Profile_of_an_uneven_road"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7c_Dip"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7c_Dip"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7c_Dip"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A7c_Dip"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Profile_of_an_uneven_road"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A8_DangerousShoulders"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A8_DangerousShoulders"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A8_DangerousShoulders"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A8_DangerousShoulders"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Car_tilting_over_a_verge"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A9_SlipperyRoad"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Triangle"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasShape"/>
+                <NamedIndividual IRI="#Diamond"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A9_SlipperyRoad"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A9_SlipperyRoad"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Black"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A9_SlipperyRoad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Car_skidding"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B1_GiveWay"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#InvertedTriangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B1_GiveWay"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B1_GiveWay"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2a_Stop_Octagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Octagon"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2a_Stop_Octagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2a_Stop_Octagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2a_Stop_Octagon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2b_Stop_Circular"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2b_Stop_Circular"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2b_Stop_Circular"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2b_Stop_Circular"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B3_PriorityRoad"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B3_PriorityRoad"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B3_PriorityRoad"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B4_EndOfPriority"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B4_EndOfPriority"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B4_EndOfPriority"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B4_EndOfPriority"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B5_PriorityForOncomingTraffic"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B5_PriorityForOncomingTraffic"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B5_PriorityForOncomingTraffic"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B5_PriorityForOncomingTraffic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B6_PriorityOverOncomingTraffic"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B6_PriorityOverOncomingTraffic"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B6_PriorityOverOncomingTraffic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C10_MinimumDistanceBetweenVehiclesProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C10_MinimumDistanceBetweenVehiclesProhibited"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C10_MinimumDistanceBetweenVehiclesProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C10_MinimumDistanceBetweenVehiclesProhibited"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Dimension_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11a_NoLeftTurn"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11a_NoLeftTurn"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11a_NoLeftTurn"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11a_NoLeftTurn"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11b_NoRightTurn"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11b_NoRightTurn"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11b_NoRightTurn"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11b_NoRightTurn"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C12_NoUTurn"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C12_NoUTurn"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C12_NoUTurn"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C12_NoUTurn"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13aa_OvertakingProhibited_ModelA"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13aa_OvertakingProhibited_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13aa_OvertakingProhibited_ModelA"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13aa_OvertakingProhibited_ModelA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Car"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13ab_OvertakingProhibited_ModelB"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13ab_OvertakingProhibited_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13ab_OvertakingProhibited_ModelB"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13ab_OvertakingProhibited_ModelB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Car"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13ba_OvertakingByGoodsVehiclesProhibited_ModelA"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13ba_OvertakingByGoodsVehiclesProhibited_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13ba_OvertakingByGoodsVehiclesProhibited_ModelA"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13ba_OvertakingByGoodsVehiclesProhibited_ModelA"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Goods_vehicle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Car"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13bb_OvertakingByGoodsVehiclesProhibited_ModelB"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13bb_OvertakingByGoodsVehiclesProhibited_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13bb_OvertakingByGoodsVehiclesProhibited_ModelB"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13bb_OvertakingByGoodsVehiclesProhibited_ModelB"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Goods_vehicle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Car"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Number"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasSpeedValue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C15_AudibleWarningDevicesProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C15_AudibleWarningDevicesProhibited"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C15_AudibleWarningDevicesProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C15_AudibleWarningDevicesProhibited"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Horn_crossed_by_an_oblique_bar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C16_PassingWithoutStoppingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C16_PassingWithoutStoppingProhibited"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C16_PassingWithoutStoppingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C16_PassingWithoutStoppingProhibited"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17a_EndOfAllLocalProhibitionsForMovingVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17a_EndOfAllLocalProhibitionsForMovingVehicles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17a_EndOfAllLocalProhibitionsForMovingVehicles"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17b_EndOfSpeedLimit"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17b_EndOfSpeedLimit"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17b_EndOfSpeedLimit"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17b_EndOfSpeedLimit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasSpeedValue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17c_EndOfOvertakingProhibition"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17c_EndOfOvertakingProhibition"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17c_EndOfOvertakingProhibition"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Car"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17d_EndOfGoodsVehicleOvertakingProhibition"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17d_EndOfGoodsVehicleOvertakingProhibition"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C17d_EndOfGoodsVehicleOvertakingProhibition"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Goods_vehicle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Car"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C18_ParkingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C18_ParkingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C18_ParkingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C18_ParkingProhibited"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Transverse_red_bar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C19_StandingAndParkingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C19_StandingAndParkingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C19_StandingAndParkingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C19_StandingAndParkingProhibited"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Crossed_red_bars"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C1a_NoEntry_ModelA"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C1a_NoEntry_ModelA"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C1a_NoEntry_ModelA"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C1a_NoEntry_ModelA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Horizontal_bar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C1b_NoEntry_ModelB"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C1b_NoEntry_ModelB"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C1b_NoEntry_ModelB"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C1b_NoEntry_ModelB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Horizontal_bar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C20a_AlternateParkingOddDates"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C20a_AlternateParkingOddDates"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C20a_AlternateParkingOddDates"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C20a_AlternateParkingOddDates"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Number"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C20b_AlternateParkingEvenDates"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C20b_AlternateParkingEvenDates"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C20b_AlternateParkingEvenDates"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C20b_AlternateParkingEvenDates"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Number"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C2_ClosedToAllVehiclesInBothDirections"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C2_ClosedToAllVehiclesInBothDirections"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C2_ClosedToAllVehiclesInBothDirections"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3a_NoEntryForPowerDrivenVehiclesExceptTwoWheeledMotorCyclesWithoutSideCar"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3a_NoEntryForPowerDrivenVehiclesExceptTwoWheeledMotorCyclesWithoutSideCar"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3a_NoEntryForPowerDrivenVehiclesExceptTwoWheeledMotorCyclesWithoutSideCar"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3a_NoEntryForPowerDrivenVehiclesExceptTwoWheeledMotorCyclesWithoutSideCar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Vehicle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3b_NoEntryForMotorcycles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3b_NoEntryForMotorcycles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3b_NoEntryForMotorcycles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3b_NoEntryForMotorcycles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Motorcycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3c_NoEntryForCycles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3c_NoEntryForCycles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3c_NoEntryForCycles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3c_NoEntryForCycles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3d_NoEntryForMopeds"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3d_NoEntryForMopeds"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3d_NoEntryForMopeds"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3d_NoEntryForMopeds"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Moped"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3e_NoEntryForGoodsVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3e_NoEntryForGoodsVehicles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3e_NoEntryForGoodsVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3e_NoEntryForGoodsVehicles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Goods_vehicle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3f_NoEntryForPowerDrivenVehiclesDrawingTrailerExceptSemiTrailerOrSingleAxleTrailer"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3f_NoEntryForPowerDrivenVehiclesDrawingTrailerExceptSemiTrailerOrSingleAxleTrailer"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3f_NoEntryForPowerDrivenVehiclesDrawingTrailerExceptSemiTrailerOrSingleAxleTrailer"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3f_NoEntryForPowerDrivenVehiclesDrawingTrailerExceptSemiTrailerOrSingleAxleTrailer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Vehicle_with_trailer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3g_NoEntryForPowerDrivenVehiclesDrawingTrailer"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3g_NoEntryForPowerDrivenVehiclesDrawingTrailer"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3g_NoEntryForPowerDrivenVehiclesDrawingTrailer"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3g_NoEntryForPowerDrivenVehiclesDrawingTrailer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Vehicle_with_trailer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3h_NoEntryForDangerousGoodsVehiclesRequiringSpecialSignPlating"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3h_NoEntryForDangerousGoodsVehiclesRequiringSpecialSignPlating"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3h_NoEntryForDangerousGoodsVehiclesRequiringSpecialSignPlating"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3h_NoEntryForDangerousGoodsVehiclesRequiringSpecialSignPlating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3i_NoEntryForPedestrians"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3i_NoEntryForPedestrians"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3i_NoEntryForPedestrians"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3i_NoEntryForPedestrians"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3j_NoEntryForAnimalDrawnVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3j_NoEntryForAnimalDrawnVehicles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3j_NoEntryForAnimalDrawnVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3j_NoEntryForAnimalDrawnVehicles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Animal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3k_NoEntryForHandcarts"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3k_NoEntryForHandcarts"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3k_NoEntryForHandcarts"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3k_NoEntryForHandcarts"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Handcart"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3l_NoEntryForAgriculturalVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3l_NoEntryForAgriculturalVehicles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3l_NoEntryForAgriculturalVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3l_NoEntryForAgriculturalVehicles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Tractor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C4a_NoEntryForPowerDrivenVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C4a_NoEntryForPowerDrivenVehicles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C4a_NoEntryForPowerDrivenVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C4a_NoEntryForPowerDrivenVehicles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Vehicle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C4b_NoEntryForPowerDrivenOrAnimalDrawnVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C4b_NoEntryForPowerDrivenOrAnimalDrawnVehicles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C4b_NoEntryForPowerDrivenOrAnimalDrawnVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C4b_NoEntryForPowerDrivenOrAnimalDrawnVehicles"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Animal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C5_NoEntryForVehiclesExceedingWidth"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C5_NoEntryForVehiclesExceedingWidth"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C5_NoEntryForVehiclesExceedingWidth"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C5_NoEntryForVehiclesExceedingWidth"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Dimension_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C6_NoEntryForVehiclesExceedingHeight"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C6_NoEntryForVehiclesExceedingHeight"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C6_NoEntryForVehiclesExceedingHeight"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C6_NoEntryForVehiclesExceedingHeight"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Dimension_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C6_NoEntryForVehiclesExceedingHeight"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasHeightLimitValue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C7_NoEntryForVehiclesExceedingLadenMass"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C7_NoEntryForVehiclesExceedingLadenMass"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C7_NoEntryForVehiclesExceedingLadenMass"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C7_NoEntryForVehiclesExceedingLadenMass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Number"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C8_NoEntryForVehiclesExceedingAxleMass"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C8_NoEntryForVehiclesExceedingAxleMass"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C8_NoEntryForVehiclesExceedingAxleMass"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C8_NoEntryForVehiclesExceedingAxleMass"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Axle_silhouette"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C9_NoEntryForVehiclesExceedingLength"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C9_NoEntryForVehiclesExceedingLength"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C9_NoEntryForVehiclesExceedingLength"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C9_NoEntryForVehiclesExceedingLength"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Dimension_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10a_CompulsoryDirectionForDangerousGoods_Straight"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10a_CompulsoryDirectionForDangerousGoods_Straight"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10a_CompulsoryDirectionForDangerousGoods_Straight"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10a_CompulsoryDirectionForDangerousGoods_Straight"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10b_CompulsoryDirectionForDangerousGoods_Turn"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10b_CompulsoryDirectionForDangerousGoods_Turn"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10b_CompulsoryDirectionForDangerousGoods_Turn"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10b_CompulsoryDirectionForDangerousGoods_Turn"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10c_CompulsoryDirectionForDangerousGoods_Junction"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10c_CompulsoryDirectionForDangerousGoods_Junction"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10c_CompulsoryDirectionForDangerousGoods_Junction"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10c_CompulsoryDirectionForDangerousGoods_Junction"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D11a_CompulsorySharedPath_Segregated"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D11a_CompulsorySharedPath_Segregated"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D11a_CompulsorySharedPath_Segregated"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D11a_CompulsorySharedPath_Segregated"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Cycle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Pedestrian"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Median_band"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D11b_CompulsorySharedPath_Unsegregated"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D11b_CompulsorySharedPath_Unsegregated"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D11b_CompulsorySharedPath_Unsegregated"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D11b_CompulsorySharedPath_Unsegregated"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Cycle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Pedestrian"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1a_DirectionToBeFollowed"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1a_DirectionToBeFollowed"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1a_DirectionToBeFollowed"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1a_DirectionToBeFollowed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1b_DirectionToBeFollowed_Alternative"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1b_DirectionToBeFollowed_Alternative"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1b_DirectionToBeFollowed_Alternative"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1b_DirectionToBeFollowed_Alternative"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D2_PassThisSide"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D2_PassThisSide"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D2_PassThisSide"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D2_PassThisSide"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D3_CompulsoryRoundabout"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D3_CompulsoryRoundabout"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D3_CompulsoryRoundabout"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D3_CompulsoryRoundabout"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D4_CompulsoryCycleTrack"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D4_CompulsoryCycleTrack"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D4_CompulsoryCycleTrack"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D4_CompulsoryCycleTrack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D5_CompulsoryFootpath"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D5_CompulsoryFootpath"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D5_CompulsoryFootpath"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D5_CompulsoryFootpath"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D6_CompulsoryTrackForRidersOnHorseback"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D6_CompulsoryTrackForRidersOnHorseback"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D6_CompulsoryTrackForRidersOnHorseback"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D6_CompulsoryTrackForRidersOnHorseback"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Rider_on_horseback"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D7_CompulsoryMinimumSpeed"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D7_CompulsoryMinimumSpeed"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D7_CompulsoryMinimumSpeed"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D7_CompulsoryMinimumSpeed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Number"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D7_CompulsoryMinimumSpeed"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasSpeedValue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D8_EndOfCompulsoryMinimumSpeed"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D8_EndOfCompulsoryMinimumSpeed"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D8_EndOfCompulsoryMinimumSpeed"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D8_EndOfCompulsoryMinimumSpeed"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D8_EndOfCompulsoryMinimumSpeed"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasSpeedValue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D9_SnowChainsCompulsory"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D9_SnowChainsCompulsory"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D9_SnowChainsCompulsory"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBorderColour"/>
+                <NamedIndividual IRI="#Red"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D9_SnowChainsCompulsory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Tire_fitted_with_snow_chains"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#AdditionalPanel"/>
         <Class IRI="#DangerWarningSign"/>

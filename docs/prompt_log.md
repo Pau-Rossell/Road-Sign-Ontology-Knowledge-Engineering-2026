@@ -567,3 +567,53 @@ NEXT_RECOMMENDED_ACTION:
 * Correct the C14-C16 parentage under ProhibitoryOrRestrictiveSign and add or rename omitted DangerWarningSign model variants.
 
 PROMPT_LOG_ENTRY_END
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
+ENTRY_ID: PL-0005
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+Are the current properties (object and data) and classes present in [roadSignOntology.owl](ontology/roadSignOntology.owl) enough to asnwer our competency questions [competency_questions.md](docs/competency_questions.md) ? If not, explain why and what is missing.
+PROMPT_END
+
+TASK_TYPE:
+competency_questions
+
+FILES_READ:
+
+* ontology/roadSignOntology.owl
+* docs/competency_questions.md
+* docs/prompt_log.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Assessed whether the current ontology classes, object properties, data properties, and restrictions are sufficient for the listed competency questions. Found that taxonomy and many visual-property questions are mostly supported, but concrete measurements, exact speed values, road-user applicability semantics, exclusivity, normative meaning, and MTSD observation/alignment properties are missing or only partially modelled.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* No ontology changes were made; the assessment distinguishes between questions answerable from current class/restriction structure and questions requiring additional modelling or MTSD processing.
+
+VALIDATION_STATUS:
+requires_manual_check
+
+MANUAL_REVIEW_REQUIRED:
+
+* Decide whether to add explicit applicability, regulation-type, measurement, and MTSD-alignment properties to the ontology or handle some competency questions procedurally in Python.
+
+NEXT_RECOMMENDED_ACTION:
+
+* Add explicit road-user applicability and MTSD observation/alignment properties before implementing the remaining competency-question queries.
+
+PROMPT_LOG_ENTRY_END
