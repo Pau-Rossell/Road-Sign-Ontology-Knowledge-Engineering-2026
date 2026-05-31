@@ -118,3 +118,50 @@ Method: DL query
 
 RoadSign and hasGroundColour value Blue
 
+Category C — Pragmatics
+Meaning, applicability, and relevance.
+
+### CQ-15
+Question: Which road signs are relevant to pedestrians?
+
+Method: DL query
+
+RoadSign and appliesTo value Pedestrian
+
+### CQ-16
+Question: Which danger warning symbol — A11a or A11b — must be used to warn of falling rocks?
+
+Method: SPARQL
+PREFIX rdfs: [http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#)
+PREFIX rs: [http://example.org/roadsigns#](http://example.org/roadsigns#)
+
+SELECT ?sign
+WHERE {
+    ?sign rdfs:subClassOf rs:DangerWarningSign .
+    ?sign rs:warnsOf rs:FallingRocks .
+}
+
+### CQ-17
+Question: What specific symbol is used on sign A15 to warn of cattle or other animals crossing?
+
+Method: SPARQL
+PREFIX rs: [http://example.org/roadsigns#](http://example.org/roadsigns#)
+
+SELECT ?symbol
+WHERE {
+    rs:A15_DomesticAnimalCrossing rs:hasSymbol ?symbol .
+}
+
+### CQ-18
+Question: Which signs impose a restriction applicable to lorries or other large vehicles?
+
+Method: DL query
+
+RoadSign and appliesTo value HeavyVehicle
+
+### CQ-19
+Question: Which road signs apply exclusively to bicycles?
+
+Method: DL query
+
+RoadSign and appliesTo only Bicycle
