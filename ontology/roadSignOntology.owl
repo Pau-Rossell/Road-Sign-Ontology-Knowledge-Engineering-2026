@@ -172,10 +172,22 @@
         <Class IRI="#AirfieldWarningSign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Airplane"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AlternateParkingSign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AnimalCrossingWarningSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arrows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Axle_silhouette"/>
     </Declaration>
     <Declaration>
         <Class IRI="#B1_GiveWay"/>
@@ -197,6 +209,18 @@
     </Declaration>
     <Declaration>
         <Class IRI="#B6_PriorityOverOncomingTraffic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bridge_over_dual_carriageway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broad_and_thin_lines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#C10_LessThanXDistanceBetweenVehiclesProhibited"/>
@@ -337,10 +361,31 @@
         <Class IRI="#C9_NoEntryForVehiclesExceedingLength"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car_falling_into_water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car_skidding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car_throwing_up_loose_stones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car_tilting_over_a_verge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caravan"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CarriagewayNarrowsWarningSign"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ChildrenWarningSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Children_running"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Colour"/>
@@ -349,7 +394,19 @@
         <Class IRI="#CombinedReservedPathCompulsory"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Country_name"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CrossWindWarningSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crossed_red_bars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cycle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CyclistsCrossingWarningSign"/>
@@ -419,6 +476,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#DetectedSignObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagonal_band"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimension_lines"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DirectionSign"/>
@@ -544,6 +607,12 @@
         <Class IRI="#EntryProhibitionOrRestrictionSign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Exclamation_mark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extinguisher"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#F10_CampingSite"/>
     </Declaration>
     <Declaration>
@@ -589,7 +658,34 @@
         <Class IRI="#FallingRocksWarningSign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Falling_rocks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fork_and_spoon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gate"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GiveWaySign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goods_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Handcart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hiker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horizontal_bar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horn_crossed_by_an_oblique_bar"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InformationFacilityServiceSign"/>
@@ -598,7 +694,13 @@
         <Class IRI="#IntersectionWarningSign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Letters"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LightSignalsWarningSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Line_of_cars"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LooseGravelWarningSign"/>
@@ -607,7 +709,25 @@
         <Class IRI="#MandatorySign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Median_band"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moped"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motorcycle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NarrowSectionPrioritySign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#National_emblem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oblique_red_or_white_bars"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OtherDangerWarningSign"/>
@@ -616,13 +736,28 @@
         <Class IRI="#OvertakingProhibitionSign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Parallel_lines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pedestrian"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PedestrianCrossingWarningSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pedestrian_on_zebra_stripes"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PriorityRoadStatusSign"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PrioritySign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profile_of_a_steep_gradient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profile_of_an_uneven_road"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProhibitoryOrRestrictiveSign"/>
@@ -634,7 +769,13 @@
         <Class IRI="#RailwayOrTramwayWarningSign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Red_cross_or_crescent"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ReservedPathMandatorySign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rider_on_horseback"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RoadSign"/>
@@ -643,10 +784,22 @@
         <Class IRI="#RoadWorksWarningSign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Road_outline_lines_narrowing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Running_person_towards_a_door"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Shape"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SlipperyRoadWarningSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snow_crystal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spanner"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SpecialRegulationSign"/>
@@ -661,10 +814,43 @@
         <Class IRI="#SwingBridgeWarningSign"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Swing_bridge_span"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Symbol"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#T-shaped_symbol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Telephone_receiver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tire_fitted_with_snow_chains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tractor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TrafficCongestionWarningSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tramway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transverse_red_bar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tree_and_picnic_table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tunnel_opening"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TurningProhibitionSign"/>
@@ -677,6 +863,30 @@
     </Declaration>
     <Declaration>
         <Class IRI="#UnevenRoadWarningSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle_with_trailer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wheelchair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windsock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Words"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Youth_hostel_logo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#St._Andrew&apos;s_cross"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasBorderColour"/>
@@ -767,216 +977,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#St.Andrew&apos;sCross"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Car_throwing_up_loose_stones"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fork_and_spoon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Broad_and_thin_lines"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cycle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vehicle_carrying_dangerous_goods"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Animal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rider_on_horseback"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vehicle_with_trailer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tree_and_picnic_table"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snow_crystal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Red_cross_or_crescent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Caravan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Parallel_lines"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Train"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wheelchair"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gas"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Horn_crossed_by_an_oblique_bar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Running_person_towards_a_door"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Extinguisher"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bed"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Line_of_cars"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#T-shaped_symbol"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pedestrian_on_zebra_stripes"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vehicle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Handcart"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Telephone_receiver"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Letters"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Car_skidding"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Oblique_red_or_white_bars"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Axle_silhouette"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#St._Andrew&apos;s_cross"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Moped"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Crossed_red_bars"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Median_band"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Motorcycle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Car_tilting_over_a_verge"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Airplane"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Car_falling_into_water"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tramway"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Number"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Diagonal_band"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Country_name"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Horizontal_bar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Profile_of_a_steep_gradient"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Car"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pedestrian"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transverse_red_bar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#National_emblem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Swing_bridge_span"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Exclamation_mark"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Children_running"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hiker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tunnel_opening"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dimension_lines"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tire_fitted_with_snow_chains"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Goods_vehicle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Profile_of_an_uneven_road"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Arrows"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tractor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Falling_rocks"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Words"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Road_outline_lines_narrowing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spanner"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Windsock"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bridge_over_dual_carriageway"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Youth_hostel_logo"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#A10a_LooseGravel_Triangle"/>
@@ -1195,6 +1195,10 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Airplane"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AlternateParkingSign"/>
         <Class IRI="#StandingOrParkingRestrictionSign"/>
     </SubClassOf>
@@ -1257,6 +1261,10 @@
     <SubClassOf>
         <Class IRI="#Bus"/>
         <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C10_LessThanXDistanceBetweenVehiclesProhibited"/>
@@ -1447,6 +1455,10 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Car_falling_into_water"/>
         <Class IRI="#Symbol"/>
     </SubClassOf>
@@ -1465,6 +1477,10 @@
     <SubClassOf>
         <Class IRI="#Caravan"/>
         <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caravan"/>
+        <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CarriagewayNarrowsWarningSign"/>
@@ -1501,6 +1517,10 @@
     <SubClassOf>
         <Class IRI="#Cycle"/>
         <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cycle"/>
+        <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CyclistsCrossingWarningSign"/>
@@ -1611,148 +1631,1311 @@
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E10a_ExitFromParkingProhibitedZone"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10a_ExitFromParkingProhibitedZone"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10a_ExitFromParkingProhibitedZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10a_ExitFromParkingProhibitedZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E10b_ExitFromTimeBoundZone"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10b_ExitFromTimeBoundZone"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10b_ExitFromTimeBoundZone"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10b_ExitFromTimeBoundZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10b_ExitFromTimeBoundZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E10c_ExitFromParkingZone"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E10c_ExitFromParkingZone"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10c_ExitFromParkingZone"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10c_ExitFromParkingZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10c_ExitFromParkingZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E10d_ExitFromMaximumSpeedZone"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10d_ExitFromMaximumSpeedZone"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10d_ExitFromMaximumSpeedZone"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10d_ExitFromMaximumSpeedZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E10d_ExitFromMaximumSpeedZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E11a_Tunnel_Beginning"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E11a_Tunnel_Beginning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Tunnel_opening"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E11a_Tunnel_Beginning"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E11a_Tunnel_Beginning"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E11b_Tunnel_End"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E11b_Tunnel_End"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Tunnel_opening"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E11b_Tunnel_End"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E11b_Tunnel_End"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E12a_PedestrianCrossing_Standard"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E12a_PedestrianCrossing_Standard"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian_on_zebra_stripes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E12a_PedestrianCrossing_Standard"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E12a_PedestrianCrossing_Standard"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E12b_PedestrianCrossing_Pentagon"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E12b_PedestrianCrossing_Pentagon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian_on_zebra_stripes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E12b_PedestrianCrossing_Pentagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E12b_PedestrianCrossing_Pentagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E12c_PedestrianCrossing_Dark"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E12c_PedestrianCrossing_Dark"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian_on_zebra_stripes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E12c_PedestrianCrossing_Dark"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E12c_PedestrianCrossing_Dark"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E14a_Parking"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E14a_Parking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Letters"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E14a_Parking"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E14a_Parking"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E14b_Parking_PlusBus"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E14b_Parking_PlusBus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Letters"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E14b_Parking_PlusBus"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E14b_Parking_PlusBus"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E14c_Parking_PlusTrain"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E14c_Parking_PlusTrain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Letters"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E14c_Parking_PlusTrain"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E14c_Parking_PlusTrain"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E15_BusStop"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E15_BusStop"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Bus"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E15_BusStop"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E15_BusStop"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E16_TramwayStop"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E16_TramwayStop"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Tramway"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E16_TramwayStop"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E16_TramwayStop"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E1a_LaneMinimumSpeed_MultiLane"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E1a_LaneMinimumSpeed_MultiLane"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E1a_LaneMinimumSpeed_MultiLane"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E1a_LaneMinimumSpeed_MultiLane"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E1b_LaneMinimumSpeed_OneLane"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E1b_LaneMinimumSpeed_OneLane"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E1b_LaneMinimumSpeed_OneLane"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E1b_LaneMinimumSpeed_OneLane"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E1c_LaneMaximumSpeed_MultiLane"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E1c_LaneMaximumSpeed_MultiLane"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Number"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E1c_LaneMaximumSpeed_MultiLane"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E1c_LaneMaximumSpeed_MultiLane"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E2a_LaneReservedForBuses_Position"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E2a_LaneReservedForBuses_Position"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Bus"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E2a_LaneReservedForBuses_Position"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E2a_LaneReservedForBuses_Position"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E2b_LaneReservedForBuses_Entrance"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E2b_LaneReservedForBuses_Entrance"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Bus"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E2b_LaneReservedForBuses_Entrance"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E2b_LaneReservedForBuses_Entrance"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E3a_OneWaySign_Perpendicular"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E3a_OneWaySign_Perpendicular"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E3a_OneWaySign_Perpendicular"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E3a_OneWaySign_Perpendicular"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E3b_OneWaySign_Parallel"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E3b_OneWaySign_Parallel"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E3b_OneWaySign_Parallel"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E3b_OneWaySign_Parallel"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E5a_Motorway_Beginning"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E5a_Motorway_Beginning"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E5a_Motorway_Beginning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Bridge_over_dual_carriageway"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E5a_Motorway_Beginning"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E5b_Motorway_End"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E5b_Motorway_End"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E5b_Motorway_End"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Bridge_over_dual_carriageway"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E5b_Motorway_End"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E6a_RoadForMotorVehicles"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E6a_RoadForMotorVehicles"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Car"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E6a_RoadForMotorVehicles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E6a_RoadForMotorVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E6b_EndOfRoadForMotorVehicles"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E6b_EndOfRoadForMotorVehicles"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Car"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E6b_EndOfRoadForMotorVehicles"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E6b_EndOfRoadForMotorVehicles"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E7a_BeginningOfBuiltUpArea_Name"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7a_BeginningOfBuiltUpArea_Name"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7a_BeginningOfBuiltUpArea_Name"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7a_BeginningOfBuiltUpArea_Name"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7a_BeginningOfBuiltUpArea_Name"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E7b_BeginningOfBuiltUpArea_Silhouette"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E7b_BeginningOfBuiltUpArea_Silhouette"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7b_BeginningOfBuiltUpArea_Silhouette"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7b_BeginningOfBuiltUpArea_Silhouette"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7b_BeginningOfBuiltUpArea_Silhouette"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E7c_BeginningOfBuiltUpArea_Combined"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7c_BeginningOfBuiltUpArea_Combined"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7c_BeginningOfBuiltUpArea_Combined"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7c_BeginningOfBuiltUpArea_Combined"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7c_BeginningOfBuiltUpArea_Combined"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E7d_BeginningOfBuiltUpArea_Model4"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E7d_BeginningOfBuiltUpArea_Model4"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7d_BeginningOfBuiltUpArea_Model4"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7d_BeginningOfBuiltUpArea_Model4"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E7d_BeginningOfBuiltUpArea_Model4"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E8a_EndOfBuiltUpArea_Name"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8a_EndOfBuiltUpArea_Name"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8a_EndOfBuiltUpArea_Name"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8a_EndOfBuiltUpArea_Name"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8a_EndOfBuiltUpArea_Name"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E8b_EndOfBuiltUpArea_Silhouette"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E8b_EndOfBuiltUpArea_Silhouette"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8b_EndOfBuiltUpArea_Silhouette"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8b_EndOfBuiltUpArea_Silhouette"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8b_EndOfBuiltUpArea_Silhouette"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E8c_EndOfBuiltUpArea_Combined"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8c_EndOfBuiltUpArea_Combined"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8c_EndOfBuiltUpArea_Combined"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8c_EndOfBuiltUpArea_Combined"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8c_EndOfBuiltUpArea_Combined"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E8d_EndOfBuiltUpArea_Model4"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E8d_EndOfBuiltUpArea_Model4"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Diagonal_band"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Parallel_lines"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8d_EndOfBuiltUpArea_Model4"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8d_EndOfBuiltUpArea_Model4"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E8d_EndOfBuiltUpArea_Model4"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E9a_ZonalValidity_ParkingProhibited"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9a_ZonalValidity_ParkingProhibited"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9a_ZonalValidity_ParkingProhibited"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9a_ZonalValidity_ParkingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9a_ZonalValidity_ParkingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E9b_ZonalValidity_TimeBound"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E9b_ZonalValidity_TimeBound"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9b_ZonalValidity_TimeBound"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9b_ZonalValidity_TimeBound"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9b_ZonalValidity_TimeBound"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E9c_ZonalValidity_ParkingZone"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E9c_ZonalValidity_ParkingZone"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9c_ZonalValidity_ParkingZone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9c_ZonalValidity_ParkingZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9c_ZonalValidity_ParkingZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E9d_ZonalValidity_MaximumSpeedZone"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9d_ZonalValidity_MaximumSpeedZone"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Light"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9d_ZonalValidity_MaximumSpeedZone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9d_ZonalValidity_MaximumSpeedZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Black"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E9d_ZonalValidity_MaximumSpeedZone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EndOfProhibitionOrRestrictionSign"/>
@@ -1775,56 +2958,538 @@
         <Class IRI="#InformationFacilityServiceSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#F10_CampingSite"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F10_CampingSite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Tent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F10_CampingSite"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F10_CampingSite"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#F11_CaravanSite"/>
         <Class IRI="#InformationFacilityServiceSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F11_CaravanSite"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F11_CaravanSite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Caravan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F11_CaravanSite"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F11_CaravanSite"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#F12_CampingAndCaravanSite"/>
         <Class IRI="#InformationFacilityServiceSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#F12_CampingAndCaravanSite"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Caravan"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Tent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F12_CampingAndCaravanSite"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F12_CampingAndCaravanSite"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F12_CampingAndCaravanSite"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#F13_YouthHostel"/>
         <Class IRI="#InformationFacilityServiceSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F13_YouthHostel"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F13_YouthHostel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Youth_hostel_logo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F13_YouthHostel"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F13_YouthHostel"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#F17_EmergencyTelephone"/>
         <Class IRI="#InformationFacilityServiceSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#F17_EmergencyTelephone"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Telephone_receiver"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Words"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F17_EmergencyTelephone"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F17_EmergencyTelephone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F17_EmergencyTelephone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#F18_FireExtinguisher"/>
         <Class IRI="#InformationFacilityServiceSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F18_FireExtinguisher"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Extinguisher"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F18_FireExtinguisher"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F18_FireExtinguisher"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F18_FireExtinguisher"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#F1a_FirstAidStation_RedCross"/>
         <Class IRI="#InformationFacilityServiceSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#F1a_FirstAidStation_RedCross"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F1a_FirstAidStation_RedCross"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Red_cross_or_crescent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F1a_FirstAidStation_RedCross"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F1a_FirstAidStation_RedCross"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#F2_BreakdownService"/>
         <Class IRI="#InformationFacilityServiceSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F2_BreakdownService"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F2_BreakdownService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Spanner"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F2_BreakdownService"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F2_BreakdownService"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#F3_Telephone"/>
         <Class IRI="#InformationFacilityServiceSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#F3_Telephone"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F3_Telephone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Telephone_receiver"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F3_Telephone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F3_Telephone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#F4_FillingStation"/>
         <Class IRI="#InformationFacilityServiceSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F4_FillingStation"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F4_FillingStation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Gas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F4_FillingStation"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F4_FillingStation"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#F5_HotelMotel"/>
         <Class IRI="#InformationFacilityServiceSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#F5_HotelMotel"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F5_HotelMotel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Fork_and_spoon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F5_HotelMotel"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F5_HotelMotel"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#F6_Restaurant"/>
         <Class IRI="#InformationFacilityServiceSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F6_Restaurant"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F6_Restaurant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Fork_and_spoon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F6_Restaurant"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F6_Restaurant"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#F7_Refreshments"/>
         <Class IRI="#InformationFacilityServiceSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#F7_Refreshments"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F7_Refreshments"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Cup"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F7_Refreshments"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F7_Refreshments"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#F8_PicnicSite"/>
         <Class IRI="#InformationFacilityServiceSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F8_PicnicSite"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Blue"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Green"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F8_PicnicSite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Tree_and_picnic_table"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F8_PicnicSite"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F8_PicnicSite"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Rectangle"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FallingRocksWarningSign"/>
@@ -1855,8 +3520,16 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Goods_vehicle"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Handcart"/>
         <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Handcart"/>
+        <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hiker"/>
@@ -1907,8 +3580,16 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Moped"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Motorcycle"/>
         <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorcycle"/>
+        <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NarrowSectionPrioritySign"/>
@@ -2062,6 +3743,10 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Tractor"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TrafficCongestionWarningSign"/>
         <Class IRI="#DangerWarningSign"/>
     </SubClassOf>
@@ -2070,8 +3755,16 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Train"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Tramway"/>
         <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramway"/>
+        <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Transverse_red_bar"/>
@@ -2110,8 +3803,16 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Vehicle_with_trailer"/>
         <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle_with_trailer"/>
+        <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Wheelchair"/>
@@ -2144,6 +3845,77 @@
         <Class IRI="#SpecialRegulationSign"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Airplane"/>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Arrows"/>
+        <Class IRI="#Axle_silhouette"/>
+        <Class IRI="#Bed"/>
+        <Class IRI="#Bridge_over_dual_carriageway"/>
+        <Class IRI="#Broad_and_thin_lines"/>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Car"/>
+        <Class IRI="#Car_falling_into_water"/>
+        <Class IRI="#Car_skidding"/>
+        <Class IRI="#Car_throwing_up_loose_stones"/>
+        <Class IRI="#Car_tilting_over_a_verge"/>
+        <Class IRI="#Caravan"/>
+        <Class IRI="#Children_running"/>
+        <Class IRI="#Country_name"/>
+        <Class IRI="#Crossed_red_bars"/>
+        <Class IRI="#Cup"/>
+        <Class IRI="#Cycle"/>
+        <Class IRI="#Diagonal_band"/>
+        <Class IRI="#Dimension_lines"/>
+        <Class IRI="#Exclamation_mark"/>
+        <Class IRI="#Extinguisher"/>
+        <Class IRI="#Falling_rocks"/>
+        <Class IRI="#Fork_and_spoon"/>
+        <Class IRI="#Gate"/>
+        <Class IRI="#Goods_vehicle"/>
+        <Class IRI="#Handcart"/>
+        <Class IRI="#Hiker"/>
+        <Class IRI="#Horizontal_bar"/>
+        <Class IRI="#Horn_crossed_by_an_oblique_bar"/>
+        <Class IRI="#Letters"/>
+        <Class IRI="#Line_of_cars"/>
+        <Class IRI="#Median_band"/>
+        <Class IRI="#Moped"/>
+        <Class IRI="#Motorcycle"/>
+        <Class IRI="#National_emblem"/>
+        <Class IRI="#Number"/>
+        <Class IRI="#Oblique_red_or_white_bars"/>
+        <Class IRI="#Parallel_lines"/>
+        <Class IRI="#Pedestrian"/>
+        <Class IRI="#Pedestrian_on_zebra_stripes"/>
+        <Class IRI="#Profile_of_a_steep_gradient"/>
+        <Class IRI="#Profile_of_an_uneven_road"/>
+        <Class IRI="#Red_cross_or_crescent"/>
+        <Class IRI="#Rider_on_horseback"/>
+        <Class IRI="#Road_outline_lines_narrowing"/>
+        <Class IRI="#Running_person_towards_a_door"/>
+        <Class IRI="#Snow_crystal"/>
+        <Class IRI="#Spanner"/>
+        <Class IRI="#Swing_bridge_span"/>
+        <Class IRI="#T-shaped_symbol"/>
+        <Class IRI="#Telephone_receiver"/>
+        <Class IRI="#Tent"/>
+        <Class IRI="#Tire_fitted_with_snow_chains"/>
+        <Class IRI="#Tractor"/>
+        <Class IRI="#Train"/>
+        <Class IRI="#Tramway"/>
+        <Class IRI="#Transverse_red_bar"/>
+        <Class IRI="#Tree_and_picnic_table"/>
+        <Class IRI="#Tunnel_opening"/>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+        <Class IRI="#Vehicle_with_trailer"/>
+        <Class IRI="#Wheelchair"/>
+        <Class IRI="#Windsock"/>
+        <Class IRI="#Words"/>
+        <Class IRI="#Youth_hostel_logo"/>
+        <Class IRI="#St._Andrew&apos;s_cross"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Colour"/>
         <Class IRI="#DetectedSignObject"/>
         <Class IRI="#RoadSign"/>
@@ -2164,6 +3936,45 @@
         <Class IRI="#PrioritySign"/>
         <Class IRI="#ProhibitoryOrRestrictiveSign"/>
         <Class IRI="#SpecialRegulationSign"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#E10a_ExitFromParkingProhibitedZone"/>
+        <Class IRI="#E10b_ExitFromTimeBoundZone"/>
+        <Class IRI="#E10c_ExitFromParkingZone"/>
+        <Class IRI="#E10d_ExitFromMaximumSpeedZone"/>
+        <Class IRI="#E11a_Tunnel_Beginning"/>
+        <Class IRI="#E11b_Tunnel_End"/>
+        <Class IRI="#E12a_PedestrianCrossing_Standard"/>
+        <Class IRI="#E12b_PedestrianCrossing_Pentagon"/>
+        <Class IRI="#E12c_PedestrianCrossing_Dark"/>
+        <Class IRI="#E14a_Parking"/>
+        <Class IRI="#E14b_Parking_PlusBus"/>
+        <Class IRI="#E14c_Parking_PlusTrain"/>
+        <Class IRI="#E15_BusStop"/>
+        <Class IRI="#E16_TramwayStop"/>
+        <Class IRI="#E1a_LaneMinimumSpeed_MultiLane"/>
+        <Class IRI="#E1b_LaneMinimumSpeed_OneLane"/>
+        <Class IRI="#E1c_LaneMaximumSpeed_MultiLane"/>
+        <Class IRI="#E2a_LaneReservedForBuses_Position"/>
+        <Class IRI="#E2b_LaneReservedForBuses_Entrance"/>
+        <Class IRI="#E3a_OneWaySign_Perpendicular"/>
+        <Class IRI="#E3b_OneWaySign_Parallel"/>
+        <Class IRI="#E5a_Motorway_Beginning"/>
+        <Class IRI="#E5b_Motorway_End"/>
+        <Class IRI="#E6a_RoadForMotorVehicles"/>
+        <Class IRI="#E6b_EndOfRoadForMotorVehicles"/>
+        <Class IRI="#E7a_BeginningOfBuiltUpArea_Name"/>
+        <Class IRI="#E7b_BeginningOfBuiltUpArea_Silhouette"/>
+        <Class IRI="#E7c_BeginningOfBuiltUpArea_Combined"/>
+        <Class IRI="#E7d_BeginningOfBuiltUpArea_Model4"/>
+        <Class IRI="#E8a_EndOfBuiltUpArea_Name"/>
+        <Class IRI="#E8b_EndOfBuiltUpArea_Silhouette"/>
+        <Class IRI="#E8c_EndOfBuiltUpArea_Combined"/>
+        <Class IRI="#E8d_EndOfBuiltUpArea_Model4"/>
+        <Class IRI="#E9a_ZonalValidity_ParkingProhibited"/>
+        <Class IRI="#E9b_ZonalValidity_TimeBound"/>
+        <Class IRI="#E9c_ZonalValidity_ParkingZone"/>
+        <Class IRI="#E9d_ZonalValidity_MaximumSpeedZone"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Colour"/>
@@ -2386,6 +4197,11 @@
         <DataProperty IRI="#hasWidth"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vehicle</IRI>
+        <Literal xml:lang="en">Subclasses of Vehicle represent road user types to which a sign applies. Situational depictions of vehicles (e.g. Car_skidding) must NOT subclass Vehicle.</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
