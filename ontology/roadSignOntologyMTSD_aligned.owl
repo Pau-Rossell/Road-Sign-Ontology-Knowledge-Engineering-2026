@@ -9,9 +9,1616 @@
     <owl:Ontology rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD">
         <owl:imports rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology"/>
     </owl:Ontology>
+
+    <!-- MTSD_ALIGNMENT_BLOCK_START -->
+    <!-- MTSD-derived dataset label classes generated from data/raw/MTSD.ttl.
+         Each MTSD_* class preserves one original MTSD rdfs:label and is linked
+         with rdfs:subClassOf to the broadest defensible imported ontology class.
+         No owl:equivalentClass axioms are asserted here because MTSD labels are
+         dataset-specific and frequently variant-specific or value-specific. -->
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__accident_area__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--accident-area--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__both_directions__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H2_LengthPanel"/>
+        <rdfs:label>complementary--both-directions--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__buses__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H5b_UserCategory_Bus"/>
+        <rdfs:label>complementary--buses--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_left__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-left--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_left__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-left--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_left__g5">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-left--g5</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_right__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-right--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_right__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-right--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_right__g5">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-right--g5</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__chevron_right_unsure__g6">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--chevron-right-unsure--g6</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__distance__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H1_DistancePanel"/>
+        <rdfs:label>complementary--distance--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__distance__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H1_DistancePanel"/>
+        <rdfs:label>complementary--distance--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__distance__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H1_DistancePanel"/>
+        <rdfs:label>complementary--distance--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__except_bicycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H6_ExemptionPanel"/>
+        <rdfs:label>complementary--except-bicycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__extent_of_prohibition_area_both_direction__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H2_LengthPanel"/>
+        <rdfs:label>complementary--extent-of-prohibition-area-both-direction--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__go_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--go-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__go_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--go-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__go_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--go-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__keep_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--keep-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__keep_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--keep-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_15__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-15--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_20__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-20--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_25__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-25--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_30__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-30--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_35__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-35--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_40__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-40--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_45__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-45--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_50__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-50--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_55__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-55--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_70__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-70--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__maximum_speed_limit_75__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--maximum-speed-limit-75--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__obstacle_delineator__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--obstacle-delineator--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__obstacle_delineator__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--obstacle-delineator--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__one_direction_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--one-direction-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__one_direction_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--one-direction-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__pass_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--pass-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__priority_route_at_intersection__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H8_IntersectionDiagram"/>
+        <rdfs:label>complementary--priority-route-at-intersection--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__tow_away_zone__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--tow-away-zone--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__trucks__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H5a_UserCategory_GoodsVehicle"/>
+        <rdfs:label>complementary--trucks--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__trucks_turn_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#H5a_UserCategory_GoodsVehicle"/>
+        <rdfs:label>complementary--trucks-turn-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__turn_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--turn-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_complementary__turn_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>complementary--turn-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__airport__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:label>information--airport--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__airport__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:label>information--airport--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__bike_route__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign"/>
+        <rdfs:label>information--bike-route--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__bus_stop__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E15_BusStop"/>
+        <rdfs:label>information--bus-stop--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__camp__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F10_CampingSite"/>
+        <rdfs:label>information--camp--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__central_lane__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>information--central-lane--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__children__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+        <rdfs:label>information--children--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__dead_end__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#G13_NoThroughRoad+"/>
+        <rdfs:label>information--dead-end--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__dead_end_except_bicycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#G13_NoThroughRoad+"/>
+        <rdfs:label>information--dead-end-except-bicycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__disabled_persons__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:label>information--disabled-persons--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__emergency_facility__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F1a_FirstAidStation_RedCross"/>
+        <rdfs:label>information--emergency-facility--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__end_of_built_up_area__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>information--end-of-built-up-area--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__end_of_limited_access_road__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E6b_EndOfRoadForMotorVehicles"/>
+        <rdfs:label>information--end-of-limited-access-road--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__end_of_living_street__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>information--end-of-living-street--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__end_of_motorway__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E5b_Motorway_End"/>
+        <rdfs:label>information--end-of-motorway--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__end_of_pedestrians_only__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>information--end-of-pedestrians-only--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__food__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F6_Restaurant"/>
+        <rdfs:label>information--food--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__gas_station__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F4_FillingStation"/>
+        <rdfs:label>information--gas-station--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__gas_station__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F4_FillingStation"/>
+        <rdfs:label>information--gas-station--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__highway_exit__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign"/>
+        <rdfs:label>information--highway-exit--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__highway_interstate_route__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign"/>
+        <rdfs:label>information--highway-interstate-route--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__hospital__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>information--hospital--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__interstate_route__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign"/>
+        <rdfs:label>information--interstate-route--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__limited_access_road__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E6a_RoadForMotorVehicles"/>
+        <rdfs:label>information--limited-access-road--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__living_street__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>information--living-street--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__lodging__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F5_HotelMotel"/>
+        <rdfs:label>information--lodging--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__minimum_speed_40__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D7_CompulsoryMinimumSpeed"/>
+        <rdfs:label>information--minimum-speed-40--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__motorway__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E5a_Motorway_Beginning"/>
+        <rdfs:label>information--motorway--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__no_parking__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C18_ParkingProhibited"/>
+        <rdfs:label>information--no-parking--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__parking__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14a_Parking"/>
+        <rdfs:label>information--parking--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__parking__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14a_Parking"/>
+        <rdfs:label>information--parking--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__parking__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14a_Parking"/>
+        <rdfs:label>information--parking--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__parking__g45">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14a_Parking"/>
+        <rdfs:label>information--parking--g45</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__parking__g5">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14a_Parking"/>
+        <rdfs:label>information--parking--g5</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__parking__g6">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14a_Parking"/>
+        <rdfs:label>information--parking--g6</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__pedestrians_crossing__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>information--pedestrians-crossing--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__pedestrians_crossing__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>information--pedestrians-crossing--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__road_bump__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+        <rdfs:label>information--road-bump--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__safety_area__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+        <rdfs:label>information--safety-area--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__stairs__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:label>information--stairs--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__telephone__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F3_Telephone"/>
+        <rdfs:label>information--telephone--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__telephone__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F3_Telephone"/>
+        <rdfs:label>information--telephone--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__trailer_camping__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F11_CaravanSite"/>
+        <rdfs:label>information--trailer-camping--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_information__tram_bus_stop__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>information--tram-bus-stop--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__bicycles_only__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D4_CompulsoryCycleTrack"/>
+        <rdfs:label>regulatory--bicycles-only--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__bicycles_only__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D4_CompulsoryCycleTrack"/>
+        <rdfs:label>regulatory--bicycles-only--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__bicycles_only__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D4_CompulsoryCycleTrack"/>
+        <rdfs:label>regulatory--bicycles-only--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__buses_only__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E2a_LaneReservedForBuses_Position"/>
+        <rdfs:label>regulatory--buses-only--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__detour_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign"/>
+        <rdfs:label>regulatory--detour-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__do_not_block_intersection__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ProhibitoryOrRestrictiveSign"/>
+        <rdfs:label>regulatory--do-not-block-intersection--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__do_not_stop_on_tracks__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ProhibitoryOrRestrictiveSign"/>
+        <rdfs:label>regulatory--do-not-stop-on-tracks--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__dual_lanes_go_straight_on_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E4_PreselectionSign"/>
+        <rdfs:label>regulatory--dual-lanes-go-straight-on-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__dual_lanes_go_straight_on_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E4_PreselectionSign"/>
+        <rdfs:label>regulatory--dual-lanes-go-straight-on-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__dual_lanes_turn_left_no_u_turn__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E4_PreselectionSign"/>
+        <rdfs:label>regulatory--dual-lanes-turn-left-no-u-turn--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__dual_lanes_turn_left_or_straight__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E4_PreselectionSign"/>
+        <rdfs:label>regulatory--dual-lanes-turn-left-or-straight--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__dual_lanes_turn_right_or_straight__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E4_PreselectionSign"/>
+        <rdfs:label>regulatory--dual-lanes-turn-right-or-straight--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__dual_path_bicycles_and_pedestrians__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D11_CombinedReservedPathMandatorySign"/>
+        <rdfs:label>regulatory--dual-path-bicycles-and-pedestrians--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__dual_path_pedestrians_and_bicycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D11_CombinedReservedPathMandatorySign"/>
+        <rdfs:label>regulatory--dual-path-pedestrians-and-bicycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__end_of_bicycles_only__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
+        <rdfs:label>regulatory--end-of-bicycles-only--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__end_of_buses_only__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>regulatory--end-of-buses-only--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__end_of_maximum_speed_limit_30__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C17b_EndOfSpeedLimit"/>
+        <rdfs:label>regulatory--end-of-maximum-speed-limit-30--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__end_of_maximum_speed_limit_70__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C17b_EndOfSpeedLimit"/>
+        <rdfs:label>regulatory--end-of-maximum-speed-limit-70--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__end_of_maximum_speed_limit_70__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C17b_EndOfSpeedLimit"/>
+        <rdfs:label>regulatory--end-of-maximum-speed-limit-70--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__end_of_no_parking__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C17_EndOfProhibitionOrRestrictionSign"/>
+        <rdfs:label>regulatory--end-of-no-parking--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__end_of_priority_road__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#B4_EndOfPriority"/>
+        <rdfs:label>regulatory--end-of-priority-road--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__end_of_prohibition__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C17_EndOfProhibitionOrRestrictionSign"/>
+        <rdfs:label>regulatory--end-of-prohibition--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__end_of_speed_limit_zone__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10d_ExitFromMaximumSpeedZone"/>
+        <rdfs:label>regulatory--end-of-speed-limit-zone--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__give_way_to_oncoming_traffic__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#B5_PriorityForOncomingTraffic"/>
+        <rdfs:label>regulatory--give-way-to-oncoming-traffic--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__go_straight__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--go-straight--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__go_straight__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--go-straight--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__go_straight_or_turn_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--go-straight-or-turn-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__go_straight_or_turn_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--go-straight-or-turn-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__go_straight_or_turn_left__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--go-straight-or-turn-left--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__go_straight_or_turn_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--go-straight-or-turn-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__go_straight_or_turn_right__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--go-straight-or-turn-right--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__height_limit__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C6_NoEntryForVehiclesExceedingHeight"/>
+        <rdfs:label>regulatory--height-limit--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__keep_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide"/>
+        <rdfs:label>regulatory--keep-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__keep_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide"/>
+        <rdfs:label>regulatory--keep-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__keep_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide"/>
+        <rdfs:label>regulatory--keep-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__keep_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide"/>
+        <rdfs:label>regulatory--keep-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__keep_right__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide"/>
+        <rdfs:label>regulatory--keep-right--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__keep_right__g6">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide"/>
+        <rdfs:label>regulatory--keep-right--g6</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__lane_control__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>regulatory--lane-control--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__left_turn_yield_on_green__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#PrioritySign"/>
+        <rdfs:label>regulatory--left-turn-yield-on-green--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_10__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-10--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_100__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-100--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_100__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-100--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_110__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-110--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_120__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-120--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_15__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-15--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_20__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-20--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_25__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-25--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_25__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-25--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_30__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-30--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_30__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-30--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_35__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-35--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_40__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-40--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_40__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-40--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_40__g6">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-40--g6</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_45__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-45--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_45__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-45--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_5__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-5--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_50__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-50--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_50__g6">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-50--g6</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_55__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-55--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_60__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-60--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_65__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-65--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_70__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-70--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_80__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-80--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_90__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-90--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_led_100__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-led-100--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_led_60__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-led-60--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__maximum_speed_limit_led_80__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--maximum-speed-limit-led-80--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__minimum_safe_distance__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C10_MinimumDistanceBetweenVehiclesProhibited"/>
+        <rdfs:label>regulatory--minimum-safe-distance--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__mopeds_and_bicycles_only__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D04_D06_ReservedPathMandatorySign"/>
+        <rdfs:label>regulatory--mopeds-and-bicycles-only--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_bicycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3c_NoEntryForCycles"/>
+        <rdfs:label>regulatory--no-bicycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_bicycles__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3c_NoEntryForCycles"/>
+        <rdfs:label>regulatory--no-bicycles--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_bicycles__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3c_NoEntryForCycles"/>
+        <rdfs:label>regulatory--no-bicycles--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_buses__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C03_CategoryEntryProhibitionSign"/>
+        <rdfs:label>regulatory--no-buses--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_entry__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C01_NoEntrySign"/>
+        <rdfs:label>regulatory--no-entry--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_hawkers__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ProhibitoryOrRestrictiveSign"/>
+        <rdfs:label>regulatory--no-hawkers--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_heavy_goods_vehicles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3e_NoEntryForGoodsVehicles"/>
+        <rdfs:label>regulatory--no-heavy-goods-vehicles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_heavy_goods_vehicles__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3e_NoEntryForGoodsVehicles"/>
+        <rdfs:label>regulatory--no-heavy-goods-vehicles--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_heavy_goods_vehicles__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3e_NoEntryForGoodsVehicles"/>
+        <rdfs:label>regulatory--no-heavy-goods-vehicles--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_heavy_goods_vehicles__g5">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3e_NoEntryForGoodsVehicles"/>
+        <rdfs:label>regulatory--no-heavy-goods-vehicles--g5</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_heavy_goods_vehicles_or_buses__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C03_CategoryEntryProhibitionSign"/>
+        <rdfs:label>regulatory--no-heavy-goods-vehicles-or-buses--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_left_turn__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11a_NoLeftTurn"/>
+        <rdfs:label>regulatory--no-left-turn--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_left_turn__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11a_NoLeftTurn"/>
+        <rdfs:label>regulatory--no-left-turn--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_left_turn__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11a_NoLeftTurn"/>
+        <rdfs:label>regulatory--no-left-turn--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_mopeds_or_bicycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C03_CategoryEntryProhibitionSign"/>
+        <rdfs:label>regulatory--no-mopeds-or-bicycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_motor_vehicle_trailers__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3f_NoEntryForPowerDrivenVehiclesDrawingTrailerExceptSemiTrailerOrSingleAxleTrailer"/>
+        <rdfs:label>regulatory--no-motor-vehicle-trailers--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_motor_vehicles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C4a_NoEntryForPowerDrivenVehicles"/>
+        <rdfs:label>regulatory--no-motor-vehicles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_motor_vehicles__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C4a_NoEntryForPowerDrivenVehicles"/>
+        <rdfs:label>regulatory--no-motor-vehicles--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_motor_vehicles_except_motorcycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3a_NoEntryForPowerDrivenVehiclesExceptTwoWheeledMotorCyclesWithoutSideCar"/>
+        <rdfs:label>regulatory--no-motor-vehicles-except-motorcycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_motor_vehicles_except_motorcycles__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3a_NoEntryForPowerDrivenVehiclesExceptTwoWheeledMotorCyclesWithoutSideCar"/>
+        <rdfs:label>regulatory--no-motor-vehicles-except-motorcycles--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_motorcycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3b_NoEntryForMotorcycles"/>
+        <rdfs:label>regulatory--no-motorcycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_motorcycles__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3b_NoEntryForMotorcycles"/>
+        <rdfs:label>regulatory--no-motorcycles--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_overtaking__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C13a_OvertakingProhibitedSign"/>
+        <rdfs:label>regulatory--no-overtaking--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_overtaking__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C13a_OvertakingProhibitedSign"/>
+        <rdfs:label>regulatory--no-overtaking--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_overtaking__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C13a_OvertakingProhibitedSign"/>
+        <rdfs:label>regulatory--no-overtaking--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_overtaking__g5">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C13a_OvertakingProhibitedSign"/>
+        <rdfs:label>regulatory--no-overtaking--g5</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_overtaking_by_heavy_goods_vehicles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C13b_GoodsVehicleOvertakingProhibitedSign"/>
+        <rdfs:label>regulatory--no-overtaking-by-heavy-goods-vehicles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_parking__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C18_ParkingProhibited"/>
+        <rdfs:label>regulatory--no-parking--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_parking__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C18_ParkingProhibited"/>
+        <rdfs:label>regulatory--no-parking--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_parking__g5">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C18_ParkingProhibited"/>
+        <rdfs:label>regulatory--no-parking--g5</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_parking_or_no_stopping__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C18_C20_StandingOrParkingRestrictionSign"/>
+        <rdfs:label>regulatory--no-parking-or-no-stopping--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_parking_or_no_stopping__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C18_C20_StandingOrParkingRestrictionSign"/>
+        <rdfs:label>regulatory--no-parking-or-no-stopping--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_parking_or_no_stopping__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C18_C20_StandingOrParkingRestrictionSign"/>
+        <rdfs:label>regulatory--no-parking-or-no-stopping--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_pedestrians__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3i_NoEntryForPedestrians"/>
+        <rdfs:label>regulatory--no-pedestrians--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_pedestrians__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3i_NoEntryForPedestrians"/>
+        <rdfs:label>regulatory--no-pedestrians--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_pedestrians__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3i_NoEntryForPedestrians"/>
+        <rdfs:label>regulatory--no-pedestrians--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_pedestrians_or_bicycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C03_CategoryEntryProhibitionSign"/>
+        <rdfs:label>regulatory--no-pedestrians-or-bicycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_right_turn__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11b_NoRightTurn"/>
+        <rdfs:label>regulatory--no-right-turn--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_right_turn__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11b_NoRightTurn"/>
+        <rdfs:label>regulatory--no-right-turn--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_right_turn__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11b_NoRightTurn"/>
+        <rdfs:label>regulatory--no-right-turn--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_stopping__g15">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C19_StandingAndParkingProhibited"/>
+        <rdfs:label>regulatory--no-stopping--g15</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_stopping__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C19_StandingAndParkingProhibited"/>
+        <rdfs:label>regulatory--no-stopping--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_stopping__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C19_StandingAndParkingProhibited"/>
+        <rdfs:label>regulatory--no-stopping--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_stopping__g5">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C19_StandingAndParkingProhibited"/>
+        <rdfs:label>regulatory--no-stopping--g5</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_stopping__g8">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C19_StandingAndParkingProhibited"/>
+        <rdfs:label>regulatory--no-stopping--g8</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_straight_through__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11_C12_TurningProhibitionSign"/>
+        <rdfs:label>regulatory--no-straight-through--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_straight_through__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11_C12_TurningProhibitionSign"/>
+        <rdfs:label>regulatory--no-straight-through--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_turn_on_red__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11_C12_TurningProhibitionSign"/>
+        <rdfs:label>regulatory--no-turn-on-red--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_turn_on_red__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11_C12_TurningProhibitionSign"/>
+        <rdfs:label>regulatory--no-turn-on-red--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_turn_on_red__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11_C12_TurningProhibitionSign"/>
+        <rdfs:label>regulatory--no-turn-on-red--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_turns__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C11_C12_TurningProhibitionSign"/>
+        <rdfs:label>regulatory--no-turns--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_u_turn__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C12_NoUTurn"/>
+        <rdfs:label>regulatory--no-u-turn--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_u_turn__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C12_NoUTurn"/>
+        <rdfs:label>regulatory--no-u-turn--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_u_turn__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C12_NoUTurn"/>
+        <rdfs:label>regulatory--no-u-turn--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__no_vehicles_carrying_dangerous_goods__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C3h_NoEntryForDangerousGoodsVehiclesRequiringSpecialSignPlating"/>
+        <rdfs:label>regulatory--no-vehicles-carrying-dangerous-goods--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__one_way_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular"/>
+        <rdfs:label>regulatory--one-way-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__one_way_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular"/>
+        <rdfs:label>regulatory--one-way-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__one_way_left__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular"/>
+        <rdfs:label>regulatory--one-way-left--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__one_way_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular"/>
+        <rdfs:label>regulatory--one-way-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__one_way_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular"/>
+        <rdfs:label>regulatory--one-way-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__one_way_right__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular"/>
+        <rdfs:label>regulatory--one-way-right--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__one_way_straight__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular"/>
+        <rdfs:label>regulatory--one-way-straight--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__parking_restrictions__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C18_C20_StandingOrParkingRestrictionSign"/>
+        <rdfs:label>regulatory--parking-restrictions--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__pass_on_either_side__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide"/>
+        <rdfs:label>regulatory--pass-on-either-side--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__pass_on_either_side__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide"/>
+        <rdfs:label>regulatory--pass-on-either-side--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__passing_lane_ahead__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>regulatory--passing-lane-ahead--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__pedestrians_only__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D5_CompulsoryFootpath"/>
+        <rdfs:label>regulatory--pedestrians-only--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__pedestrians_only__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D5_CompulsoryFootpath"/>
+        <rdfs:label>regulatory--pedestrians-only--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__priority_over_oncoming_vehicles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#B6_PriorityOverOncomingTraffic"/>
+        <rdfs:label>regulatory--priority-over-oncoming-vehicles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__priority_road__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#B3_PriorityRoad"/>
+        <rdfs:label>regulatory--priority-road--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__radar_enforced__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
+        <rdfs:label>regulatory--radar-enforced--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__reversible_lanes__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:label>regulatory--reversible-lanes--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__road_closed__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C01_C10_EntryProhibitionOrRestrictionSign"/>
+        <rdfs:label>regulatory--road-closed--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__road_closed__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C01_C10_EntryProhibitionOrRestrictionSign"/>
+        <rdfs:label>regulatory--road-closed--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__road_closed_to_vehicles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C2_ClosedToAllVehiclesInBothDirections"/>
+        <rdfs:label>regulatory--road-closed-to-vehicles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__road_closed_to_vehicles__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C2_ClosedToAllVehiclesInBothDirections"/>
+        <rdfs:label>regulatory--road-closed-to-vehicles--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__roundabout__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D3_CompulsoryRoundabout"/>
+        <rdfs:label>regulatory--roundabout--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__roundabout__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D3_CompulsoryRoundabout"/>
+        <rdfs:label>regulatory--roundabout--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__shared_path_bicycles_and_pedestrians__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D11_CombinedReservedPathMandatorySign"/>
+        <rdfs:label>regulatory--shared-path-bicycles-and-pedestrians--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__shared_path_pedestrians_and_bicycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D11_CombinedReservedPathMandatorySign"/>
+        <rdfs:label>regulatory--shared-path-pedestrians-and-bicycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__stop__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#B02_StopSign"/>
+        <rdfs:label>regulatory--stop--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__stop__g10">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#B02_StopSign"/>
+        <rdfs:label>regulatory--stop--g10</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__stop__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#B02_StopSign"/>
+        <rdfs:label>regulatory--stop--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__stop_here_on_red_or_flashing_light__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ProhibitoryOrRestrictiveSign"/>
+        <rdfs:label>regulatory--stop-here-on-red-or-flashing-light--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__stop_here_on_red_or_flashing_light__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ProhibitoryOrRestrictiveSign"/>
+        <rdfs:label>regulatory--stop-here-on-red-or-flashing-light--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__stop_signals__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ProhibitoryOrRestrictiveSign"/>
+        <rdfs:label>regulatory--stop-signals--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__text_four_lines__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+        <rdfs:label>regulatory--text-four-lines--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__triple_lanes_turn_left_center_lane__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E4_PreselectionSign"/>
+        <rdfs:label>regulatory--triple-lanes-turn-left-center-lane--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__truck_speed_limit_60__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C14_MaximumSpeedLimit"/>
+        <rdfs:label>regulatory--truck-speed-limit-60--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turn_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--turn-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turn_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--turn-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turn_left__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--turn-left--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turn_left_ahead__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D01_DirectionToBeFollowedSign"/>
+        <rdfs:label>regulatory--turn-left-ahead--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turn_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--turn-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turn_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--turn-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turn_right__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--turn-right--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turn_right_ahead__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D01_DirectionToBeFollowedSign"/>
+        <rdfs:label>regulatory--turn-right-ahead--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turn_right_ahead__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D01_DirectionToBeFollowedSign"/>
+        <rdfs:label>regulatory--turn-right-ahead--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__turning_vehicles_yield_to_pedestrians__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#PrioritySign"/>
+        <rdfs:label>regulatory--turning-vehicles-yield-to-pedestrians--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__u_turn__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed"/>
+        <rdfs:label>regulatory--u-turn--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__weight_limit__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C7_NoEntryForVehiclesExceedingLadenMass"/>
+        <rdfs:label>regulatory--weight-limit--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__weight_limit_with_trucks__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C7_NoEntryForVehiclesExceedingLadenMass"/>
+        <rdfs:label>regulatory--weight-limit-with-trucks--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__width_limit__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C5_NoEntryForVehiclesExceedingWidth"/>
+        <rdfs:label>regulatory--width-limit--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__wrong_way__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#C01_NoEntrySign"/>
+        <rdfs:label>regulatory--wrong-way--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_regulatory__yield__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#B1_GiveWay"/>
+        <rdfs:label>regulatory--yield--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__accidental_area_unsure__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--accidental-area-unsure--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__added_lane_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--added-lane-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__bicycles_crossing__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A14_CyclistsEnteringOrCrossing"/>
+        <rdfs:label>warning--bicycles-crossing--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__bicycles_crossing__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A14_CyclistsEnteringOrCrossing"/>
+        <rdfs:label>warning--bicycles-crossing--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__bicycles_crossing__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A14_CyclistsEnteringOrCrossing"/>
+        <rdfs:label>warning--bicycles-crossing--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__bus_stop_ahead__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--bus-stop-ahead--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__children__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A13_Children"/>
+        <rdfs:label>warning--children--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__children__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A13_Children"/>
+        <rdfs:label>warning--children--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__crossroads__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18_GeneralPriorityIntersectionWarningSign"/>
+        <rdfs:label>warning--crossroads--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__crossroads__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18_GeneralPriorityIntersectionWarningSign"/>
+        <rdfs:label>warning--crossroads--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__crossroads_with_priority_to_the_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18_GeneralPriorityIntersectionWarningSign"/>
+        <rdfs:label>warning--crossroads-with-priority-to-the-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__curve_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1a_LeftBend"/>
+        <rdfs:label>warning--curve-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__curve_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1a_LeftBend"/>
+        <rdfs:label>warning--curve-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__curve_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1b_RightBend"/>
+        <rdfs:label>warning--curve-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__curve_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1b_RightBend"/>
+        <rdfs:label>warning--curve-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__dip__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A7c_Dip"/>
+        <rdfs:label>warning--dip--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__divided_highway_ends__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--divided-highway-ends--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__divided_highway_ends__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--divided-highway-ends--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__domestic_animals__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A15a_DomesticAnimalsCrossing"/>
+        <rdfs:label>warning--domestic-animals--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__domestic_animals__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A15a_DomesticAnimalsCrossing"/>
+        <rdfs:label>warning--domestic-animals--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__double_curve_first_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1c_DoubleBendLeftFirst"/>
+        <rdfs:label>warning--double-curve-first-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__double_curve_first_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1c_DoubleBendLeftFirst"/>
+        <rdfs:label>warning--double-curve-first-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__double_curve_first_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1d_DoubleBendRightFirst"/>
+        <rdfs:label>warning--double-curve-first-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__double_curve_first_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1d_DoubleBendRightFirst"/>
+        <rdfs:label>warning--double-curve-first-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__double_reverse_curve_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--double-reverse-curve-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__double_turn_first_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--double-turn-first-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__dual_lanes_right_turn_or_go_straight__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--dual-lanes-right-turn-or-go-straight--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__emergency_vehicles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--emergency-vehicles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__equestrians_crossing__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A15_AnimalCrossingWarningSign"/>
+        <rdfs:label>warning--equestrians-crossing--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__falling_rocks_or_debris_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A10_A11_RoadDebrisWarningSign"/>
+        <rdfs:label>warning--falling-rocks-or-debris-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__falling_rocks_or_debris_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A10_A11_RoadDebrisWarningSign"/>
+        <rdfs:label>warning--falling-rocks-or-debris-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__falling_rocks_or_debris_right__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A10_A11_RoadDebrisWarningSign"/>
+        <rdfs:label>warning--falling-rocks-or-debris-right--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__flaggers_in_road__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A16_RoadWorks"/>
+        <rdfs:label>warning--flaggers-in-road--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__hairpin_curve_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--hairpin-curve-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__hairpin_curve_left__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--hairpin-curve-left--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__hairpin_curve_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--hairpin-curve-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__hairpin_curve_right__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--hairpin-curve-right--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__height_restriction__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--height-restriction--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__horizontal_alignment_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--horizontal-alignment-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__horizontal_alignment_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--horizontal-alignment-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__horizontal_alignment_right__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--horizontal-alignment-right--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__junction_with_a_side_road_acute_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <rdfs:label>warning--junction-with-a-side-road-acute-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__junction_with_a_side_road_acute_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <rdfs:label>warning--junction-with-a-side-road-acute-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__junction_with_a_side_road_perpendicular_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <rdfs:label>warning--junction-with-a-side-road-perpendicular-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__junction_with_a_side_road_perpendicular_left__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <rdfs:label>warning--junction-with-a-side-road-perpendicular-left--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__junction_with_a_side_road_perpendicular_left__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <rdfs:label>warning--junction-with-a-side-road-perpendicular-left--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__junction_with_a_side_road_perpendicular_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <rdfs:label>warning--junction-with-a-side-road-perpendicular-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__junction_with_a_side_road_perpendicular_right__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18g_GeneralPriorityIntersection_SideRoad"/>
+        <rdfs:label>warning--junction-with-a-side-road-perpendicular-right--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__kangaloo_crossing__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A15b_WildAnimalsCrossing"/>
+        <rdfs:label>warning--kangaloo-crossing--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__loop_270_degree__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--loop-270-degree--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__narrow_bridge__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A04_CarriagewayNarrowsWarningSign"/>
+        <rdfs:label>warning--narrow-bridge--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__narrow_bridge__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A04_CarriagewayNarrowsWarningSign"/>
+        <rdfs:label>warning--narrow-bridge--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__offset_roads__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18e_GeneralPriorityIntersection_Staggered"/>
+        <rdfs:label>warning--offset-roads--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__other_danger__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A32_OtherDangers"/>
+        <rdfs:label>warning--other-danger--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__other_danger__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A32_OtherDangers"/>
+        <rdfs:label>warning--other-danger--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pass_left_or_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--pass-left-or-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pass_left_or_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--pass-left-or-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pedestrian_stumble_train__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_A27_RailwayOrTramwayWarningSign"/>
+        <rdfs:label>warning--pedestrian-stumble-train--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pedestrians_crossing__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A12_A14_RoadUserCrossingWarningSign"/>
+        <rdfs:label>warning--pedestrians-crossing--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pedestrians_crossing__g10">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A12_A14_RoadUserCrossingWarningSign"/>
+        <rdfs:label>warning--pedestrians-crossing--g10</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pedestrians_crossing__g11">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A12_A14_RoadUserCrossingWarningSign"/>
+        <rdfs:label>warning--pedestrians-crossing--g11</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pedestrians_crossing__g12">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A12_A14_RoadUserCrossingWarningSign"/>
+        <rdfs:label>warning--pedestrians-crossing--g12</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pedestrians_crossing__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A12_A14_RoadUserCrossingWarningSign"/>
+        <rdfs:label>warning--pedestrians-crossing--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pedestrians_crossing__g5">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A12_A14_RoadUserCrossingWarningSign"/>
+        <rdfs:label>warning--pedestrians-crossing--g5</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__pedestrians_crossing__g9">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A12_A14_RoadUserCrossingWarningSign"/>
+        <rdfs:label>warning--pedestrians-crossing--g9</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__playground__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A13_Children"/>
+        <rdfs:label>warning--playground--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__playground__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A13_Children"/>
+        <rdfs:label>warning--playground--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_crossing__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_A27_RailwayOrTramwayWarningSign"/>
+        <rdfs:label>warning--railroad-crossing--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_crossing__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_A27_RailwayOrTramwayWarningSign"/>
+        <rdfs:label>warning--railroad-crossing--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_crossing__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_A27_RailwayOrTramwayWarningSign"/>
+        <rdfs:label>warning--railroad-crossing--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_crossing_with_barriers__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_LevelCrossingWithGates"/>
+        <rdfs:label>warning--railroad-crossing-with-barriers--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_crossing_with_barriers__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_LevelCrossingWithGates"/>
+        <rdfs:label>warning--railroad-crossing-with-barriers--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_crossing_with_barriers__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_LevelCrossingWithGates"/>
+        <rdfs:label>warning--railroad-crossing-with-barriers--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_crossing_without_barriers__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_A27_RailwayOrTramwayWarningSign"/>
+        <rdfs:label>warning--railroad-crossing-without-barriers--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_crossing_without_barriers__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_A27_RailwayOrTramwayWarningSign"/>
+        <rdfs:label>warning--railroad-crossing-without-barriers--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_crossing_without_barriers__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A25_A27_RailwayOrTramwayWarningSign"/>
+        <rdfs:label>warning--railroad-crossing-without-barriers--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_intersection__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A28_LevelCrossingImmediateWarningSign"/>
+        <rdfs:label>warning--railroad-intersection--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__railroad_intersection__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A28_LevelCrossingImmediateWarningSign"/>
+        <rdfs:label>warning--railroad-intersection--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__restricted_zone__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+        <rdfs:label>warning--restricted-zone--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_bump__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A7b_HumpBridgeOrRidge"/>
+        <rdfs:label>warning--road-bump--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_bump__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A7b_HumpBridgeOrRidge"/>
+        <rdfs:label>warning--road-bump--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_narrows__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A04_CarriagewayNarrowsWarningSign"/>
+        <rdfs:label>warning--road-narrows--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_narrows__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A04_CarriagewayNarrowsWarningSign"/>
+        <rdfs:label>warning--road-narrows--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_narrows_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A04_CarriagewayNarrowsWarningSign"/>
+        <rdfs:label>warning--road-narrows-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_narrows_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A04_CarriagewayNarrowsWarningSign"/>
+        <rdfs:label>warning--road-narrows-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_narrows_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A04_CarriagewayNarrowsWarningSign"/>
+        <rdfs:label>warning--road-narrows-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_narrows_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A04_CarriagewayNarrowsWarningSign"/>
+        <rdfs:label>warning--road-narrows-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_widens__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--road-widens--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__road_widens_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--road-widens-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__roadworks__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A16_RoadWorks"/>
+        <rdfs:label>warning--roadworks--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__roadworks__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A16_RoadWorks"/>
+        <rdfs:label>warning--roadworks--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__roadworks__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A16_RoadWorks"/>
+        <rdfs:label>warning--roadworks--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__roadworks__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A16_RoadWorks"/>
+        <rdfs:label>warning--roadworks--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__roadworks__g6">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A16_RoadWorks"/>
+        <rdfs:label>warning--roadworks--g6</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__roundabout__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A22_Roundabout"/>
+        <rdfs:label>warning--roundabout--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__roundabout__g25">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A22_Roundabout"/>
+        <rdfs:label>warning--roundabout--g25</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__school_zone__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A13_Children"/>
+        <rdfs:label>warning--school-zone--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__shared_lane_motorcycles_bicycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--shared-lane-motorcycles-bicycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__slippery_motorcycles__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A9_SlipperyRoad"/>
+        <rdfs:label>warning--slippery-motorcycles--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__slippery_road_surface__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A9_SlipperyRoad"/>
+        <rdfs:label>warning--slippery-road-surface--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__slippery_road_surface__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A9_SlipperyRoad"/>
+        <rdfs:label>warning--slippery-road-surface--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__steep_ascent__g7">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A03_SteepAscentWarningSign"/>
+        <rdfs:label>warning--steep-ascent--g7</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__stop_ahead__g9">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A20_A21_PriorityControlAheadWarningSign"/>
+        <rdfs:label>warning--stop-ahead--g9</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__t_roads__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18d_GeneralPriorityIntersection_TJunction"/>
+        <rdfs:label>warning--t-roads--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__t_roads__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18d_GeneralPriorityIntersection_TJunction"/>
+        <rdfs:label>warning--t-roads--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__texts__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A32_OtherDangers"/>
+        <rdfs:label>warning--texts--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__texts__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A32_OtherDangers"/>
+        <rdfs:label>warning--texts--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__texts__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A32_OtherDangers"/>
+        <rdfs:label>warning--texts--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__traffic_merges_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--traffic-merges-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__traffic_merges_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--traffic-merges-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__traffic_merges_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--traffic-merges-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__traffic_merges_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--traffic-merges-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__traffic_signals__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A17_LightSignalsWarningSign"/>
+        <rdfs:label>warning--traffic-signals--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__traffic_signals__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A17_LightSignalsWarningSign"/>
+        <rdfs:label>warning--traffic-signals--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__traffic_signals__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A17_LightSignalsWarningSign"/>
+        <rdfs:label>warning--traffic-signals--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__traffic_signals__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A17_LightSignalsWarningSign"/>
+        <rdfs:label>warning--traffic-signals--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__trail_crossing__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--trail-crossing--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__trams_crossing__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A27_TramwayLine"/>
+        <rdfs:label>warning--trams-crossing--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__trucks_crossing__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+        <rdfs:label>warning--trucks-crossing--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__turn_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--turn-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__turn_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--turn-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__turn_right__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A01_DangerousBendWarningSign"/>
+        <rdfs:label>warning--turn-right--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__two_way_traffic__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A23_TwoWayTraffic"/>
+        <rdfs:label>warning--two-way-traffic--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__two_way_traffic__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A23_TwoWayTraffic"/>
+        <rdfs:label>warning--two-way-traffic--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__uneven_road__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A7a_UnevenRoad"/>
+        <rdfs:label>warning--uneven-road--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__uneven_road__g6">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A7a_UnevenRoad"/>
+        <rdfs:label>warning--uneven-road--g6</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__uneven_roads_ahead__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A7a_UnevenRoad"/>
+        <rdfs:label>warning--uneven-roads-ahead--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__wild_animals__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A15b_WildAnimalsCrossing"/>
+        <rdfs:label>warning--wild-animals--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__wild_animals__g4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A15b_WildAnimalsCrossing"/>
+        <rdfs:label>warning--wild-animals--g4</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__winding_road_first_left__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1c_DoubleBendLeftFirst"/>
+        <rdfs:label>warning--winding-road-first-left--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__winding_road_first_left__g2">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1c_DoubleBendLeftFirst"/>
+        <rdfs:label>warning--winding-road-first-left--g2</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__winding_road_first_right__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1d_DoubleBendRightFirst"/>
+        <rdfs:label>warning--winding-road-first-right--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__winding_road_first_right__g3">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A1d_DoubleBendRightFirst"/>
+        <rdfs:label>warning--winding-road-first-right--g3</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__wombat_crossing__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A15b_WildAnimalsCrossing"/>
+        <rdfs:label>warning--wombat-crossing--g1</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntologyMTSD#MTSD_warning__y_roads__g1">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#A18f_GeneralPriorityIntersection_YJunction"/>
+        <rdfs:label>warning--y-roads--g1</rdfs:label>
+    </owl:Class>
+    <!-- MTSD_ALIGNMENT_BLOCK_END -->
 </rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-

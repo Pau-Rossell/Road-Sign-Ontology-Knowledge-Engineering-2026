@@ -879,3 +879,157 @@ NEXT_RECOMMENDED_ACTION:
 * Add explicit road-user applicability and MTSD observation/alignment properties before implementing the remaining competency-question queries.
 
 PROMPT_LOG_ENTRY_END
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
+ENTRY_ID: PL-0006
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+You are assisting with a Knowledge Engineering project involving an OWL 2 ontology of road signs.
+
+Thoroughly study the following files:
+
+1. ontology/roadSignOntology.owl
+2. data/raw/MTSD.ttl
+
+The MTSD.ttl file is large, so inspect it efficiently. Do not load or print the entire file unnecessarily. Extract its class/label structure, especially MTSD traffic-sign labels such as rdfs:label values on traffic-sign objects.
+
+Task:
+
+Integrate the MTSD dataset vocabulary with the existing road-sign ontology.
+
+Specifically:
+
+1. Analyse the current class hierarchy in roadSignOntology.owl.
+2. Identify MTSD labels/classes that correspond to existing ontology classes.
+3. Add missing MTSD-derived subclasses where the MTSD concept is narrower than an existing ontology class.
+4. Use rdfs:subClassOf for narrower dataset-specific classes.
+5. Use owl:equivalentClass only where the MTSD concept and the ontology concept have exactly the same meaning.
+6. Do not force equivalence for value-specific, country-specific, variant-specific, or dataset-specific labels.
+7. Preserve the original MTSD label text using rdfs:label annotations.
+8. Treat data/raw/MTSD.ttl as read-only.
+9. Avoid changing unrelated ontology classes, properties, individuals, or axioms.
+10. Keep Vienna Convention classes and MTSD-derived classes clearly distinguishable.
+
+Expected output:
+
+1. A summary of the MTSD labels/classes analysed.
+2. A proposed or implemented class hierarchy alignment.
+3. A list of added rdfs:subClassOf axioms.
+4. A list of proposed owl:equivalentClass axioms, with justification for each.
+5. A list of uncertain or unmapped MTSD labels.
+6. A clear explanation of modelling decisions.
+7. Validation status, including whether XML/RDF parsing was run and whether Protégé reasoner validation is still required.
+
+Important modelling rule:
+
+An MTSD class should be equivalent to a roadSignOntology class only if both denote exactly the same road-sign type. Otherwise, the MTSD class should be modelled as a subclass of the broader ontology class.
+
+Example:
+
+MTSD_regulatory__maximum_speed_limit_120__g1
+  rdfs:subClassOf C14_MaximumSpeedLimit
+
+not:
+
+MTSD_regulatory__maximum_speed_limit_120__g1
+  owl:equivalentClass C14_MaximumSpeedLimit
+
+because the MTSD class is value-specific while C14_MaximumSpeedLimit covers all maximum-speed-limit signs.
+PROMPT_END
+
+TASK_TYPE:
+alignment
+
+FILES_READ:
+
+* ontology/roadSignOntology.owl
+* ontology/roadSignOntologyMTSD_aligned.owl
+* data/raw/MTSD.ttl
+* docs/prompt_log.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* ontology/roadSignOntologyMTSD_aligned.owl - added MTSD-derived class declarations, subclass axioms, and rdfs:label annotations while importing the base ontology
+* data/processed/mtsd_alignment_mapping.csv - created mapping table for all unique MTSD labels
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Streamed MTSD.ttl to extract 401 unique rdfs:label values from 206386 labelled traffic-sign objects. Added a marked MTSD_ALIGNMENT_BLOCK to ontology/roadSignOntologyMTSD_aligned.owl, which imports the base road-sign ontology, with 400 MTSD-derived classes, 400 rdfs:subClassOf axioms, and 400 rdfs:label annotations. Left ontology/roadSignOntology.owl as the unmodified base ontology. Left the MTSD catch-all label other-sign unmapped. Created a CSV mapping table recording counts, generated class names, target ontology classes, mapping status, and reasons. XML parsing and xmllint checks passed for the base and aligned ontology files; RDFLib RDF parsing was not run because rdflib is not installed in the project virtual environment.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* MTSD-derived classes live in the RoadSignOntologyMTSD alignment ontology namespace, use an MTSD_ prefix, and preserve original MTSD labels with rdfs:label.
+* No owl:equivalentClass axioms were asserted because the MTSD labels are dataset-specific and frequently variant-specific or value-specific.
+* Value-specific speed-limit labels were modelled as subclasses of C14_MaximumSpeedLimit, and complementary speed labels were modelled as AdditionalPanel subclasses rather than C14 equivalents.
+* Broad parent classes such as DangerWarningSign, AdditionalPanel, SpecialRegulationSign, and RoadSign were used where no safer specific existing class was available.
+
+VALIDATION_STATUS:
+requires_manual_check
+
+MANUAL_REVIEW_REQUIRED:
+
+* Review the generated MTSD mappings in data/processed/mtsd_alignment_mapping.csv and run Protégé reasoner validation after loading ontology/roadSignOntologyMTSD_aligned.owl.
+
+NEXT_RECOMMENDED_ACTION:
+
+* Run Protégé reasoner validation on ontology/roadSignOntologyMTSD_aligned.owl and inspect representative MTSD classes such as MTSD_regulatory__maximum_speed_limit_120__g1, MTSD_regulatory__stop__g1, and MTSD_warning__falling_rocks_or_debris_right__g1.
+
+PROMPT_LOG_ENTRY_END
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
+ENTRY_ID: PL-0007
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+make the git up to date. It si my understanding that the only conflic can arise with the prompt log, which should be too problematic
+PROMPT_END
+
+TASK_TYPE:
+project_management
+
+FILES_READ:
+
+* docs/prompt_log.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Fetched origin/main, merged the remote changes into local main, verified that the base ontology contains no MTSD alignment block, validated the base and MTSD-aligned ontology XML files, and pushed the synchronized branch to origin/main. No merge conflict required manual resolution.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* NONE
+
+VALIDATION_STATUS:
+passed
+
+MANUAL_REVIEW_REQUIRED:
+
+* NONE
+
+NEXT_RECOMMENDED_ACTION:
+
+* NONE
+
+PROMPT_LOG_ENTRY_END
