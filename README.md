@@ -1,30 +1,30 @@
 ### KNOWLEDGE ENGINEERING: ROAD SIGN ONTOLOGY PROJECT README
-This file contains the basic information on the project structure. For starters, the contents of the directory follow the following structure:
+This file contains the basic information on the project architecture:
 
 ```
 project/
-├── ontology/
-│   └── roadSignOntology.owl
+├── ontology/                           / This holds the actual .owl ontologies
+│   ├── roadSignOntology.owl            / The class taxonomy
+│   └── roadSignOntologyMTSD_aligned    / The actual MTSD aligned ontology
 │
 ├── data/
 │   ├── raw
-│   │     └── MTSD.ttl
+│   │   └── MTSD.ttl                    / Mappillary Trafic Sign Dataset
 │   └── processed
+│       └── mtsd_alignment_mapping      / CSV to align roadSignOntology and MTSD.ttl
 │
-├── queries/
+├── queries/                            / Contains the python, SPARQL,... queries for each CQ
 │
-├── scripts/
+├── scripts/                            / Contains .html auxiliary files that aided us in comprehending the project composition
 │
 ├── docs/
-│   ├── competency_questions.md
-│   ├── alignment_matrix.csv
-│   ├── prompt_log.csv
-│   ├── defence_drill.md
-│   └── README_submission.md
-├── results/
-│   ├── cq_answers.md
-│   ├── reasoner_report.md
-│   ├── figures/
-│   └── screenshots/
-└── README.md
+│   ├── KnowledgeEngineeringSessions/   / KE sessions PDFs
+│   ├── competency_questions.md         / The CQs
+│   ├── prompt_log.md                  / Structured LLM prompts log
+│   ├── Conv_road_signs_2006v_EN.pdf    / The Vienna Convention on road signs as shared in the Virtual Campus
+│   └── ontologyFormat                  / Specifies the format to be used throughout our ontology
+│
+├── AGENTS.md                           / Prompt which serves as contex for any agent working within the directory.
+├── .gitignore                          / Extensions and files we want to avoid pushing to the repository
+└── README.md                           / INFO on the project directory architecture
 ```
