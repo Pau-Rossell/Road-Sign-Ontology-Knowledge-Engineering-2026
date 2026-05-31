@@ -259,6 +259,61 @@ PROMPT_LOG_ENTRY_END
 
 PROMPT_LOG_ENTRY_START
 
+ENTRY_ID: PL-0013
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+I just attached a parsed version of the vienna_convention, do the same thing I requested before with the sections B, then C, and finally D
+PROMPT_END
+
+TASK_TYPE:
+ontology_modelling
+
+FILES_READ:
+
+* C:\Users\alexa\Downloads\Vienna_Convention_Parsed.md
+* ontology/roadSignOntology.owl
+* docs/prompt_log.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* ontology/roadSignOntology.owl - added Section B, C, and D visual/value restrictions and new limit-value data properties
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Extended Sections B, C, and D using the parsed Vienna Convention summary. Added concrete shape/ground/symbol restrictions for key priority and mandatory signs, strengthened prohibitory-sign family axioms, and introduced width, length, mass, and axle-mass limit data properties for value-bearing restrictive signs. XML well-formedness check passed.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* The update stayed conservative and reused the existing class/style pattern rather than introducing a new road-user applicability relation or embedded-symbol model.
+* New numeric properties were introduced only where the current ontology lacked a precise home for restriction values, such as vehicle length or axle-mass limits.
+* Parsed summary statements that were too coarse or exception-heavy were applied to sign families selectively rather than to all PrioritySign, ProhibitoryOrRestrictiveSign, or MandatorySign subclasses globally.
+
+VALIDATION_STATUS:
+requires_manual_check
+
+MANUAL_REVIEW_REQUIRED:
+
+* Review whether C01/C02 and C17 families should receive additional model-specific visual axioms beyond the conservative family restrictions added here.
+* Review whether D8 end-of-compulsory-minimum-speed should be modelled with a stronger end-marking pattern than the current Number plus Diagonal_band approximation.
+* Review whether additional symbol classes are needed for signs such as animal-drawn vehicles or more exact STOP/no-entry iconography.
+
+NEXT_RECOMMENDED_ACTION:
+
+* Open the updated B, C, and D classes in Protégé and run representative DL queries to verify that the new shape, colour, and numeric-value restrictions support your competency questions as intended.
+
+PROMPT_LOG_ENTRY_END
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
 ENTRY_ID: PL-0012
 
 DATE: 2026-05-31

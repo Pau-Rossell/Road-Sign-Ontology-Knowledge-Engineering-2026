@@ -1057,13 +1057,22 @@
         <DataProperty IRI="#hasArrowheadTermination"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasAxleMassLimitValue"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasDistanceValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLengthLimitValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasHeight"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasHeightLimitValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMassLimitValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasLengthValue"/>
@@ -1076,6 +1085,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasTextLanguage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidthLimitValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasWidth"/>
@@ -1619,6 +1631,97 @@
         <Class IRI="#B05_B06_NarrowSectionPrioritySign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#B1_GiveWay"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#InvertedTriangle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2a_Stop_Octagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Octagon"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2b_Stop_Circular"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B3_PriorityRoad"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B3_PriorityRoad"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B4_EndOfPriority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Diagonal_band"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B4_EndOfPriority"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Yellow"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B4_EndOfPriority"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Diamond"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B5_PriorityForOncomingTraffic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B5_PriorityForOncomingTraffic"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B6_PriorityOverOncomingTraffic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B6_PriorityOverOncomingTraffic"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B6_PriorityOverOncomingTraffic"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Square"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Bed"/>
         <Class IRI="#Symbol"/>
     </SubClassOf>
@@ -1769,6 +1872,396 @@
     <SubClassOf>
         <Class IRI="#C20b_AlternateParkingEvenDates"/>
         <Class IRI="#C20_AlternateParkingSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C03_CategoryEntryProhibitionSign"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C03_CategoryEntryProhibitionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C03_CategoryEntryProhibitionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C04_MultipleCategoryEntryProhibitionSign"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C04_MultipleCategoryEntryProhibitionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C04_MultipleCategoryEntryProhibitionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C05_C10_VehicleMetricRestrictionSign"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C05_C10_VehicleMetricRestrictionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C05_C10_VehicleMetricRestrictionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11_C12_TurningProhibitionSign"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11_C12_TurningProhibitionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C11_C12_TurningProhibitionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13_OvertakingProhibitionSign"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13_OvertakingProhibitionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13_OvertakingProhibitionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Number"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C14_MaximumSpeedLimit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasSpeedValue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C15_AudibleWarningDevicesProhibited"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C15_AudibleWarningDevicesProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C15_AudibleWarningDevicesProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C15_AudibleWarningDevicesProhibited"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Horn_crossed_by_an_oblique_bar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C16_PassingWithoutStoppingProhibited"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C16_PassingWithoutStoppingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C16_PassingWithoutStoppingProhibited"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C16_PassingWithoutStoppingProhibited"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Words"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C18_C20_StandingOrParkingRestrictionSign"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#White"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGroundColour"/>
+                <NamedIndividual IRI="#Yellow"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C18_C20_StandingOrParkingRestrictionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C18_C20_StandingOrParkingRestrictionSign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3b_NoEntryForMotorcycles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Motorcycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3c_NoEntryForCycles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3d_NoEntryForMopeds"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Moped"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3e_NoEntryForGoodsVehicles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Goods_vehicle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3f_NoEntryForPowerDrivenVehiclesDrawingTrailerExceptSemiTrailerOrSingleAxleTrailer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Vehicle_with_trailer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3g_NoEntryForPowerDrivenVehiclesDrawingTrailer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Vehicle_with_trailer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3h_NoEntryForDangerousGoodsVehiclesRequiringSpecialSignPlating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3i_NoEntryForPedestrians"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3k_NoEntryForHandcarts"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Handcart"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3l_NoEntryForAgriculturalVehicles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Tractor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C4a_NoEntryForPowerDrivenVehicles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Vehicle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C5_NoEntryForVehiclesExceedingWidth"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasWidthLimitValue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C6_NoEntryForVehiclesExceedingHeight"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasHeightLimitValue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C7_NoEntryForVehiclesExceedingLadenMass"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasMassLimitValue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C8_NoEntryForVehiclesExceedingAxleMass"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAxleMassLimitValue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C9_NoEntryForVehiclesExceedingLength"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasLengthLimitValue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C10_MinimumDistanceBetweenVehiclesProhibited"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasDistanceValue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C2_ClosedToAllVehiclesInBothDirections"/>
@@ -1993,6 +2486,199 @@
     <SubClassOf>
         <Class IRI="#D9_SnowChainsCompulsory"/>
         <Class IRI="#MandatorySign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D01_D03_DirectionalMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D01_D03_DirectionalMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1a_DirectionToBeFollowed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D1b_DirectionToBeFollowed_Alternative"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D2_PassThisSide"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D3_CompulsoryRoundabout"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Arrows"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D04_D06_ReservedPathMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D04_D06_ReservedPathMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D4_CompulsoryCycleTrack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D5_CompulsoryFootpath"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D6_CompulsoryTrackForRidersOnHorseback"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Rider_on_horseback"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D07_D08_MinimumSpeedMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D7_CompulsoryMinimumSpeed"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D7_CompulsoryMinimumSpeed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Number"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D7_CompulsoryMinimumSpeed"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasSpeedValue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D8_EndOfCompulsoryMinimumSpeed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Number"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D8_EndOfCompulsoryMinimumSpeed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Diagonal_band"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D9_SnowChainsCompulsory"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D9_SnowChainsCompulsory"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D9_SnowChainsCompulsory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Tire_fitted_with_snow_chains"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10_DangerousGoodsDirectionMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Blue"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10_DangerousGoodsDirectionMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasShape"/>
+            <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10a_CompulsoryDirectionForDangerousGoods_Straight"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10b_CompulsoryDirectionForDangerousGoods_Turn"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10c_CompulsoryDirectionForDangerousGoods_Junction"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Arrows"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymbol"/>
+                <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DangerWarningSign"/>
@@ -5157,6 +5843,10 @@
         <Class IRI="#Colour"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
+        <DataProperty IRI="#hasAxleMassLimitValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#hasArrowheadTermination"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -5173,7 +5863,15 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#hasLengthLimitValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#hasLengthValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMassLimitValue"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -5189,9 +5887,17 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#hasWidthLimitValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#hasWidth"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAxleMassLimitValue"/>
+        <Class IRI="#RoadSign"/>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasArrowheadTermination"/>
         <Class IRI="#RoadSign"/>
@@ -5209,7 +5915,15 @@
         <Class IRI="#RoadSign"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasLengthLimitValue"/>
+        <Class IRI="#RoadSign"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasLengthValue"/>
+        <Class IRI="#RoadSign"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMassLimitValue"/>
         <Class IRI="#RoadSign"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -5225,9 +5939,17 @@
         <Class IRI="#RoadSign"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasWidthLimitValue"/>
+        <Class IRI="#RoadSign"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasWidth"/>
         <Class IRI="#RoadSign"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAxleMassLimitValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasArrowheadTermination"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
@@ -5245,7 +5967,15 @@
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#hasLengthLimitValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasLengthValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMassLimitValue"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -5259,6 +5989,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasTextLanguage"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidthLimitValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasWidth"/>
