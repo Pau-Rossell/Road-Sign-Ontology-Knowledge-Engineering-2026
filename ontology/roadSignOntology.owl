@@ -147,9 +147,166 @@
     
 
 
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Airplane -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Airplane">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Animal -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Animal">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Axle_silhouette -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Axle_silhouette">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bed -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bed">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bridge_over_dual_carriageway -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bridge_over_dual_carriageway">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Broad_and_thin_lines -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Broad_and_thin_lines">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bus -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bus">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_falling_into_water -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_falling_into_water">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_skidding -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_skidding">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_throwing_up_loose_stones -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_throwing_up_loose_stones">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_tilting_over_a_verge -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_tilting_over_a_verge">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Caravan -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Caravan">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Children_running -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Children_running">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Colour -->
 
     <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Colour"/>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Country_name -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Country_name">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Crossed_red_bars -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Crossed_red_bars">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Cup -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Cup">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Cycle -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Cycle">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
     
 
 
@@ -167,6 +324,22 @@
     
 
 
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Dimension_lines -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Dimension_lines">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign -->
 
     <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign">
@@ -175,18 +348,2094 @@
     
 
 
-    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#FacilityServiceSign -->
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10a_ExitFromParkingProhibitedZone -->
 
-    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#FacilityServiceSign">
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10a_ExitFromParkingProhibitedZone">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10b_ExitFromTimeBoundZone -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10b_ExitFromTimeBoundZone">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10c_ExitFromParkingZone -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10c_ExitFromParkingZone">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10d_ExitFromMaximumSpeedZone -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10d_ExitFromMaximumSpeedZone">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E11a_Tunnel_Beginning -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E11a_Tunnel_Beginning">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tunnel_opening"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E11b_Tunnel_End -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E11b_Tunnel_End">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tunnel_opening"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E12a_PedestrianCrossing_Standard -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E12a_PedestrianCrossing_Standard">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Pedestrian_on_zebra_stripes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E12b_PedestrianCrossing_Pentagon -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E12b_PedestrianCrossing_Pentagon">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Pedestrian_on_zebra_stripes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diamond"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E12c_PedestrianCrossing_Dark -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E12c_PedestrianCrossing_Dark">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Pedestrian_on_zebra_stripes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14a_Parking -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14a_Parking">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Letters"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14b_Parking_PlusBus -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14b_Parking_PlusBus">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Letters"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14c_Parking_PlusTrain -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14c_Parking_PlusTrain">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Letters"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E15_BusStop -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E15_BusStop">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bus"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E16_TramwayStop -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E16_TramwayStop">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tramway"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E1a_LaneMinimumSpeed_MultiLane -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E1a_LaneMinimumSpeed_MultiLane">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Number"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E1b_LaneMinimumSpeed_OneLane -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E1b_LaneMinimumSpeed_OneLane">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Number"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E1c_LaneMaximumSpeed_MultiLane -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E1c_LaneMaximumSpeed_MultiLane">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Number"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E2a_LaneReservedForBuses_Position -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E2a_LaneReservedForBuses_Position">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bus"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E2b_LaneReservedForBuses_Entrance -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E2b_LaneReservedForBuses_Entrance">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bus"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3b_OneWaySign_Parallel -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3b_OneWaySign_Parallel">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E5a_Motorway_Beginning -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E5a_Motorway_Beginning">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bridge_over_dual_carriageway"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E5b_Motorway_End -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E5b_Motorway_End">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bridge_over_dual_carriageway"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E6a_RoadForMotorVehicles -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E6a_RoadForMotorVehicles">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E6b_EndOfRoadForMotorVehicles -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E6b_EndOfRoadForMotorVehicles">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7a_BeginningOfBuiltUpArea_Name -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7a_BeginningOfBuiltUpArea_Name">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7b_BeginningOfBuiltUpArea_Silhouette -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7b_BeginningOfBuiltUpArea_Silhouette">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7c_BeginningOfBuiltUpArea_Combined -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7c_BeginningOfBuiltUpArea_Combined">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7d_BeginningOfBuiltUpArea_Model4 -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7d_BeginningOfBuiltUpArea_Model4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8a_EndOfBuiltUpArea_Name -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8a_EndOfBuiltUpArea_Name">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8b_EndOfBuiltUpArea_Silhouette -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8b_EndOfBuiltUpArea_Silhouette">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8c_EndOfBuiltUpArea_Combined -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8c_EndOfBuiltUpArea_Combined">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8d_EndOfBuiltUpArea_Model4 -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8d_EndOfBuiltUpArea_Model4">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9a_ZonalValidity_ParkingProhibited -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9a_ZonalValidity_ParkingProhibited">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9b_ZonalValidity_TimeBound -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9b_ZonalValidity_TimeBound">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9c_ZonalValidity_ParkingZone -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9c_ZonalValidity_ParkingZone">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9d_ZonalValidity_MaximumSpeedZone -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9d_ZonalValidity_MaximumSpeedZone">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Light"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Exclamation_mark -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Exclamation_mark">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Extinguisher -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Extinguisher">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F10_CampingSite -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F10_CampingSite">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F11_CaravanSite -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F11_CaravanSite">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Caravan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F12_CampingAndCaravanSite -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F12_CampingAndCaravanSite">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Caravan"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F13_YouthHostel -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F13_YouthHostel">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Youth_hostel_logo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F17_EmergencyTelephone -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F17_EmergencyTelephone">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Telephone_receiver"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F18_FireExtinguisher -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F18_FireExtinguisher">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Extinguisher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Red"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F1a_FirstAidStation_RedCross -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F1a_FirstAidStation_RedCross">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Red_cross_or_crescent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F2_BreakdownService -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F2_BreakdownService">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Spanner"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F3_Telephone -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F3_Telephone">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Telephone_receiver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F4_FillingStation -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F4_FillingStation">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Gas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F5_HotelMotel -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F5_HotelMotel">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Fork_and_spoon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F6_Restaurant -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F6_Restaurant">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Fork_and_spoon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F7_Refreshments -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F7_Refreshments">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Cup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F8_PicnicSite -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#F8_PicnicSite">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasGroundColour"/>
+                        <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tree_and_picnic_table"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasBorderColour"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#White"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:hasValue rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rectangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Falling_rocks -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Falling_rocks">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Fork_and_spoon -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Fork_and_spoon">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Gas -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Gas">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Gate -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Gate">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Goods_vehicle -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Goods_vehicle">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Handcart -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Handcart">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Hiker -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Hiker">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Horizontal_bar -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Horizontal_bar">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Horn_crossed_by_an_oblique_bar -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Horn_crossed_by_an_oblique_bar">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign">
         <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
     </owl:Class>
     
 
 
-    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationSign -->
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Letters -->
 
-    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationSign">
-        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Letters">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Line_of_cars -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Line_of_cars">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
     </owl:Class>
     
 
@@ -199,10 +2448,100 @@
     
 
 
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Median_band -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Median_band">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Moped -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Moped">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Motorcycle -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Motorcycle">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#National_emblem -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#National_emblem">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Number -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Number">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Oblique_red_or_white_bars -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Oblique_red_or_white_bars">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Pedestrian -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Pedestrian">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Pedestrian_on_zebra_stripes -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Pedestrian_on_zebra_stripes">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#PrioritySign -->
 
     <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#PrioritySign">
         <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Profile_of_a_steep_gradient -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Profile_of_a_steep_gradient">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Profile_of_an_uneven_road -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Profile_of_an_uneven_road">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
     </owl:Class>
     
 
@@ -215,9 +2554,48 @@
     
 
 
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Red_cross_or_crescent -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Red_cross_or_crescent">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rider_on_horseback -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rider_on_horseback">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign -->
 
-    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#hasShape"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Shape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Road_outline_lines_narrowing -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Road_outline_lines_narrowing">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Running_person_towards_a_door -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Running_person_towards_a_door">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
     
 
 
@@ -227,9 +2605,191 @@
     
 
 
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Snow_crystal -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Snow_crystal">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Spanner -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Spanner">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Swing_bridge_span -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Swing_bridge_span">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol -->
 
     <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#T-shaped_symbol -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#T-shaped_symbol">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Telephone_receiver -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Telephone_receiver">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tent -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tent">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tire_fitted_with_snow_chains -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tire_fitted_with_snow_chains">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tractor -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tractor">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Train -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Train">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tramway -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tramway">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Transverse_red_bar -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Transverse_red_bar">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tree_and_picnic_table -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tree_and_picnic_table">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tunnel_opening -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tunnel_opening">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:comment xml:lang="en">Subclasses of Vehicle represent road user types to which a sign applies. Situational depictions of vehicles (e.g. Car_skidding) must NOT subclass Vehicle.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle_carrying_dangerous_goods -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle_carrying_dangerous_goods">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle_with_trailer -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle_with_trailer">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Wheelchair -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Wheelchair">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Windsock -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Windsock">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Youth_hostel_logo -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Youth_hostel_logo">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#St._Andrew&apos;s_cross -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#St._Andrew&apos;s_cross">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Symbol"/>
+    </owl:Class>
     
 
 
@@ -418,11 +2978,85 @@
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#AdditionalPanel"/>
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign"/>
-            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#FacilityServiceSign"/>
-            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationSign"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#PrioritySign"/>
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ProhibitoryOrRestrictiveSign"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Airplane"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Animal"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Arrows"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Axle_silhouette"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bed"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bridge_over_dual_carriageway"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Broad_and_thin_lines"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Bus"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_falling_into_water"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_skidding"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_throwing_up_loose_stones"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Car_tilting_over_a_verge"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Caravan"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Children_running"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Country_name"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Crossed_red_bars"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Cup"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Cycle"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Diagonal_band"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Dimension_lines"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Exclamation_mark"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Extinguisher"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Falling_rocks"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Fork_and_spoon"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Gate"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Goods_vehicle"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Handcart"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Hiker"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Horizontal_bar"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Horn_crossed_by_an_oblique_bar"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Letters"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Line_of_cars"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Median_band"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Moped"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Motorcycle"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#National_emblem"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Number"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Oblique_red_or_white_bars"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Parallel_lines"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Pedestrian"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Pedestrian_on_zebra_stripes"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Profile_of_a_steep_gradient"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Profile_of_an_uneven_road"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Red_cross_or_crescent"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Rider_on_horseback"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Road_outline_lines_narrowing"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Running_person_towards_a_door"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Snow_crystal"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Spanner"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Swing_bridge_span"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#T-shaped_symbol"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Telephone_receiver"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tent"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tire_fitted_with_snow_chains"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tractor"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Train"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tramway"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Transverse_red_bar"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tree_and_picnic_table"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Tunnel_opening"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle_carrying_dangerous_goods"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Vehicle_with_trailer"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Wheelchair"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Windsock"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Words"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#Youth_hostel_logo"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#St._Andrew&apos;s_cross"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -449,11 +3083,53 @@
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign"/>
-            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#FacilityServiceSign"/>
-            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationSign"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#InformationFacilityServiceSign"/>
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#PrioritySign"/>
             <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ProhibitoryOrRestrictiveSign"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#SpecialRegulationSign"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10a_ExitFromParkingProhibitedZone"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10b_ExitFromTimeBoundZone"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10c_ExitFromParkingZone"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E10d_ExitFromMaximumSpeedZone"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E11a_Tunnel_Beginning"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E11b_Tunnel_End"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E12a_PedestrianCrossing_Standard"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E12b_PedestrianCrossing_Pentagon"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E12c_PedestrianCrossing_Dark"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14a_Parking"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14b_Parking_PlusBus"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E14c_Parking_PlusTrain"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E15_BusStop"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E16_TramwayStop"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E1a_LaneMinimumSpeed_MultiLane"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E1b_LaneMinimumSpeed_OneLane"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E1c_LaneMaximumSpeed_MultiLane"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E2a_LaneReservedForBuses_Position"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E2b_LaneReservedForBuses_Entrance"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3a_OneWaySign_Perpendicular"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E3b_OneWaySign_Parallel"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E5a_Motorway_Beginning"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E5b_Motorway_End"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E6a_RoadForMotorVehicles"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E6b_EndOfRoadForMotorVehicles"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7a_BeginningOfBuiltUpArea_Name"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7b_BeginningOfBuiltUpArea_Silhouette"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7c_BeginningOfBuiltUpArea_Combined"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E7d_BeginningOfBuiltUpArea_Model4"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8a_EndOfBuiltUpArea_Name"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8b_EndOfBuiltUpArea_Silhouette"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8c_EndOfBuiltUpArea_Combined"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E8d_EndOfBuiltUpArea_Model4"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9a_ZonalValidity_ParkingProhibited"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9b_ZonalValidity_TimeBound"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9c_ZonalValidity_ParkingZone"/>
+            <rdf:Description rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#E9d_ZonalValidity_MaximumSpeedZone"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
