@@ -255,6 +255,57 @@ NEXT_RECOMMENDED_ACTION:
 
 PROMPT_LOG_ENTRY_END
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
+ENTRY_ID: PL-0004
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+based on the CQ stated in the file docs\competency_questions.md how should I indicate on my Protegé ontology the Symbol of a sign?
+PROMPT_END
+
+TASK_TYPE:
+explanation
+
+FILES_READ:
+
+* docs/competency_questions.md
+* ontology/roadSignOntology.owl
+* docs/prompt_log.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Explained how to represent sign symbols in Protégé based on the competency questions, recommending use of the existing hasSymbol object property from RoadSign to Symbol, with specific symbol vocabulary individuals or subclasses and optional literal values for cases such as speed-limit numerals.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* Symbol should be modelled separately from the sign itself so symbol-based competency questions remain queryable.
+* Value-bearing content such as speed numerals should use a datatype property in addition to symbol linkage rather than replacing the symbol representation.
+
+VALIDATION_STATUS:
+requires_manual_check
+
+MANUAL_REVIEW_REQUIRED:
+
+* Verify in Protégé that the chosen symbol pattern supports the intended DL, SPARQL, and Python competency-question queries without overcommitting to unnecessary equivalence axioms.
+
+NEXT_RECOMMENDED_ACTION:
+
+* Add a small controlled symbol vocabulary in Protégé and test it against CQ-14, CQ-16, and CQ-17.
+
+PROMPT_LOG_ENTRY_END
+
 PROMPT LOG ENTRY RULES
 
 * ENTRY_ID uses sequential numbering: PL-0001, PL-0002, PL-0003, and so on.
