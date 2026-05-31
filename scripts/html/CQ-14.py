@@ -1,5 +1,3 @@
-%pip install owlready2
-
 from owlready2 import *
 
 onto_path.append(".")
