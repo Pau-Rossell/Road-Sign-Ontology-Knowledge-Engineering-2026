@@ -1029,6 +1029,14 @@
     
 
 
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#CombinedReservedPathCompulsory -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#CombinedReservedPathCompulsory">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#CrossWindWarningSign -->
 
     <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#CrossWindWarningSign">
@@ -1041,6 +1049,126 @@
 
     <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#CyclistsCrossingWarningSign">
         <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D10a_CompulsoryDirectionForDangerousGoods_Straight -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D10a_CompulsoryDirectionForDangerousGoods_Straight">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerousGoodsDirection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D10b_CompulsoryDirectionForDangerousGoods_Turn -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D10b_CompulsoryDirectionForDangerousGoods_Turn">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerousGoodsDirection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D10c_CompulsoryDirectionForDangerousGoods_Junction -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D10c_CompulsoryDirectionForDangerousGoods_Junction">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerousGoodsDirection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D11a_CompulsorySharedPath_Segregated -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D11a_CompulsorySharedPath_Segregated">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#CombinedReservedPathCompulsory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D11b_CompulsorySharedPath_Unsegregated -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D11b_CompulsorySharedPath_Unsegregated">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#CombinedReservedPathCompulsory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1a_DirectionToBeFollowed">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionToBeFollowedSign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1b_DirectionToBeFollowed_Alternative -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D1b_DirectionToBeFollowed_Alternative">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionToBeFollowedSign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D2_PassThisSide">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D3_CompulsoryRoundabout -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D3_CompulsoryRoundabout">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D4_CompulsoryCycleTrack -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D4_CompulsoryCycleTrack">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ReservedPathMandatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D5_CompulsoryFootpath -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D5_CompulsoryFootpath">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ReservedPathMandatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D6_CompulsoryTrackForRidersOnHorseback -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D6_CompulsoryTrackForRidersOnHorseback">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ReservedPathMandatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D7_CompulsoryMinimumSpeed -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D7_CompulsoryMinimumSpeed">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D8_EndOfCompulsoryMinimumSpeed -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D8_EndOfCompulsoryMinimumSpeed">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D9_SnowChainsCompulsory -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#D9_SnowChainsCompulsory">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
     </owl:Class>
     
 
@@ -1077,6 +1205,14 @@
     
 
 
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerousGoodsDirection -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerousGoodsDirection">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerousShoulderWarningSign -->
 
     <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerousShoulderWarningSign">
@@ -1095,6 +1231,14 @@
 
     <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionSign">
         <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RoadSign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionToBeFollowedSign -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DirectionToBeFollowedSign">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
     </owl:Class>
     
 
@@ -1247,6 +1391,14 @@
 
     <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#RailwayOrTramwayWarningSign">
         <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#DangerWarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ReservedPathMandatorySign -->
+
+    <owl:Class rdf:about="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#ReservedPathMandatorySign">
+        <rdfs:subClassOf rdf:resource="https://github.com/Pau-Rossell/Road-Sign-Ontology-Knowledge-Engineering-2026/RoadSignOntology#MandatorySign"/>
     </owl:Class>
     
 
