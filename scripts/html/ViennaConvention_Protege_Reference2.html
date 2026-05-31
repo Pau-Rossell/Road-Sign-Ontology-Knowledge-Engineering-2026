@@ -103,6 +103,176 @@ body {
 .filter-btn.active { background: var(--acc); color: #000; border-color: var(--acc); font-weight: 500; }
 .count-badge { font-size: 11px; color: var(--muted); font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
 
+/* -- CLASSIFIER -- */
+.classifier-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 250;
+  background: rgba(0, 0, 0, .62);
+  padding: 78px 24px 24px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.classifier-backdrop.open { display: flex; }
+.classifier-dialog {
+  width: min(920px, 100%);
+  max-height: calc(100vh - 110px);
+  overflow: auto;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, .55);
+}
+.classifier-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.classifier-title {
+  flex: 1;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--acc);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.classifier-summary {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+}
+.classifier-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.classifier-field label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--dim);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.classifier-field select {
+  width: 100%;
+  min-height: 32px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 3px;
+  color: var(--text);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  padding: 6px 8px;
+  outline: none;
+}
+.classifier-field select:focus { border-color: var(--acc); }
+.value-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+}
+.value-group {
+  padding: 14px 16px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.value-group:nth-child(odd) { border-right: 1px solid var(--border); }
+.value-group-wide {
+  grid-column: 1 / -1;
+  border-right: 0 !important;
+}
+.value-heading {
+  margin-bottom: 9px;
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.value-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.value-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 25px;
+  padding: 4px 8px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 3px;
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all .12s;
+}
+.value-chip:hover { border-color: var(--acc); color: var(--text); }
+.value-chip.active {
+  border-color: var(--acc);
+  color: var(--acc);
+  background: #241f10;
+}
+.value-chip-count { color: var(--dim); }
+.value-chip.active .value-chip-count { color: var(--acc2); }
+.value-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--border2);
+  flex-shrink: 0;
+}
+.value-swatch.none {
+  background:
+    linear-gradient(135deg, transparent 44%, var(--border2) 45%, var(--border2) 55%, transparent 56%),
+    var(--surface3);
+}
+.shape-mark {
+  min-width: 14px;
+  color: var(--acc);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+}
+.symbol-chip {
+  max-width: 100%;
+  align-items: flex-start;
+  text-align: left;
+}
+.symbol-mark {
+  min-width: 14px;
+  color: #7ec8e3;
+  text-align: center;
+}
+.value-label { overflow-wrap: anywhere; }
+.classifier-close {
+  min-width: 32px;
+  min-height: 28px;
+  padding: 4px 8px;
+}
+
+@media (max-width: 760px) {
+  .classifier-backdrop { padding: 68px 10px 10px; }
+  .classifier-grid,
+  .value-groups { grid-template-columns: 1fr; }
+  .value-group:nth-child(odd) { border-right: 0; }
+}
+
 /* ── MAIN LAYOUT ── */
 .main { display: flex; height: calc(100vh - 89px); overflow: hidden; }
 
@@ -149,9 +319,73 @@ body {
   flex-shrink: 0;
 }
 .sec-count { margin-left: auto; font-size: 10px; color: var(--dim); font-family: 'IBM Plex Mono', monospace; }
+.hierarchy-tree {
+  font-size: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--dim);
+  line-height: 1.9;
+  padding: 4px 0;
+}
+.tree-link {
+  display: block;
+  width: 100%;
+  padding: 1px 4px;
+  background: transparent;
+  border: 0;
+  border-radius: 3px;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+.tree-link:hover { background: var(--surface2); color: var(--text); }
+.tree-link.active { background: var(--surface3); color: var(--text); }
+.tree-prefix { color: var(--dim); }
+.tree-class { color: #7ec8e3; }
+.tree-visual { color: var(--acc); }
 
 /* ── CONTENT ── */
 .content { flex: 1; overflow-y: auto; padding: 20px 24px; }
+
+/* ── CLASS REFERENCE ── */
+.class-index {
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+.class-ref-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.class-ref {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px;
+  scroll-margin-top: 120px;
+}
+.class-ref-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: #7ec8e3;
+  margin-bottom: 6px;
+}
+.class-ref-meta {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.class-ref-values {
+  max-height: 148px;
+  overflow-y: auto;
+}
+
+@media (max-width: 980px) {
+  .classifier-grid,
+  .class-ref-grid { grid-template-columns: 1fr; }
+}
 
 /* ── SECTION HEADER ── */
 .sec-header {
@@ -323,7 +557,7 @@ body {
 </div>
 
 <div class="search-bar">
-  <input class="search-input" id="search" placeholder="Search by code, name, shape, colour, OWL class…" oninput="filterRows()">
+  <input class="search-input" id="search" placeholder="Search by code, name, shape, colour, symbol, OWL class…" oninput="filterRows()">
   <button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">All</button>
   <button class="filter-btn" data-filter="A" onclick="setFilter('A',this)" style="color:var(--A)">A</button>
   <button class="filter-btn" data-filter="B" onclick="setFilter('B',this)" style="color:var(--B)">B</button>
@@ -333,49 +567,106 @@ body {
   <button class="filter-btn" data-filter="F" onclick="setFilter('F',this)" style="color:var(--F)">F</button>
   <button class="filter-btn" data-filter="G" onclick="setFilter('G',this)" style="color:var(--G)">G</button>
   <button class="filter-btn" data-filter="H" onclick="setFilter('H',this)" style="color:var(--H)">H</button>
+  <button class="filter-btn" id="classify-toggle" type="button" onclick="toggleClassifier()">Classify</button>
+  <button class="filter-btn" id="visual-reset" type="button" onclick="resetClassifier()" style="display:none">Reset visual</button>
   <span class="count-badge" id="count-badge">180 signs</span>
+</div>
+
+<div class="classifier-backdrop" id="classifier-backdrop" aria-hidden="true" onclick="closeClassifierOnBackdrop(event)">
+  <section class="classifier-dialog" role="dialog" aria-modal="true" aria-labelledby="classifier-title">
+    <div class="classifier-head">
+      <div class="classifier-title" id="classifier-title">Visual Classifier</div>
+      <button class="filter-btn" type="button" onclick="resetClassifier()">Reset</button>
+      <button class="filter-btn classifier-close" type="button" onclick="toggleClassifier(false)">Close</button>
+    </div>
+    <div class="classifier-summary" id="classifier-summary">All visual values</div>
+    <div class="classifier-grid">
+      <div class="classifier-field">
+        <label for="classify-color">Colour</label>
+        <select id="classify-color" onchange="setClassifier('color', this.value)"></select>
+      </div>
+      <div class="classifier-field">
+        <label for="classify-ground">Ground colour</label>
+        <select id="classify-ground" onchange="setClassifier('ground', this.value)"></select>
+      </div>
+      <div class="classifier-field">
+        <label for="classify-border">Border colour</label>
+        <select id="classify-border" onchange="setClassifier('border', this.value)"></select>
+      </div>
+      <div class="classifier-field">
+        <label for="classify-shape">Shape</label>
+        <select id="classify-shape" onchange="setClassifier('shape', this.value)"></select>
+      </div>
+      <div class="classifier-field">
+        <label for="classify-symbol">Symbol</label>
+        <select id="classify-symbol" onchange="setClassifier('symbol', this.value)"></select>
+      </div>
+    </div>
+    <div class="value-groups">
+      <div class="value-group">
+        <div class="value-heading">All colours</div>
+        <div class="value-list" id="all-colours-list"></div>
+      </div>
+      <div class="value-group">
+        <div class="value-heading">Ground colours</div>
+        <div class="value-list" id="ground-colours-list"></div>
+      </div>
+      <div class="value-group">
+        <div class="value-heading">Border colours</div>
+        <div class="value-list" id="border-colours-list"></div>
+      </div>
+      <div class="value-group">
+        <div class="value-heading">Shapes</div>
+        <div class="value-list" id="shapes-list"></div>
+      </div>
+      <div class="value-group value-group-wide">
+        <div class="value-heading">Symbols / Content</div>
+        <div class="value-list" id="symbols-list"></div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <div class="main">
 <nav class="sidebar">
   <div class="sidebar-section">
     <div class="sidebar-label">Sections</div>
-    <button class="sec-btn active" onclick="scrollTo('secA')" id="navA">
+    <button class="sec-btn active" data-class="DangerWarningSign" onclick="jumpToClass('DangerWarningSign')" id="navA">
       <span class="sec-code" style="background:var(--A-bg);color:var(--A)">A</span>
       Danger Warning
       <span class="sec-count">51</span>
     </button>
-    <button class="sec-btn" onclick="scrollTo('secB')" id="navB">
+    <button class="sec-btn" data-class="PrioritySign" onclick="jumpToClass('PrioritySign')" id="navB">
       <span class="sec-code" style="background:var(--B-bg);color:var(--B)">B</span>
       Priority
       <span class="sec-count">7</span>
     </button>
-    <button class="sec-btn" onclick="scrollTo('secC')" id="navC">
+    <button class="sec-btn" data-class="ProhibitoryOrRestrictiveSign" onclick="jumpToClass('ProhibitoryOrRestrictiveSign')" id="navC">
       <span class="sec-code" style="background:var(--C-bg);color:var(--C)">C</span>
       Prohibitory
       <span class="sec-count">24</span>
     </button>
-    <button class="sec-btn" onclick="scrollTo('secD')" id="navD">
+    <button class="sec-btn" data-class="MandatorySign" onclick="jumpToClass('MandatorySign')" id="navD">
       <span class="sec-code" style="background:var(--D-bg);color:var(--D)">D</span>
       Mandatory
       <span class="sec-count">14</span>
     </button>
-    <button class="sec-btn" onclick="scrollTo('secE')" id="navE">
+    <button class="sec-btn" data-class="InformationFacilityServiceSign" onclick="jumpToClass('InformationFacilityServiceSign')" id="navE">
       <span class="sec-code" style="background:var(--E-bg);color:var(--E)">E</span>
       Information
       <span class="sec-count">37</span>
     </button>
-    <button class="sec-btn" onclick="scrollTo('secF')" id="navF">
+    <button class="sec-btn" data-class="FacilityServiceSign" onclick="jumpToClass('FacilityServiceSign')" id="navF">
       <span class="sec-code" style="background:var(--F-bg);color:var(--F)">F</span>
       Facility Service
       <span class="sec-count">14</span>
     </button>
-    <button class="sec-btn" onclick="scrollTo('secG')" id="navG">
+    <button class="sec-btn" data-class="DirectionPositionIndicationSign" onclick="jumpToClass('DirectionPositionIndicationSign')" id="navG">
       <span class="sec-code" style="background:var(--G-bg);color:var(--G)">G</span>
       Direction
       <span class="sec-count">24</span>
     </button>
-    <button class="sec-btn" onclick="scrollTo('secH')" id="navH">
+    <button class="sec-btn" data-class="AdditionalPanel" onclick="jumpToClass('AdditionalPanel')" id="navH">
       <span class="sec-code" style="background:var(--H-bg);color:var(--H)">H</span>
       Additional Panels
       <span class="sec-count">11</span>
@@ -384,16 +675,19 @@ body {
 
   <div class="sidebar-section" style="margin-top:8px">
     <div class="sidebar-label">OWL Hierarchy</div>
-    <div style="font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--dim);line-height:1.9;padding:4px 0">
-      RoadSign<br>
-      &nbsp;├─ <span style="color:var(--A)">DangerWarningSign</span><br>
-      &nbsp;├─ <span style="color:var(--B)">PrioritySign</span><br>
-      &nbsp;├─ <span style="color:var(--C)">ProhibitoryOrRestrictiveSign</span><br>
-      &nbsp;├─ <span style="color:var(--D)">MandatorySign</span><br>
-      &nbsp;├─ <span style="color:var(--E)">InformationFacilityServiceSign</span><br>
-      &nbsp;├─ <span style="color:var(--F)">FacilityServiceSign</span><br>
-      &nbsp;├─ <span style="color:var(--G)">DirectionPositionIndicationSign</span><br>
-      &nbsp;└─ <span style="color:var(--H)">AdditionalPanel</span>
+    <div class="hierarchy-tree">
+      <button class="tree-link" type="button" data-class="RoadSign" onclick="jumpToClass('RoadSign')"><span class="tree-class">RoadSign</span></button>
+      <button class="tree-link" type="button" data-class="DangerWarningSign" onclick="jumpToClass('DangerWarningSign')"><span class="tree-prefix">&nbsp;├─</span> <span style="color:var(--A)">DangerWarningSign</span></button>
+      <button class="tree-link" type="button" data-class="PrioritySign" onclick="jumpToClass('PrioritySign')"><span class="tree-prefix">&nbsp;├─</span> <span style="color:var(--B)">PrioritySign</span></button>
+      <button class="tree-link" type="button" data-class="ProhibitoryOrRestrictiveSign" onclick="jumpToClass('ProhibitoryOrRestrictiveSign')"><span class="tree-prefix">&nbsp;├─</span> <span style="color:var(--C)">ProhibitoryOrRestrictiveSign</span></button>
+      <button class="tree-link" type="button" data-class="MandatorySign" onclick="jumpToClass('MandatorySign')"><span class="tree-prefix">&nbsp;├─</span> <span style="color:var(--D)">MandatorySign</span></button>
+      <button class="tree-link" type="button" data-class="InformationFacilityServiceSign" onclick="jumpToClass('InformationFacilityServiceSign')"><span class="tree-prefix">&nbsp;├─</span> <span style="color:var(--E)">InformationFacilityServiceSign</span></button>
+      <button class="tree-link" type="button" data-class="FacilityServiceSign" onclick="jumpToClass('FacilityServiceSign')"><span class="tree-prefix">&nbsp;├─</span> <span style="color:var(--F)">FacilityServiceSign</span></button>
+      <button class="tree-link" type="button" data-class="DirectionPositionIndicationSign" onclick="jumpToClass('DirectionPositionIndicationSign')"><span class="tree-prefix">&nbsp;├─</span> <span style="color:var(--G)">DirectionPositionIndicationSign</span></button>
+      <button class="tree-link" type="button" data-class="AdditionalPanel" onclick="jumpToClass('AdditionalPanel')"><span class="tree-prefix">&nbsp;└─</span> <span style="color:var(--H)">AdditionalPanel</span></button>
+      <button class="tree-link" type="button" data-class="Colour" onclick="jumpToClass('Colour')"><span class="tree-visual">Colour</span></button>
+      <button class="tree-link" type="button" data-class="Shape" onclick="jumpToClass('Shape')"><span class="tree-visual">Shape</span></button>
+      <button class="tree-link" type="button" data-class="Symbol" onclick="jumpToClass('Symbol')"><span class="tree-visual">Symbol</span></button>
     </div>
   </div>
 
@@ -409,6 +703,39 @@ body {
 </nav>
 
 <div class="content" id="content">
+
+<!-- ══════════════ CLASS REFERENCES ══════════════ -->
+<div class="class-index" id="classRoadSign">
+  <div class="sec-header" style="background:var(--surface);border-color:var(--border2)">
+    <div class="sec-header-code" style="color:var(--acc)">RS</div>
+    <div class="sec-header-info">
+      <div class="sec-header-name" style="color:var(--acc)">RoadSign</div>
+      <div class="sec-header-meta">Root class for Vienna Convention road-sign classes in this reference.</div>
+      <div class="sec-props">
+        <span class="prop-chip">RoadSign uses visual vocabulary classes through hasShape, hasGroundColour, hasBorderColour, and hasSymbol</span>
+        <span class="prop-chip">Section classes A-H are subclasses of RoadSign</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="class-ref-grid">
+    <div class="class-ref" id="classColour">
+      <div class="class-ref-name">Colour</div>
+      <div class="class-ref-meta">Controlled vocabulary for ground, border, and symbol colour values detected in the table.</div>
+      <div class="value-list class-ref-values" id="class-colour-values"></div>
+    </div>
+    <div class="class-ref" id="classShape">
+      <div class="class-ref-name">Shape</div>
+      <div class="class-ref-meta">Controlled vocabulary for sign-outline shapes and special panel forms.</div>
+      <div class="value-list class-ref-values" id="class-shape-values"></div>
+    </div>
+    <div class="class-ref" id="classSymbol">
+      <div class="class-ref-name">Symbol</div>
+      <div class="class-ref-meta">Symbol or content descriptions extracted from the symbol/content column.</div>
+      <div class="value-list class-ref-values" id="class-symbol-values"></div>
+    </div>
+  </div>
+</div>
 
 <!-- ══════════════ SECTION A ══════════════ -->
 <div id="secA">
@@ -889,12 +1216,378 @@ body {
 
 <script>
 var currentFilter = 'all';
+var classifierState = { color: 'all', ground: 'all', border: 'all', shape: 'all', symbol: 'all' };
+var classifierIndex = null;
+
+var SECTION_CLASS_BY_SEC = {
+  A: 'DangerWarningSign',
+  B: 'PrioritySign',
+  C: 'ProhibitoryOrRestrictiveSign',
+  D: 'MandatorySign',
+  E: 'InformationFacilityServiceSign',
+  F: 'FacilityServiceSign',
+  G: 'DirectionPositionIndicationSign',
+  H: 'AdditionalPanel'
+};
+
+var CLASS_TARGETS = {
+  RoadSign: { id: 'classRoadSign', filter: 'all' },
+  DangerWarningSign: { id: 'secA', filter: 'A' },
+  PrioritySign: { id: 'secB', filter: 'B' },
+  ProhibitoryOrRestrictiveSign: { id: 'secC', filter: 'C' },
+  MandatorySign: { id: 'secD', filter: 'D' },
+  InformationFacilityServiceSign: { id: 'secE', filter: 'E' },
+  FacilityServiceSign: { id: 'secF', filter: 'F' },
+  DirectionPositionIndicationSign: { id: 'secG', filter: 'G' },
+  AdditionalPanel: { id: 'secH', filter: 'H' },
+  Colour: { id: 'classColour' },
+  Shape: { id: 'classShape' },
+  Symbol: { id: 'classSymbol' }
+};
+
+var COLOUR_DEFS = [
+  { name: 'Dark Blue', swatch: '#243f70', pattern: /\bdark\s+blue\b/i },
+  { name: 'Light Yellow', swatch: '#fff4a3', pattern: /\blight\s+yellow\b/i },
+  { name: 'Black', swatch: '#111', pattern: /\bblack\b/i },
+  { name: 'Blue', swatch: '#4a9fd4', pattern: /\bblue\b/i },
+  { name: 'Dark', swatch: '#222', pattern: /\bdark\b/i },
+  { name: 'Green', swatch: '#27500a', pattern: /\bgreen\b/i },
+  { name: 'Grey', swatch: '#888', pattern: /\bgr[ae]y\b/i },
+  { name: 'Light', swatch: '#f8f8f0', pattern: /\blight\b/i },
+  { name: 'Orange', swatch: '#e07b3a', pattern: /\borange\b/i },
+  { name: 'Red', swatch: '#c00', pattern: /\bred\b/i },
+  { name: 'White', swatch: '#fff', pattern: /\bwhite\b/i },
+  { name: 'Yellow', swatch: '#ff0', pattern: /\byellow\b/i }
+];
+
+var SHAPE_DEFS = [
+  { name: 'Triangle', mark: '▲', pattern: /▲|\btriangle\b|\btri\.\b/i },
+  { name: 'Inverted Triangle', mark: '▽', pattern: /▽|\binverted\s+triangle\b/i },
+  { name: 'Diamond', mark: '◇', pattern: /◇|\bdiamond\b|\bdiam\.\b/i },
+  { name: 'Circle', mark: '○', pattern: /○|\bcircle\b/i },
+  { name: 'Octagon', mark: '⬟', pattern: /⬟|\boctagon\b/i },
+  { name: 'Rectangle', mark: '▭', pattern: /▭|\brectangle\b|\brect\.\b/i },
+  { name: 'Square', mark: '□', pattern: /□|\bsquare\b/i },
+  { name: "St. Andrew's Cross", mark: 'X', pattern: /✕|\bst\.?\s*andrew|\bx\s+shape\b/i }
+];
 
 function setFilter(sec, btn) {
   currentFilter = sec;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  updateTopFilterButtons(sec);
+  if (btn) btn.classList.add('active');
+  if (sec === 'all') {
+    setSidebarActive('RoadSign');
+  } else if (SECTION_CLASS_BY_SEC[sec]) {
+    setSidebarActive(SECTION_CLASS_BY_SEC[sec]);
+  }
   filterRows();
+}
+
+function updateTopFilterButtons(sec) {
+  document.querySelectorAll('.filter-btn[data-filter]').forEach(function(btn) {
+    btn.classList.toggle('active', btn.dataset.filter === sec);
+  });
+}
+
+function setSidebarActive(className) {
+  document.querySelectorAll('.sec-btn[data-class], .tree-link[data-class]').forEach(function(btn) {
+    btn.classList.toggle('active', btn.dataset.class === className);
+  });
+}
+
+function jumpToClass(className) {
+  var target = CLASS_TARGETS[className];
+  if (!target) return;
+
+  toggleClassifier(false);
+  setSidebarActive(className);
+
+  if (target.filter) {
+    currentFilter = target.filter;
+    updateTopFilterButtons(target.filter);
+    filterRows();
+  }
+
+  setTimeout(function() {
+    scrollTo(target.id);
+  }, 0);
+}
+
+function compactText(text) {
+  return (text || '').replace(/\s+/g, ' ').trim();
+}
+
+function cellText(row, index) {
+  return row.cells[index] ? compactText(row.cells[index].textContent) : '';
+}
+
+function unique(values) {
+  return values.filter(function(value, index, all) {
+    return value && all.indexOf(value) === index;
+  });
+}
+
+function extractColours(text, includeNone) {
+  var values = [];
+  COLOUR_DEFS.forEach(function(def) {
+    if (def.pattern.test(text)) values.push(def.name);
+  });
+  if (includeNone && /\bnone\b/i.test(text)) values.push('None');
+  return unique(values);
+}
+
+function extractShapes(text) {
+  var values = [];
+  SHAPE_DEFS.forEach(function(def) {
+    if (def.pattern.test(text)) values.push(def.name);
+  });
+  return unique(values);
+}
+
+function normaliseSymbol(text) {
+  return compactText(text)
+    .replace(/\s+—\s+/g, ' - ')
+    .replace(/\s*;\s*/g, '; ')
+    || 'No symbol / content specified';
+}
+
+function getRowClassifyValues(row) {
+  var shapeText = cellText(row, 3);
+  var groundText = cellText(row, 4);
+  var borderText = cellText(row, 5);
+  var symbolText = cellText(row, 6);
+  var ground = extractColours(groundText, false);
+  var border = extractColours(borderText, true);
+
+  return {
+    shape: extractShapes(shapeText),
+    ground: ground,
+    border: border,
+    color: unique(extractColours([groundText, borderText, symbolText].join(' '), false)),
+    symbol: [normaliseSymbol(symbolText)]
+  };
+}
+
+function countValues(map, values) {
+  unique(values).forEach(function(value) {
+    map[value] = (map[value] || 0) + 1;
+  });
+}
+
+function orderedItems(map, defs, includeNone) {
+  var ordered = defs.map(function(def) { return def.name; });
+  if (includeNone) ordered.push('None');
+
+  var items = [];
+  ordered.forEach(function(name) {
+    if (map[name]) items.push({ name: name, count: map[name] });
+  });
+  Object.keys(map).sort().forEach(function(name) {
+    if (ordered.indexOf(name) === -1) items.push({ name: name, count: map[name] });
+  });
+  return items;
+}
+
+function orderedTextItems(map) {
+  return Object.keys(map).sort(function(a, b) {
+    return a.localeCompare(b);
+  }).map(function(name) {
+    return { name: name, count: map[name] };
+  });
+}
+
+function buildClassifier() {
+  var rows = document.querySelectorAll('tr[data-sec]');
+  var maps = { color: {}, ground: {}, border: {}, shape: {}, symbol: {} };
+
+  rows.forEach(function(row) {
+    var values = getRowClassifyValues(row);
+    row.__classifyValues = values;
+    countValues(maps.color, values.color);
+    countValues(maps.ground, values.ground);
+    countValues(maps.border, values.border);
+    countValues(maps.shape, values.shape);
+    countValues(maps.symbol, values.symbol);
+  });
+
+  classifierIndex = {
+    color: orderedItems(maps.color, COLOUR_DEFS, false),
+    ground: orderedItems(maps.ground, COLOUR_DEFS, false),
+    border: orderedItems(maps.border, COLOUR_DEFS, true),
+    shape: orderedItems(maps.shape, SHAPE_DEFS, false),
+    symbol: orderedTextItems(maps.symbol)
+  };
+
+  renderClassifierSelect('classify-color', classifierIndex.color, 'All colours');
+  renderClassifierSelect('classify-ground', classifierIndex.ground, 'All ground colours');
+  renderClassifierSelect('classify-border', classifierIndex.border, 'All border colours');
+  renderClassifierSelect('classify-shape', classifierIndex.shape, 'All shapes');
+  renderClassifierSelect('classify-symbol', classifierIndex.symbol, 'All symbols');
+  renderValueList('all-colours-list', classifierIndex.color, 'color');
+  renderValueList('ground-colours-list', classifierIndex.ground, 'ground');
+  renderValueList('border-colours-list', classifierIndex.border, 'border');
+  renderValueList('shapes-list', classifierIndex.shape, 'shape');
+  renderValueList('symbols-list', classifierIndex.symbol, 'symbol');
+  renderValueList('class-colour-values', classifierIndex.color, 'color');
+  renderValueList('class-shape-values', classifierIndex.shape, 'shape');
+  renderValueList('class-symbol-values', classifierIndex.symbol, 'symbol');
+}
+
+function renderClassifierSelect(id, items, allLabel) {
+  var select = document.getElementById(id);
+  if (!select) return;
+
+  select.innerHTML = '';
+  var allOption = document.createElement('option');
+  allOption.value = 'all';
+  allOption.textContent = allLabel;
+  select.appendChild(allOption);
+
+  items.forEach(function(item) {
+    var option = document.createElement('option');
+    option.value = item.name;
+    option.textContent = item.name + ' (' + item.count + ')';
+    select.appendChild(option);
+  });
+}
+
+function colourMeta(name) {
+  for (var i = 0; i < COLOUR_DEFS.length; i++) {
+    if (COLOUR_DEFS[i].name === name) return COLOUR_DEFS[i];
+  }
+  return name === 'None'
+    ? { name: 'None', swatch: null }
+    : { name: name, swatch: '#888' };
+}
+
+function shapeMeta(name) {
+  for (var i = 0; i < SHAPE_DEFS.length; i++) {
+    if (SHAPE_DEFS[i].name === name) return SHAPE_DEFS[i];
+  }
+  return { name: name, mark: '?' };
+}
+
+function renderValueList(id, items, kind) {
+  var list = document.getElementById(id);
+  if (!list) return;
+  list.innerHTML = '';
+
+  items.forEach(function(item) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'value-chip' + (kind === 'symbol' ? ' symbol-chip' : '');
+    btn.dataset.kind = kind;
+    btn.dataset.value = item.name;
+    btn.onclick = function() { setClassifier(kind, item.name); };
+
+    if (kind === 'shape') {
+      var mark = document.createElement('span');
+      mark.className = 'shape-mark';
+      mark.textContent = shapeMeta(item.name).mark;
+      btn.appendChild(mark);
+    } else if (kind === 'symbol') {
+      var symbolMark = document.createElement('span');
+      symbolMark.className = 'symbol-mark';
+      symbolMark.textContent = 'S';
+      btn.appendChild(symbolMark);
+    } else {
+      var swatch = document.createElement('span');
+      swatch.className = 'value-swatch' + (item.name === 'None' ? ' none' : '');
+      var meta = colourMeta(item.name);
+      if (meta.swatch) swatch.style.background = meta.swatch;
+      btn.appendChild(swatch);
+    }
+
+    var label = document.createElement('span');
+    label.className = 'value-label';
+    label.textContent = item.name;
+    btn.appendChild(label);
+
+    var count = document.createElement('span');
+    count.className = 'value-chip-count';
+    count.textContent = item.count;
+    btn.appendChild(count);
+
+    list.appendChild(btn);
+  });
+}
+
+function hasActiveClassifier() {
+  return Object.keys(classifierState).some(function(key) {
+    return classifierState[key] !== 'all';
+  });
+}
+
+function describeActiveClassifier() {
+  var labels = { color: 'Colour', ground: 'Ground', border: 'Border', shape: 'Shape', symbol: 'Symbol' };
+  var parts = [];
+  Object.keys(classifierState).forEach(function(key) {
+    if (classifierState[key] !== 'all') {
+      parts.push(labels[key] + ': ' + classifierState[key]);
+    }
+  });
+  return parts.join(' | ');
+}
+
+function rowMatchesClassifier(values) {
+  return Object.keys(classifierState).every(function(key) {
+    var selected = classifierState[key];
+    return selected === 'all' || values[key].indexOf(selected) !== -1;
+  });
+}
+
+function setClassifier(kind, value) {
+  classifierState[kind] = value || 'all';
+  filterRows();
+}
+
+function resetClassifier() {
+  classifierState = { color: 'all', ground: 'all', border: 'all', shape: 'all', symbol: 'all' };
+  filterRows();
+}
+
+function updateClassifierUi(visible) {
+  Object.keys(classifierState).forEach(function(kind) {
+    var select = document.getElementById('classify-' + kind);
+    if (select) select.value = classifierState[kind];
+  });
+
+  document.querySelectorAll('.value-chip').forEach(function(chip) {
+    chip.classList.toggle('active', classifierState[chip.dataset.kind] === chip.dataset.value);
+  });
+
+  var active = hasActiveClassifier();
+  var toggle = document.getElementById('classify-toggle');
+  var reset = document.getElementById('visual-reset');
+  var summary = document.getElementById('classifier-summary');
+
+  if (toggle) toggle.classList.toggle('active', active);
+  if (reset) reset.style.display = active ? 'inline-flex' : 'none';
+  if (summary) {
+    summary.textContent = (describeActiveClassifier() || 'All visual values') + ' | ' + visible + ' visible';
+  }
+}
+
+function toggleClassifier(forceOpen) {
+  var backdrop = document.getElementById('classifier-backdrop');
+  if (!backdrop) return;
+
+  var open = typeof forceOpen === 'boolean' ? forceOpen : !backdrop.classList.contains('open');
+  backdrop.classList.toggle('open', open);
+  backdrop.setAttribute('aria-hidden', open ? 'false' : 'true');
+
+  if (open) {
+    setTimeout(function() {
+      var select = document.getElementById('classify-color');
+      if (select) select.focus();
+    }, 0);
+  }
+}
+
+function closeClassifierOnBackdrop(event) {
+  if (event.target && event.target.id === 'classifier-backdrop') {
+    toggleClassifier(false);
+  }
 }
 
 function filterRows() {
@@ -907,11 +1600,13 @@ function filterRows() {
     var txt = row.getAttribute('data-search').toLowerCase();
     var cellText = row.textContent.toLowerCase();
     var combined = txt + ' ' + cellText;
+    var values = row.__classifyValues || getRowClassifyValues(row);
 
     var secMatch = (currentFilter === 'all' || sec === currentFilter);
     var qMatch = !q || combined.includes(q);
+    var classifierMatch = rowMatchesClassifier(values);
 
-    if (secMatch && qMatch) {
+    if (secMatch && qMatch && classifierMatch) {
       row.classList.remove('hidden');
       visible++;
     } else {
@@ -922,17 +1617,20 @@ function filterRows() {
   document.getElementById('count-badge').textContent = visible + ' sign' + (visible !== 1 ? 's' : '');
   document.getElementById('empty-state').style.display = visible === 0 ? 'block' : 'none';
   if (visible === 0) {
-    document.getElementById('empty-query').textContent = '"' + (q || currentFilter) + '"';
+    document.getElementById('empty-query').textContent = '"' + (q || describeActiveClassifier() || currentFilter) + '"';
   }
 
   // hide/show section headers
+  var constrained = !!q || hasActiveClassifier();
   ['A','B','C','D','E','F','G','H'].forEach(function(s) {
     var secDiv = document.getElementById('sec' + s);
     if (!secDiv) return;
     var hasVisible = secDiv.querySelectorAll('tr[data-sec="' + s + '"]:not(.hidden)').length > 0;
     var shouldShow = (currentFilter === 'all' || currentFilter === s);
-    secDiv.style.display = (shouldShow && (hasVisible || !q)) ? 'block' : 'none';
+    secDiv.style.display = (shouldShow && (hasVisible || !constrained)) ? 'block' : 'none';
   });
+
+  updateClassifierUi(visible);
 }
 
 function scrollTo(id) {
@@ -953,13 +1651,18 @@ function copyBlock(btn) {
 
 // Keyboard shortcut: Ctrl/Cmd+F focuses search
 document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    toggleClassifier(false);
+  }
   if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
     e.preventDefault();
     document.getElementById('search').focus();
   }
 });
 
+buildClassifier();
 filterRows();
+setSidebarActive('RoadSign');
 </script>
 </body>
 </html>

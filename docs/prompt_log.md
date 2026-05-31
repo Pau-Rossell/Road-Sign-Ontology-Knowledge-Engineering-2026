@@ -213,7 +213,7 @@ PROMPT_LOG_ENTRY_START
 
 ENTRY_ID: PL-0001
 
-DATE_TIME: YYYY-MM-DD HH
+DATE: YYYY-MM-DD
 
 LLM_USED: model name or UNKNOWN
 
@@ -260,8 +260,7 @@ PROMPT LOG ENTRY RULES
 * ENTRY_ID uses sequential numbering: PL-0001, PL-0002, PL-0003, and so on.
 * Before appending a new entry, docs/prompt_log.md is inspected to find the latest existing ENTRY_ID.
 * If no previous entry exists, numbering starts at PL-0001.
-* DATE_TIME uses the current local date and time if available.
-* If exact time is unavailable, the date is used and the time is written as UNKNOWN.
+* DATE uses the current local date if available.
 * USER_PROMPT contains the user prompt verbatim, not a paraphrase.
 * FILES_READ lists only files actually inspected or used.
 * FILES_CREATED_OR_MODIFIED lists only files actually created or modified.
@@ -323,7 +322,7 @@ PROMPT_LOG_ENTRY_START
 
 ENTRY_ID: PL-0001
 
-DATE_TIME: 2026-05-30
+DATE: 2026-05-30
 
 LLM_USED: GPT-5 Codex
 
@@ -362,5 +361,107 @@ MANUAL_REVIEW_REQUIRED:
 NEXT_RECOMMENDED_ACTION:
 
 * Create a `.gitignore` file using the recommended project-specific sections.
+
+PROMPT_LOG_ENTRY_END
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
+ENTRY_ID: PL-0002
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+Add to [ViennaConvention_Protege_Reference2.html](scripts/html/ViennaConvention_Protege_Reference2.html) the capacity to classify by colour, ground colour, border colour and shape. Also, make it possible to see all colours and shapes, potentially in the classify window.
+PROMPT_END
+
+TASK_TYPE:
+documentation
+
+FILES_READ:
+
+* scripts/html/ViennaConvention_Protege_Reference2.html
+* docs/prompt_log.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* scripts/html/ViennaConvention_Protege_Reference2.html - added visual classifier UI and filtering logic
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Added a Classify dialog to the Vienna Convention Protégé reference HTML. The dialog dynamically lists detected colours, ground colours, border colours, and shapes from the existing sign table, provides dropdown and chip-based filters, and integrates those visual filters with the existing search and section filters. A Node-based inline JavaScript syntax check passed.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* The classifier derives visual values from the existing table columns rather than adding or changing ontology axioms.
+* General colour classification uses detected colours from visual text in the ground, border, and symbol/content cells; ground and border filters use their dedicated columns.
+
+VALIDATION_STATUS:
+requires_manual_check
+
+MANUAL_REVIEW_REQUIRED:
+
+* Open the HTML file in a browser and verify that the Classify dialog, dropdowns, chips, reset action, and combined search/section/visual filters behave as expected.
+
+NEXT_RECOMMENDED_ACTION:
+
+* Test representative filters such as Shape = Circle, Ground colour = Blue, Border colour = None, and Colour = Red in the browser.
+
+PROMPT_LOG_ENTRY_END
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
+ENTRY_ID: PL-0003
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+The previous modifications to [ViennaConvention_Protege_Reference2.html](scripts/html/ViennaConvention_Protege_Reference2.html) work fine. Additionally, do the same for symbols and make the left pannel (sections) interactive so that each section can be clicked and it takes you to the corresponding class.. Add the rest of the classes, those being colour, shape and symbol (for now).
+PROMPT_END
+
+TASK_TYPE:
+documentation
+
+FILES_READ:
+
+* scripts/html/ViennaConvention_Protege_Reference2.html
+* docs/prompt_log.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* scripts/html/ViennaConvention_Protege_Reference2.html - added symbol classification, interactive class navigation, and visual vocabulary class references
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Extended the HTML reference classifier with Symbol filtering and a symbol/content value inventory. Made sidebar section and OWL hierarchy entries navigate to their corresponding class/reference targets, and added top-level reference panels for RoadSign, Colour, Shape, and Symbol populated from table values. Inline JavaScript syntax and git diff whitespace checks passed.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* Symbol classification is derived from the existing symbol/content column and does not add or alter ontology axioms.
+* Colour, Shape, and Symbol are represented as visual vocabulary class references in the HTML, not asserted as ontology changes.
+
+VALIDATION_STATUS:
+requires_manual_check
+
+MANUAL_REVIEW_REQUIRED:
+
+* Open the HTML file in a browser and verify symbol filtering, class-reference navigation, and combined visual filters.
+
+NEXT_RECOMMENDED_ACTION:
+
+* Test clicking RoadSign, Colour, Shape, Symbol, and each section class in the left panel.
 
 PROMPT_LOG_ENTRY_END
