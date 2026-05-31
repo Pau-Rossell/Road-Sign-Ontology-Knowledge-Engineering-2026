@@ -25,6 +25,5 @@ project/
 │   └── ontologyFormat                  / Specifies the format to be used throughout our ontology
 │
 ├── AGENTS.md                           / Prompt which serves as contex for any agent working within the directory.
-├── .gitignore                          / Extensions and files we want to avoid pushing to the repository
 └── README.md                           / INFO on the project directory architecture
 ```
