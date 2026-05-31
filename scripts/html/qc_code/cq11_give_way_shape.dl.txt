@@ -1,0 +1,10 @@
+CQ-11
+
+Question:
+What shape does a give-way sign (B1) have?
+
+DL Query:
+B1_GiveWay and (hasShape value InvertedTriangle)
+
+Expected with current ontology:
+- Yes.

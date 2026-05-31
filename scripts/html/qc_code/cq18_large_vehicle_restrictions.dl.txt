@@ -1,0 +1,15 @@
+CQ-18
+
+Question:
+Which signs impose a restriction applicable to lorries or other large vehicles?
+
+DL Query:
+RoadSign and (
+  appliesToCategory some LargeVehicle
+  or appliesExclusivelyToCategory some Goods_vehicle
+  or appliesExclusivelyToCategory some Vehicle_with_trailer
+  or appliesExclusivelyToCategory some Vehicle_carrying_dangerous_goods
+)
+
+Expected with current ontology:
+- Returns signs that explicitly target large vehicles, goods vehicles, trailer vehicles, or dangerous-goods vehicles.

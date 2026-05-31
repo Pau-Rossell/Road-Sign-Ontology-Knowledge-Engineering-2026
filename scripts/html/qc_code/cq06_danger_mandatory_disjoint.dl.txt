@@ -1,0 +1,13 @@
+CQ-06
+
+Question:
+Are danger warning signs and mandatory signs disjoint categories?
+
+DL Query:
+DangerWarningSign and MandatorySign
+
+Check in Protégé:
+- If the query returns `owl:Nothing` / no satisfiable named classes, the categories are disjoint.
+
+Expected with current ontology:
+- Yes.

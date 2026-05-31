@@ -1,0 +1,13 @@
+CQ-02
+
+Question:
+Is a priority sign considered a type of road sign?
+
+DL Query:
+PrioritySign
+
+Check in Protégé:
+- Confirm that `RoadSign` appears in the asserted or inferred superclass list for `PrioritySign`.
+
+Expected with current ontology:
+- Yes.

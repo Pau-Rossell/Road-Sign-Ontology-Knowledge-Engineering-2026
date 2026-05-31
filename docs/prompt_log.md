@@ -259,6 +259,90 @@ PROMPT_LOG_ENTRY_END
 
 PROMPT_LOG_ENTRY_START
 
+ENTRY_ID: PL-0014
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+Now, analyze the 25 CQ (docs\competency_questions.md) and check if we can answer the all with the current ontology. Also create for each file the needed code to answer the query in scripts\html\qc_code. At the end report what you could do and what you didn't
+PROMPT_END
+
+TASK_TYPE:
+competency_questions
+
+FILES_READ:
+
+* docs/competency_questions.md
+* ontology/roadSignOntology.owl
+* ontology/roadSignOntologyMTSD_aligned.owl
+* docs/prompt_log.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* scripts/html/qc_code/README.md - created
+* scripts/html/qc_code/answerability_matrix.md - created
+* scripts/html/qc_code/_common.py - created
+* scripts/html/qc_code/cq01_primary_kinds.rq - created
+* scripts/html/qc_code/cq02_priority_sign_is_roadsign.dl.txt - created
+* scripts/html/qc_code/cq03_prohibitory_subclasses.rq - created
+* scripts/html/qc_code/cq04_stop_is_priority.dl.txt - created
+* scripts/html/qc_code/cq05_mandatory_sign_types.rq - created
+* scripts/html/qc_code/cq06_danger_mandatory_disjoint.dl.txt - created
+* scripts/html/qc_code/cq07_danger_warning_hierarchy.rq - created
+* scripts/html/qc_code/cq08_b2a_stop_colours.dl.txt - created
+* scripts/html/qc_code/cq08_b2a_stop_colours_note.txt - created
+* scripts/html/qc_code/cq09_circle_sign_border_colours.dl.txt - created
+* scripts/html/qc_code/cq09_circle_sign_border_colours_note.txt - created
+* scripts/html/qc_code/cq10_danger_warning_standard_size.rq - created
+* scripts/html/qc_code/cq11_give_way_shape.dl.txt - created
+* scripts/html/qc_code/cq12_shapes_by_category.py - created
+* scripts/html/qc_code/cq13_blue_ground_signs.dl.txt - created
+* scripts/html/qc_code/cq14_speed_value_signs.py - created
+* scripts/html/qc_code/cq15_pedestrian_relevant_signs.dl.txt - created
+* scripts/html/qc_code/cq16_falling_rocks_symbol.rq - created
+* scripts/html/qc_code/cq17_a15_crossing_symbol.rq - created
+* scripts/html/qc_code/cq18_large_vehicle_restrictions.dl.txt - created
+* scripts/html/qc_code/cq19_bicycle_only_signs.dl.txt - created
+* scripts/html/qc_code/cq20_count_signs_in_image.py - created
+* scripts/html/qc_code/cq21_images_with_compulsory_min_speed.py - created
+* scripts/html/qc_code/cq22_percentage_prohibitory_objects.py - created
+* scripts/html/qc_code/cq23_large_vehicle_signs_in_mtsd.py - created
+* scripts/html/qc_code/cq24_occluded_sign_objects.py - created
+* scripts/html/qc_code/cq25_distribution_fully_annotated_images.py - created
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Assessed all 25 competency questions against the current ontology and repository contents, produced an answerability matrix, and created one query/script artifact per CQ under scripts/html/qc_code. Ontology-focused CQs now have SPARQL, DL-query, or Python artifacts as appropriate, while MTSD-focused Python scripts explicitly report that the required dataset source is missing from the current repository snapshot.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* Treated CQ answerability conservatively as yes, partial, or no depending on whether the current ontology explicitly models the required semantics.
+* Used symbol-based approximations for pedestrian, bicycle, and large-vehicle relevance where no explicit applicability property exists.
+* Marked CQ-20 to CQ-25 as currently blocked by missing MTSD source data, because ontology/roadSignOntologyMTSD_aligned.owl is only an import stub and no data/raw/MTSD.ttl file exists in the workspace.
+
+VALIDATION_STATUS:
+requires_manual_check
+
+MANUAL_REVIEW_REQUIRED:
+
+* Review the partial/no CQ statuses in scripts/html/qc_code/answerability_matrix.md, especially CQ-08, CQ-10, CQ-14, CQ-15 to CQ-19, and CQ-20 to CQ-25.
+* Run the DL queries in Protégé and confirm the expected class results under the current reasoner configuration.
+
+NEXT_RECOMMENDED_ACTION:
+
+* Add the missing MTSD source graph to the repository and then implement the dataset-specific logic for CQ-20 to CQ-25 against the real schema.
+
+PROMPT_LOG_ENTRY_END
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
 ENTRY_ID: PL-0013
 
 DATE: 2026-05-31

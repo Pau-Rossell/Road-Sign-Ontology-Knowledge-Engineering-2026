@@ -1,0 +1,18 @@
+PREFIX : <http://www.semanticweb.org/ontologies/2026/4//>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# CQ-16
+# What danger warning symbol -- A11a or A11b -- must be used to warn of falling rocks?
+#
+# The ontology now makes both falling-rock sign models explicit through `hasSymbol some Falling_rocks`.
+
+SELECT DISTINCT ?sign ?label ?symbol ?symbolLabel
+WHERE {
+  VALUES ?sign { :A11a_FallingRocks_Triangle :A11b_FallingRocks_Diamond }
+  OPTIONAL { ?sign rdfs:label ?label }
+  ?sign rdfs:subClassOf ?restriction .
+  ?restriction owl:onProperty :hasSymbol ;
+               owl:someValuesFrom ?symbol .
+  OPTIONAL { ?symbol rdfs:label ?symbolLabel }
+}
+ORDER BY ?sign

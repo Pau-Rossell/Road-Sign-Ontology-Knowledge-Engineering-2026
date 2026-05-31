@@ -1,0 +1,2 @@
+CQ-08 note:
+The query artifact is a DL-query note because the current ontology lacks the required colour axioms on `B2a_Stop_Octagon`.

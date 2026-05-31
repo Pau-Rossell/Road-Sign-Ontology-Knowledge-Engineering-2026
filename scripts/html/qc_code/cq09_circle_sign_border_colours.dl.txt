@@ -1,0 +1,15 @@
+CQ-09
+
+Question:
+Which border colours can circle-shaped road signs have?
+
+DL Query:
+RoadSign and (hasShape value Circle) and (hasBorderColour some owl:Thing)
+
+Alternative colour-specific checks:
+- RoadSign and (hasShape value Circle) and (hasBorderColour value Red)
+- RoadSign and (hasShape value Circle) and (hasBorderColour value Blue)
+- RoadSign and (hasShape value Circle) and (hasBorderColour value White)
+
+Expected with current ontology:
+- The explicit border colours currently modelled for circle-sign families are `Red` and `White`.

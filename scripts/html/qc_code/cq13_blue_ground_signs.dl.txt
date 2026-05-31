@@ -1,0 +1,10 @@
+CQ-13
+
+Question:
+Which road signs have a blue ground colour?
+
+DL Query:
+RoadSign and (hasGroundColour value Blue)
+
+Expected with current ontology:
+- Yes, for all classes that explicitly carry the blue-ground restriction.

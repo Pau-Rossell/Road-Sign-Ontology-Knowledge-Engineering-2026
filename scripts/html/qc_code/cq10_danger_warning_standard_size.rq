@@ -1,0 +1,15 @@
+PREFIX : <http://www.semanticweb.org/ontologies/2026/4//>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+# CQ-10
+# What is the standard measurement for the side of a normal-sized danger warning sign?
+
+SELECT ?signClass ?label ?value
+WHERE {
+  VALUES ?signClass { :NormalSizedDangerWarningSign }
+  OPTIONAL { ?signClass rdfs:label ?label }
+  ?signClass rdfs:subClassOf ?restriction .
+  ?restriction owl:onProperty :hasStandardSideLength ;
+               owl:hasValue ?value .
+}

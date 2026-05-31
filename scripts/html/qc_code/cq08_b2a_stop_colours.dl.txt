@@ -1,0 +1,11 @@
+CQ-08
+
+Question:
+What are the required background and border colours for a model B2a STOP sign?
+
+DL Query:
+B2a_Stop_Octagon and (hasGroundColour value Red) and (hasBorderColour value White)
+
+Expected with current ontology:
+- Ground colour: `Red`
+- Border colour: `White`

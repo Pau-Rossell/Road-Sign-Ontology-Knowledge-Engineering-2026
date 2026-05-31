@@ -1,0 +1,2 @@
+CQ-09 note:
+The DL query returns only classes that already carry both `hasShape value Circle` and explicit `hasBorderColour` restrictions.

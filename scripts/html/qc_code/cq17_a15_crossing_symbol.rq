@@ -1,0 +1,22 @@
+PREFIX : <http://www.semanticweb.org/ontologies/2026/4//>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+# CQ-17
+# What specific symbol is used on sign A15 to warn of cattle or other animals crossing?
+#
+# This query returns the explicit symbol fillers attached to the A15 animal-crossing variants.
+
+SELECT DISTINCT ?sign ?label ?symbol ?symbolLabel
+WHERE {
+  ?sign rdfs:subClassOf+ :A15_AnimalCrossingWarningSign .
+  FILTER(?sign != :A15_AnimalCrossingWarningSign)
+  OPTIONAL { ?sign rdfs:label ?label }
+  OPTIONAL {
+    ?sign rdfs:subClassOf ?restriction .
+    ?restriction owl:onProperty :hasSymbol ;
+                 owl:someValuesFrom ?symbol .
+    OPTIONAL { ?symbol rdfs:label ?symbolLabel }
+  }
+}
+ORDER BY ?sign ?symbol

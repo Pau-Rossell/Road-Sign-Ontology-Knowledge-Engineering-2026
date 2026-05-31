@@ -1,0 +1,10 @@
+CQ-19
+
+Question:
+Which road signs apply exclusively to bicycles?
+
+DL Query:
+RoadSign and (appliesExclusivelyToCategory some Cycle)
+
+Expected with current ontology:
+- Returns signs that explicitly apply exclusively to bicycles/cycles.

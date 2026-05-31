@@ -1,0 +1,15 @@
+PREFIX : <http://www.semanticweb.org/ontologies/2026/4//>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# CQ-03
+# What are the subclasses of ProhibitoryOrRestrictiveSign defined in the Vienna Convention?
+# This returns all named subclasses in the transitive hierarchy.
+
+SELECT DISTINCT ?subclass ?label
+WHERE {
+  ?subclass rdfs:subClassOf+ :ProhibitoryOrRestrictiveSign .
+  FILTER(?subclass != :ProhibitoryOrRestrictiveSign)
+  FILTER(isIRI(?subclass))
+  OPTIONAL { ?subclass rdfs:label ?label }
+}
+ORDER BY ?subclass

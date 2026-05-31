@@ -1,0 +1,17 @@
+PREFIX : <http://www.semanticweb.org/ontologies/2026/4//>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# CQ-07
+# What is the complete class hierarchy under DangerWarningSign?
+# Returns parent-child edges inside the subtree.
+
+SELECT DISTINCT ?parent ?parentLabel ?child ?childLabel
+WHERE {
+  ?child rdfs:subClassOf ?parent .
+  ?child rdfs:subClassOf+ :DangerWarningSign .
+  ?parent rdfs:subClassOf* :DangerWarningSign .
+  FILTER(isIRI(?child) && isIRI(?parent))
+  OPTIONAL { ?child rdfs:label ?childLabel }
+  OPTIONAL { ?parent rdfs:label ?parentLabel }
+}
+ORDER BY ?parent ?child

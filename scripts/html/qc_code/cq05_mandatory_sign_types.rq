@@ -1,0 +1,14 @@
+PREFIX : <http://www.semanticweb.org/ontologies/2026/4//>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# CQ-05
+# What types of signs belong to the mandatory signs category?
+
+SELECT DISTINCT ?subclass ?label
+WHERE {
+  ?subclass rdfs:subClassOf+ :MandatorySign .
+  FILTER(?subclass != :MandatorySign)
+  FILTER(isIRI(?subclass))
+  OPTIONAL { ?subclass rdfs:label ?label }
+}
+ORDER BY ?subclass

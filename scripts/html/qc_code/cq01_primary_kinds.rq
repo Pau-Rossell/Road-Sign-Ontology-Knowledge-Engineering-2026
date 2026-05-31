@@ -1,0 +1,15 @@
+PREFIX : <http://www.semanticweb.org/ontologies/2026/4//>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+# CQ-01
+# What are the primary kinds of road signs distinguished in the Vienna Convention?
+# Interpretation used here: direct asserted subclasses of :RoadSign.
+
+SELECT ?signType ?label
+WHERE {
+  ?signType rdfs:subClassOf :RoadSign .
+  FILTER(isIRI(?signType))
+  OPTIONAL { ?signType rdfs:label ?label }
+}
+ORDER BY ?signType

@@ -256,6 +256,9 @@
         <Class IRI="#AdditionalPanel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Domestic_animal"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Airplane"/>
     </Declaration>
     <Declaration>
@@ -847,6 +850,9 @@
         <Class IRI="#Goods_vehicle"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LargeVehicle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#H1_DistancePanel"/>
     </Declaration>
     <Declaration>
@@ -949,6 +955,9 @@
         <Class IRI="#Rider_on_horseback"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NormalSizedDangerWarningSign"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RoadSign"/>
     </Declaration>
     <Declaration>
@@ -988,6 +997,9 @@
         <Class IRI="#Tire_fitted_with_snow_chains"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TrafficParticipantCategory"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Tractor"/>
     </Declaration>
     <Declaration>
@@ -1021,6 +1033,9 @@
         <Class IRI="#Windsock"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Wild_animal"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Words"/>
     </Declaration>
     <Declaration>
@@ -1034,6 +1049,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasBorderColour"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesToCategory"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasGroundColour"/>
@@ -1076,6 +1097,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasLengthValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStandardSideLength"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasSpeedValue"/>
@@ -1198,8 +1222,22 @@
         <Class IRI="#A10_A11_RoadDebrisWarningSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#A11a_FallingRocks_Triangle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Falling_rocks"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#A11b_FallingRocks_Diamond"/>
         <Class IRI="#A10_A11_RoadDebrisWarningSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A11b_FallingRocks_Diamond"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Falling_rocks"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#A12_A14_RoadUserCrossingWarningSign"/>
@@ -1210,8 +1248,22 @@
         <Class IRI="#A12_A14_RoadUserCrossingWarningSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#A12a_PedestrianCrossingAhead_ModelA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesToCategory"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#A12b_PedestrianCrossingAhead_ModelB"/>
         <Class IRI="#A12_A14_RoadUserCrossingWarningSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A12b_PedestrianCrossingAhead_ModelB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesToCategory"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#A13_Children"/>
@@ -1222,6 +1274,13 @@
         <Class IRI="#A12_A14_RoadUserCrossingWarningSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#A14_CyclistsEnteringOrCrossing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesToCategory"/>
+            <Class IRI="#Cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#A15_AnimalCrossingWarningSign"/>
         <Class IRI="#DangerWarningSign"/>
     </SubClassOf>
@@ -1230,8 +1289,22 @@
         <Class IRI="#A15_AnimalCrossingWarningSign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#A15a_DomesticAnimalsCrossing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Domestic_animal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#A15b_WildAnimalsCrossing"/>
         <Class IRI="#A15_AnimalCrossingWarningSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A15b_WildAnimalsCrossing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Wild_animal"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#A16_RoadWorks"/>
@@ -1579,6 +1652,10 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Domestic_animal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Arrows"/>
         <Class IRI="#Symbol"/>
     </SubClassOf>
@@ -1642,6 +1719,27 @@
         <ObjectHasValue>
             <ObjectProperty IRI="#hasShape"/>
             <NamedIndividual IRI="#Octagon"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2a_Stop_Octagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGroundColour"/>
+            <NamedIndividual IRI="#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2a_Stop_Octagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B2a_Stop_Octagon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasInscriptionColour"/>
+            <NamedIndividual IRI="#White"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -1800,6 +1898,13 @@
     <SubClassOf>
         <Class IRI="#C13b_GoodsVehicleOvertakingProhibitedSign"/>
         <Class IRI="#C13_OvertakingProhibitionSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C13b_GoodsVehicleOvertakingProhibitedSign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+            <Class IRI="#Goods_vehicle"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C13ba_OvertakingByGoodsVehiclesProhibited_ModelA"/>
@@ -2159,6 +2264,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#C3c_NoEntryForCycles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+            <Class IRI="#Cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#C3d_NoEntryForMopeds"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSymbol"/>
@@ -2169,6 +2281,13 @@
         <Class IRI="#C3e_NoEntryForGoodsVehicles"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Goods_vehicle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3e_NoEntryForGoodsVehicles"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
             <Class IRI="#Goods_vehicle"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -2187,6 +2306,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#C3g_NoEntryForPowerDrivenVehiclesDrawingTrailer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+            <Class IRI="#Vehicle_with_trailer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#C3h_NoEntryForDangerousGoodsVehiclesRequiringSpecialSignPlating"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSymbol"/>
@@ -2194,9 +2320,23 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#C3h_NoEntryForDangerousGoodsVehiclesRequiringSpecialSignPlating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+            <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#C3i_NoEntryForPedestrians"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C3i_NoEntryForPedestrians"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
             <Class IRI="#Pedestrian"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -2255,6 +2395,13 @@
             <DataProperty IRI="#hasLengthLimitValue"/>
             <Datatype abbreviatedIRI="xsd:decimal"/>
         </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C05_C10_VehicleMetricRestrictionSign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesToCategory"/>
+            <Class IRI="#LargeVehicle"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C10_MinimumDistanceBetweenVehiclesProhibited"/>
@@ -2444,8 +2591,34 @@
         <Class IRI="#D11_CombinedReservedPathMandatorySign"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#D11a_CompulsorySharedPath_Segregated"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#appliesToCategory"/>
+                <Class IRI="#Cycle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#appliesToCategory"/>
+                <Class IRI="#Pedestrian"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#D11b_CompulsorySharedPath_Unsegregated"/>
         <Class IRI="#D11_CombinedReservedPathMandatorySign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D11b_CompulsorySharedPath_Unsegregated"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#appliesToCategory"/>
+                <Class IRI="#Cycle"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#appliesToCategory"/>
+                <Class IRI="#Pedestrian"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#D1a_DirectionToBeFollowed"/>
@@ -2502,6 +2675,13 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#D01_D03_DirectionalMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#D1a_DirectionToBeFollowed"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSymbol"/>
@@ -2544,6 +2724,13 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#D04_D06_ReservedPathMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#D4_CompulsoryCycleTrack"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSymbol"/>
@@ -2551,9 +2738,23 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#D4_CompulsoryCycleTrack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+            <Class IRI="#Cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#D5_CompulsoryFootpath"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSymbol"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D5_CompulsoryFootpath"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
             <Class IRI="#Pedestrian"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -2569,6 +2770,13 @@
         <ObjectHasValue>
             <ObjectProperty IRI="#hasShape"/>
             <NamedIndividual IRI="#Circle"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D07_D08_MinimumSpeedMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2642,6 +2850,20 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#D10_DangerousGoodsDirectionMandatorySign"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasBorderColour"/>
+            <NamedIndividual IRI="#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#D10_DangerousGoodsDirectionMandatorySign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+            <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#D10a_CompulsoryDirectionForDangerousGoods_Straight"/>
         <ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
@@ -2681,8 +2903,23 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Domestic_animal"/>
+        <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DangerWarningSign"/>
         <Class IRI="#RoadSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NormalSizedDangerWarningSign"/>
+        <Class IRI="#DangerWarningSign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NormalSizedDangerWarningSign"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasStandardSideLength"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.90</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Diagonal_band"/>
@@ -2964,6 +3201,13 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E12a_PedestrianCrossing_Standard"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesToCategory"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E12b_PedestrianCrossing_Pentagon"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
@@ -2989,6 +3233,13 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#E12b_PedestrianCrossing_Pentagon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesToCategory"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#E12c_PedestrianCrossing_Dark"/>
         <Class IRI="#SpecialRegulationSign"/>
     </SubClassOf>
@@ -3012,6 +3263,13 @@
             <ObjectProperty IRI="#hasShape"/>
             <NamedIndividual IRI="#Rectangle"/>
         </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E12c_PedestrianCrossing_Dark"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesToCategory"/>
+            <Class IRI="#Pedestrian"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#E13a_Hospital_Text"/>
@@ -5106,6 +5364,18 @@
         <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Goods_vehicle"/>
+        <Class IRI="#TrafficParticipantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LargeVehicle"/>
+        <Class IRI="#TrafficParticipantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LargeVehicle"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#H1_DistancePanel"/>
         <Class IRI="#AdditionalPanel"/>
     </SubClassOf>
@@ -5298,6 +5568,10 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Pedestrian"/>
+        <Class IRI="#TrafficParticipantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Pedestrian_on_zebra_stripes"/>
         <Class IRI="#Symbol"/>
     </SubClassOf>
@@ -5324,6 +5598,10 @@
     <SubClassOf>
         <Class IRI="#Rider_on_horseback"/>
         <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rider_on_horseback"/>
+        <Class IRI="#TrafficParticipantCategory"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RoadSign"/>
@@ -5381,6 +5659,10 @@
         <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Cycle"/>
+        <Class IRI="#TrafficParticipantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Train"/>
         <Class IRI="#Symbol"/>
     </SubClassOf>
@@ -5413,6 +5695,10 @@
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#TrafficParticipantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Vehicle_carrying_dangerous_goods"/>
         <Class IRI="#Symbol"/>
     </SubClassOf>
@@ -5421,12 +5707,24 @@
         <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Vehicle_carrying_dangerous_goods"/>
+        <Class IRI="#TrafficParticipantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Vehicle_with_trailer"/>
         <Class IRI="#Symbol"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vehicle_with_trailer"/>
         <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle_with_trailer"/>
+        <Class IRI="#TrafficParticipantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wild_animal"/>
+        <Class IRI="#Animal"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Wheelchair"/>
@@ -5761,6 +6059,14 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+        <ObjectProperty IRI="#appliesToCategory"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesToCategory"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasGroundColour"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -5788,6 +6094,14 @@
     </FunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasBorderColour"/>
+        <Class IRI="#RoadSign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+        <Class IRI="#RoadSign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesToCategory"/>
         <Class IRI="#RoadSign"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -5817,6 +6131,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasBorderColour"/>
         <Class IRI="#Colour"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesExclusivelyToCategory"/>
+        <Class IRI="#TrafficParticipantCategory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesToCategory"/>
+        <Class IRI="#TrafficParticipantCategory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasGroundColour"/>
@@ -5875,6 +6197,10 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#hasStandardSideLength"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#hasSpeedValue"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -5924,6 +6250,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasMassLimitValue"/>
+        <Class IRI="#RoadSign"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStandardSideLength"/>
         <Class IRI="#RoadSign"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -5979,6 +6309,10 @@
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#hasStandardSideLength"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasSpeedValue"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
@@ -5998,6 +6332,46 @@
         <DataProperty IRI="#hasWidth"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Domestic_animal</IRI>
+        <Literal>Domestic animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LargeVehicle</IRI>
+        <Literal>Large vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NormalSizedDangerWarningSign</IRI>
+        <Literal>Normal-sized danger warning sign</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TrafficParticipantCategory</IRI>
+        <Literal>Traffic participant category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wild_animal</IRI>
+        <Literal>Wild animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliesExclusivelyToCategory</IRI>
+        <Literal>applies exclusively to category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliesToCategory</IRI>
+        <Literal>applies to category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStandardSideLength</IRI>
+        <Literal>has standard side length</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#A01_DangerousBendWarningSign</IRI>

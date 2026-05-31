@@ -1,0 +1,14 @@
+CQ-04
+
+Question:
+Is a STOP sign (B2) a type of priority sign?
+
+DL Query:
+B2a_Stop_Octagon
+
+Check in Protégé:
+- Confirm that `PrioritySign` appears in the asserted or inferred superclass list.
+- You can also inspect `B2b_Stop_Circular` separately if you want both STOP variants.
+
+Expected with current ontology:
+- Yes.

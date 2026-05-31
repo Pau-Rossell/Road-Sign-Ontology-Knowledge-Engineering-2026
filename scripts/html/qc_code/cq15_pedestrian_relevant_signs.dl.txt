@@ -1,0 +1,10 @@
+CQ-15
+
+Question:
+Which road signs are relevant to pedestrians?
+
+DL Query:
+RoadSign and (appliesToCategory some Pedestrian or appliesExclusivelyToCategory some Pedestrian)
+
+Expected with current ontology:
+- Returns the signs that explicitly apply to pedestrians.
