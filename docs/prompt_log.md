@@ -516,3 +516,54 @@ NEXT_RECOMMENDED_ACTION:
 * Test clicking RoadSign, Colour, Shape, Symbol, and each section class in the left panel.
 
 PROMPT_LOG_ENTRY_END
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROMPT_LOG_ENTRY_START
+
+ENTRY_ID: PL-0004
+
+DATE: 2026-05-31
+
+LLM_USED: GPT-5 Codex
+
+USER_PROMPT:
+PROMPT_START
+Consider [roadSignOntology.owl](ontology/roadSignOntology.owl) in it's current state, and thoroughly compare it to [ViennaConvention_Protege_Reference2.html](scripts/html/ViennaConvention_Protege_Reference2.html) . Does the roadSign hierarchy for DangerWarningSign, MandatorySign, PrioritySign and ProhibitoryOrRestrictiveSign match the hierarchy expressed by the vienna convention? If not, highlight the specific inconsistencies and mismatches and briefly provide a reason for the mismatch. Be thorough.
+PROMPT_END
+
+TASK_TYPE:
+validation
+
+FILES_READ:
+
+* ontology/roadSignOntology.owl
+* scripts/html/ViennaConvention_Protege_Reference2.html
+* docs/prompt_log.md
+
+FILES_CREATED_OR_MODIFIED:
+
+* docs/prompt_log.md - appended prompt-log entry
+
+OUTPUT_SUMMARY:
+SUMMARY_START
+Compared the current ontology subclass hierarchy against the Vienna Convention HTML reference for DangerWarningSign, MandatorySign, PrioritySign, and ProhibitoryOrRestrictiveSign. Identified exact matches, omitted sign-model classes, naming mismatches, abstract grouping classes, and incorrect subclass placement for selected prohibitory/restrictive signs.
+SUMMARY_END
+
+KEY_MODELLING_DECISIONS:
+
+* No ontology changes were made; the HTML reference was treated as the Vienna class reference for this structural comparison.
+* The comparison used asserted/transitive subclass membership and class names, not a reasoner-derived inferred hierarchy.
+
+VALIDATION_STATUS:
+requires_manual_check
+
+MANUAL_REVIEW_REQUIRED:
+
+* Review the listed hierarchy mismatches in Protégé and decide which class names or parent classes should be changed.
+
+NEXT_RECOMMENDED_ACTION:
+
+* Correct the C14-C16 parentage under ProhibitoryOrRestrictiveSign and add or rename omitted DangerWarningSign model variants.
+
+PROMPT_LOG_ENTRY_END
